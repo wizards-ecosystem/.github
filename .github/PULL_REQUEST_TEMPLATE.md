@@ -19,6 +19,6 @@
 - [ ] Matches the surrounding code's naming, comment density, and idiom
 - [ ] Does not contradict an accepted decision record (or adds one that supersedes it)
 - [ ] Specification and conformance corpus updated together, if either moved
-- [ ] Status words used as defined in [BRAND.md](https://github.com/wizards-ecosystem/.github/blob/main/BRAND.md) — *working*, *frozen*, *specified*, *gated*
-- [ ] Product names written per BRAND.md — no `wizards-*` slug used as a display name
-- [ ] No AI attribution or co-author trailers in commits
+- [ ] Status words used as defined in [BRAND.md](https://github.com/wizards-ecosystem/.github/blob/main/BRAND.md): *working*, *frozen*, *specified*, *gated*
+- [ ] Product names written per BRAND.md, with no `wizards-*` slug used as a display name
+- [ ] Prose follows the BRAND.md voice rules, including in commit messages

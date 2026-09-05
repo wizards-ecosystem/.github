@@ -5,11 +5,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Check the status page first.** Every project here states what is actually
-        built, and much of what looks like a defect is a documented limit. Wizzy has
+        **Check the status page first.** Every project here states what is built, and
+        much of what looks like a defect is a documented limit. Wizzy has
         `STATUS.md`, Lyre has `HANDOFF.md`, Conclave has `docs/GAPS.md`.
 
-        Security concerns do **not** go here — see the project's `SECURITY.md`.
+        Security concerns do **not** go here. See the project's `SECURITY.md`.
   - type: input
     id: version
     attributes:

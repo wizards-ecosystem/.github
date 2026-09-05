@@ -5,9 +5,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Check whether the project is gated first.** Conclave and Courier are
-        deliberately blocked on Wizzy and are not taking implementation work in another
-        language — that refusal is the design.
+        **Check whether the project is gated first.** Conclave and Courier are blocked
+        on Wizzy and are not taking implementation work in another language. That
+        refusal is the design.
 
         Check the roadmap too. A roadmap entry is not a delivery date, but it does mean
         the idea is already accepted.

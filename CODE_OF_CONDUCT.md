@@ -11,8 +11,8 @@ contempt is not.
 Specifically, in issues, pull requests, reviews, discussions, and any other project
 space:
 
-- Argue about the work, not the person. "This breaks the ownership invariant because X"
-  is the whole job. "You clearly didn't read the spec" is not.
+- Argue about the work rather than the person. "This breaks the ownership invariant
+  because X" is the whole job. "You clearly didn't read the spec" is not.
 - Assume the other person is competent and acting in good faith until you have real
   evidence otherwise.
 - Accept a decision once it is made and recorded, or reopen it properly with a new
@@ -22,13 +22,14 @@ space:
 
 ## Scope
 
-Applies in all project spaces in this organization, and when representing a project publicly.
+Applies in all project spaces in this organization, and when representing a project
+publicly.
 
 ## Enforcement
 
-Report conduct concerns privately to the organization owner — through GitHub, or through
+Report conduct concerns privately to the organization owner, through GitHub or through
 the private channel by which repository access was granted. Reports will be read and
 handled discreetly.
 
 The owner may warn, edit or remove contributions, or block an account. This is a small
-organization: there is no committee, no appeals board, and no pretense of one.
+organization, with no committee and no appeals board.
