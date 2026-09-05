@@ -1,0 +1,41 @@
+name: Proposal
+description: Something the project should do that it does not do.
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Check whether the project is gated first.** Conclave and Courier are
+        deliberately blocked on Wizzy and are not taking implementation work in another
+        language — that refusal is the design.
+
+        Check the roadmap too. A roadmap entry is not a delivery date, but it does mean
+        the idea is already accepted.
+  - type: textarea
+    id: need
+    attributes:
+      label: What you are trying to do
+      description: The actual task, not the feature you think would solve it.
+    validations:
+      required: true
+  - type: textarea
+    id: blocked
+    attributes:
+      label: Why the project cannot do it today
+      description: What you tried, and where it stopped.
+    validations:
+      required: true
+  - type: textarea
+    id: shape
+    attributes:
+      label: The shape you have in mind
+      description: Optional. If you have a design, sketch it. If you don't, say so.
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Before submitting
+      options:
+        - label: I read the project's status page and this is not a documented limit.
+          required: true
+        - label: I checked the roadmap and this is not already accepted work.
+          required: true

@@ -1,0 +1,54 @@
+name: Defect report
+description: Something behaves differently than the project says it does.
+labels: ["defect"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Check the status page first.** Every project here states what is actually
+        built, and much of what looks like a defect is a documented limit. Wizzy has
+        `STATUS.md`, Lyre has `HANDOFF.md`, Conclave has `docs/GAPS.md`.
+
+        Security concerns do **not** go here — see the project's `SECURITY.md`.
+  - type: input
+    id: version
+    attributes:
+      label: Commit or toolchain
+      description: The exact revision you ran. "latest" is not a revision.
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: e.g. Windows 11, Ubuntu 24.04 under WSL2, macOS 15
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what says so
+      description: >
+        Name the document, decision record, or specification that led you to expect it.
+        A defect is a gap between behavior and a written claim.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+      description: Paste the diagnostic verbatim. Trim it, don't paraphrase it.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Smallest reproduction
+      description: The smallest program or input that still shows the problem.

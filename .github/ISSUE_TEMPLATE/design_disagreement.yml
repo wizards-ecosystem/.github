@@ -1,0 +1,45 @@
+name: Design disagreement
+description: You think an accepted decision is wrong.
+labels: ["design"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        These projects are design-first: decisions are written down before the code and
+        an accepted decision is law over any README.
+
+        **A disagreement with an accepted decision is resolved by a new decision record,
+        not by an issue.** This form is where that conversation starts.
+  - type: input
+    id: decision
+    attributes:
+      label: The decision you disagree with
+      description: Its identifier and title.
+      placeholder: e.g. ADR-0131, or D-183
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The program or scenario that exposes the problem
+      description: >
+        Concrete beats abstract. Show the code, the workflow, or the failure that the
+        current decision produces.
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: What you would do instead, and what it costs
+      description: >
+        Including what it breaks. A proposal that names no cost has not been thought
+        through yet.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: >
+        What makes you confident? Benchmarks, prior art, a proof sketch, a failing case.
+        Claims name their evidence here as everywhere else.
