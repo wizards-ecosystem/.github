@@ -24,10 +24,10 @@ is designed but unbuilt, it says so. Where a gate is closed, it says which one.
 
 | Project | What it is | Status |
 | --- | --- | --- |
-| **The Wizard's Ink** | Home of **Wizzy** — a statically typed language whose compiler tracks effects, resources, authority, and concurrency, so ordinary code stays simple and is still checked. Value semantics, failure in the type, no `async` coloring. | Pre-0.1 · private |
-| **The Wizard's OS** | A from-scratch operating system. Rust kernel, x86_64, UEFI. Capability-based and async-first: handles and submission queues are the native ABI, POSIX is a translation layer. CoW checksummed filesystem, WebAssembly apps as first-class. | In development · private |
-| **The Wizard's Conclave** | An agent orchestrator that carries a project from idea to reviewed merge, driving your existing coding-agent subscriptions through their official headless CLIs — isolated worktrees, cross-vendor review, a merge gate that is code rather than a model. | v0.1 frozen · rebuilding · private |
-| **The Wizard's Courier** | A durable local job vendor. One per checkout: it persists and orders jobs, spawns and confines the workers a studio declares, streams telemetry over a loopback socket, and reconciles whatever it finds after a restart. | Specified, not built · private |
+| **The Wizard's Ink** | Home of **Wizzy** — a statically typed language whose compiler tracks effects, resources, authority, and concurrency, so ordinary code stays simple and is still checked. Value semantics, failure in the type, no `async` coloring. | Working · private |
+| **The Wizard's OS** | A from-scratch operating system. Rust kernel, x86_64, UEFI. Capability-based and async-first: handles and submission queues are the native ABI, POSIX is a translation layer. CoW checksummed filesystem, WebAssembly apps as first-class. | Working · private |
+| **The Wizard's Conclave** | An agent orchestrator that carries a project from idea to reviewed merge, driving your existing coding-agent subscriptions through their official headless CLIs — isolated worktrees, cross-vendor review, a merge gate that is code rather than a model. | Frozen · rebuild gated · private |
+| **The Wizard's Courier** | A durable local job vendor. One per checkout: it persists and orders jobs, spawns and confines the workers a studio declares, streams telemetry over a loopback socket, and reconciles whatever it finds after a restart. | Specified · private |
 | **The Wizard's Lyre** | A generative music studio that runs entirely on your own GPU — no accounts, no keys, no cloud. A library of song projects, each with a plan and a rail of immutable takes that remember their parent. | Working · private |
 | **The Wizard's Brush** | A local-first image and video studio, with an optional second lane for a GPU you operate yourself. One durable queue, one asset library, one browser UI across both. | Working · private |
 | **The Wizard's Pick** | A local lockpick for authorized security testing. The offensive-security model runs on your machine; nothing leaves it. | [**Public**](https://github.com/wizards-ecosystem/wizards-pick) |
@@ -87,6 +87,16 @@ Four words, used consistently across every repository, meaning the same thing ea
 - **Frozen** — it runs and is not being extended, because a successor is coming.
 - **Specified** — designed and pinned by a conformance corpus; no implementation exists.
 - **Gated** — deliberately blocked on a named dependency, with the gate written down.
+
+### Version numbers here are deliberately conservative
+
+Read the status word, not the version. Wizzy carries `0.0.1` while running a complete
+CLI, two execution backends, a bytecode VM, a Cranelift native tier, effect inference,
+authority reporting, structured concurrency, and an LSP — tested on Linux, macOS, and
+Windows. The number is low because a version is only spent when it names a **completed
+gate**, and Wizzy's own roadmap does not reach `v0.3` until its third milestone closes.
+
+A low number here means an unclaimed gate, not a small amount of work.
 
 ## Access
 
