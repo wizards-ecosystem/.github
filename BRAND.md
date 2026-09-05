@@ -125,17 +125,23 @@ carries everything else. A surface that is mostly gold has failed.
 
 ## The mark
 
-A keystone arch: a gold arch on a violet field with a teal keystone set at the apex.
+**TODO — not designed yet.** There is no organization mark, wordmark, or avatar. The
+GitHub profile currently shows the default identicon.
 
-The arch is held up by the one stone at its top — which is what this is. Six projects
-rest on one language, and three of them have written down that they will wait for it
-rather than build around it. The mark says that.
+What exists to build from when it is designed:
 
-- [`assets/wizards-mark.svg`](assets/wizards-mark.svg) — dark field, for most uses
-- [`assets/wizards-mark-light.svg`](assets/wizards-mark-light.svg) — parchment field
+- **Wizzy's favicon** (`wizards-ink/site/public/favicon.svg`) is the only mark in the
+  ecosystem today — a rounded square in `#241345`, a gold `W` stroke at weight 7, a teal
+  point at the apex. Whatever gets made should share its construction so the family reads
+  as one hand.
+- **The palette above** is settled and does not need revisiting.
+- **One idea worth keeping:** a keystone arch. The arch is held up by the single stone at
+  its top, which is what this ecosystem is — six projects resting on one language, three
+  of them having written down that they will wait for it rather than build around it.
 
-It shares its construction with Wizzy's existing favicon — same rounded square, same gold
-stroke weight, same teal point — so the family reads as one hand.
+Deliverables when the time comes: a mark on a dark field, the same on parchment, and a
+500×500 PNG for the GitHub org avatar (which cannot be set through the API — it is a UI
+upload at the org profile settings page).
 
 ## Voice
 

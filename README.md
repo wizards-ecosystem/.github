@@ -32,4 +32,4 @@ have its own. A repository's own copy always wins.
 status vocabulary. It is the authority on all of them; where a repository disagrees, the
 repository is out of date.
 
-[`assets/`](assets/) — the ecosystem mark, dark and light.
+**No mark or avatar exists yet** — see the TODO in [`BRAND.md`](BRAND.md#the-mark).

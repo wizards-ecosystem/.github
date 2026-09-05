@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/wizards-ecosystem/.github/main/assets/wizards-mark.svg" width="76" alt="" />
-
 # The Wizard's Ecosystem
 
 **Tools that carry their own guarantees — and run on your machine.**
