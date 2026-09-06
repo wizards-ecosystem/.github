@@ -41,9 +41,10 @@ use **the ecosystem** in running prose.
 | **The Wizard's Lyre** | `wizards-lyre` | The music studio |
 | **The Wizard's Brush** | `wizards-brush` | The image and video studio |
 | **The Wizard's Pick** | `wizards-pick` | The security tool |
+| **The Wizard's Familiar** | `wizards-familiar` | The local coding agent |
 
 Use the full display name in a title, heading, or first prose mention. Afterwards, use the
-project word: Ink, OS, Conclave, Courier, Lyre, Brush, or Pick. Slugs, commands, package
+project word: Ink, OS, Conclave, Courier, Lyre, Brush, Pick, or Familiar. Slugs, commands, package
 names, binary names, and file paths do not take apostrophes.
 
 Wizzy is the language. The Wizard's Ink is its project and repository. Do not replace
@@ -91,6 +92,9 @@ Project accents:
 | Lyre | `#456348` | `#AFC9AE` |
 | Brush | `#994D34` | `#E5AD99` |
 | Pick | `#285E63` | `#95C6CA` |
+
+Familiar has no accent pair yet. Its artwork has not been produced, so it ships with
+the shared signature until that family exists.
 
 These are semantic pairs, not interchangeable decoration. The light values meet or
 exceed 4.5:1 against the light canvas; the dark companions do the same against the dark
