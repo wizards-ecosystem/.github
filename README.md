@@ -28,8 +28,11 @@ have its own. A repository's own copy always wins.
 
 ## Also here
 
-[**`BRAND.md`**](BRAND.md) holds the naming model, the palette, the mark, the voice, and
-the status vocabulary. It is the authority on all of them. Where a repository disagrees,
-the repository is out of date.
+[**`BRAND.md`**](BRAND.md) holds the naming model, visual direction, voice, and status
+vocabulary. The production artwork, semantic tokens, usage rules, provenance, and pinned
+build live in [**`brand/`**](brand/). Together they are the authority; where a repository
+disagrees, the repository is out of date.
 
-**No mark or avatar exists yet.** See the TODO in [`BRAND.md`](BRAND.md#the-mark).
+The local 500 x 500 organization-avatar export is
+[`brand/ecosystem/ecosystem-avatar.png`](brand/ecosystem/ecosystem-avatar.png). Creating
+the file does not upload it to GitHub; that remains an organization-settings action.

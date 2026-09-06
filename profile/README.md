@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="../brand/ecosystem/ecosystem-header.png" alt="The Wizard's Ecosystem" width="100%" />
+
 # The Wizard's Ecosystem
 
 **Software that carries its own guarantees and runs on your machine.**

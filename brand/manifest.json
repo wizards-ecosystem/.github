@@ -1,0 +1,292 @@
+{
+  "version": 2,
+  "approvedDirection": "option 1 family signature with option 2 project artwork",
+  "approvedStudy": "source/approved-sheet.png",
+  "canvas": "#F7F6F2",
+  "signature": {
+    "sha256": "759ee828875140b2284ca03dad26f00f947d44a16b1cd07a33edc60bdba26fd4",
+    "rasterSha256": "4a3ed2185942fcb770456d93b8274c709755f1d014a2b2d186e710f7cd5f8288"
+  },
+  "projects": {
+    "ecosystem": {
+      "name": "The Wizard's Ecosystem",
+      "accent": "#6F4738",
+      "accentDark": "#D8CFC3",
+      "art": {
+        "sha256": "1b0ae6867e19867a1b69eee93269bc6ccd44a3e2333441f3b629a4cd855b08be",
+        "width": 1319,
+        "height": 498
+      },
+      "lockup": {
+        "sha256": "0e4ae5d2e5d93b820ee61abc361eaad16fee8a37e6848ffe6bc53d6f20cf4e28",
+        "width": 1200,
+        "height": 520
+      },
+      "header": {
+        "sha256": "858fa462c2549b437a241f20990cbd0130296a7d39638b1d41d98fce09f29b5c",
+        "width": 1200,
+        "height": 480
+      },
+      "social": {
+        "sha256": "320a7373cc12ac7d1454d80dc84f6db95410d5bc5a2df2ff44b7becfb5760d92",
+        "width": 1200,
+        "height": 630
+      },
+      "icon": {
+        "sha256": "8dbf655559b152bee793890f2adf01e1941546c6e6643d0264083a757ffcc157",
+        "width": 64,
+        "height": 64
+      },
+      "avatar": {
+        "sha256": "02d48f081615540006e4a516084a0d287dfb94a2d0d1f36ed4a0455f74146ccf",
+        "width": 500,
+        "height": 500
+      }
+    },
+    "ink": {
+      "name": "The Wizard's Ink",
+      "accent": "#7A303B",
+      "accentDark": "#E2A3AC",
+      "art": {
+        "sha256": "a985d731497b302ba03e3f84f9e569c9f049877c8b1736e164e7f57db8f91e07",
+        "width": 583,
+        "height": 328
+      },
+      "lockup": {
+        "sha256": "c6fd33b5e7f63711b3aec2554845ca34dd16a0c4c46d3d9fe897217f0fbdc299",
+        "width": 1200,
+        "height": 520
+      },
+      "header": {
+        "sha256": "da71438c31cc8c1cb86c0e90328d7fc249f146bde5b635d08adf33d038ac7816",
+        "width": 1200,
+        "height": 480
+      },
+      "social": {
+        "sha256": "69fedc39ec25fb39cd49792f6d1e49ae34d2427b16d9000857acc42c1595cc9d",
+        "width": 1200,
+        "height": 630
+      },
+      "icon": {
+        "sha256": "c4ce421cfa8bca297e0b08230f9109f0e87e56f5f93986012f41845e5d6f064c",
+        "width": 64,
+        "height": 64
+      },
+      "avatar": {
+        "sha256": "a620d1bc1c5e61fd3cee25af916a80adb9a1fad13637a993c6cfff3e3b039216",
+        "width": 500,
+        "height": 500
+      }
+    },
+    "os": {
+      "name": "The Wizard's OS",
+      "accent": "#485F79",
+      "accentDark": "#A9C0D8",
+      "art": {
+        "sha256": "d3cdef393b57ad906d595af5a2eca310a80679072363ef64fa512e95ce2671fa",
+        "width": 1116,
+        "height": 623
+      },
+      "lockup": {
+        "sha256": "448ec7ab8c7ef78af8e4e10e0ccf78465a88242323760be0ef459d770ef1fed1",
+        "width": 1200,
+        "height": 520
+      },
+      "header": {
+        "sha256": "3935f537f13374ca5b2c597b9502608a707a36079d1db6a96024a397652443bd",
+        "width": 1200,
+        "height": 480
+      },
+      "social": {
+        "sha256": "c11ebb25d02c77d9f67235ae2e0ef1287bd0ef494a0d233f68710ae7984655d7",
+        "width": 1200,
+        "height": 630
+      },
+      "icon": {
+        "sha256": "7a8ea0838b6acce4fa6c534ef501bd0e9a2a128911118c7b9982f2a4e510fa82",
+        "width": 64,
+        "height": 64
+      },
+      "avatar": {
+        "sha256": "25d30820fea51303478561133b985e9e5176d7b15455d5b6e4a415578be90668",
+        "width": 500,
+        "height": 500
+      }
+    },
+    "conclave": {
+      "name": "The Wizard's Conclave",
+      "accent": "#65516D",
+      "accentDark": "#C9B0D3",
+      "art": {
+        "sha256": "ef3aa840b91132f6c8ad6d504fdc1249e95edf11614012f2fafb73e33d694a93",
+        "width": 1430,
+        "height": 619
+      },
+      "lockup": {
+        "sha256": "2a7335418aa982e489fe2d6738f760301e29e94fbb5bb24649aa2d799d073834",
+        "width": 1200,
+        "height": 520
+      },
+      "header": {
+        "sha256": "87f3f3bcf5cf63551f16a9361dd14c2af07ef5ee1492763725ed348312f2bcca",
+        "width": 1200,
+        "height": 480
+      },
+      "social": {
+        "sha256": "65439f38ff26b0ac71919bed8b3ec51ebcc3a52c9e6e0a1795fc69e97d22b163",
+        "width": 1200,
+        "height": 630
+      },
+      "icon": {
+        "sha256": "f7deccb7129dbfc2d573ff8d14445fa0382b37a67a5899c021ed50f74a066cae",
+        "width": 64,
+        "height": 64
+      },
+      "avatar": {
+        "sha256": "80db5e9882f6adbc7d6e1a9ebd98d7feccde034272e09663fe0a14263a45c388",
+        "width": 500,
+        "height": 500
+      }
+    },
+    "courier": {
+      "name": "The Wizard's Courier",
+      "accent": "#85621D",
+      "accentDark": "#E3C477",
+      "art": {
+        "sha256": "0c374d0256c3aa3ff1372fdfe9c0ad52c9771fffe65ebf38854c40a27846b069",
+        "width": 1355,
+        "height": 443
+      },
+      "lockup": {
+        "sha256": "f25bf1e142bc719f04bdccab2822eaeadb51f779f187fbbbafbec8bb4938b90d",
+        "width": 1200,
+        "height": 520
+      },
+      "header": {
+        "sha256": "dec42b9b2546b353c261064593639aeac8fad6b6437717e8839119497e6866c9",
+        "width": 1200,
+        "height": 480
+      },
+      "social": {
+        "sha256": "35dcc5b54102068da7eac29fde42d98cc10a67b768ad892c872a861d022c5ce6",
+        "width": 1200,
+        "height": 630
+      },
+      "icon": {
+        "sha256": "79767b3a3f887bed01d58fd25538bebe2d1707a65d5e20f0fb0822d632c9441e",
+        "width": 64,
+        "height": 64
+      },
+      "avatar": {
+        "sha256": "95825b099ffd09c289b0416e34e0410363de1059308cf861139743fcefa2f38d",
+        "width": 500,
+        "height": 500
+      }
+    },
+    "lyre": {
+      "name": "The Wizard's Lyre",
+      "accent": "#456348",
+      "accentDark": "#AFC9AE",
+      "art": {
+        "sha256": "fd5feed1ace8e9435950ecf69269a404059b7f33aaeeff031056bcc36a13948b",
+        "width": 592,
+        "height": 355
+      },
+      "lockup": {
+        "sha256": "f3ee03444ec13e0440891220c551dc3637984f49aedacfcfb802afe773b7d7be",
+        "width": 1200,
+        "height": 520
+      },
+      "header": {
+        "sha256": "ab5fd1e7f7e1aa8eea7529ad561cb505f449472961dc8d5fca99c8af63122699",
+        "width": 1200,
+        "height": 480
+      },
+      "social": {
+        "sha256": "7ea4ee75da997099a2324f339663a18a163c91f88f232c7d42e03c7dc5f4b248",
+        "width": 1200,
+        "height": 630
+      },
+      "icon": {
+        "sha256": "4de670181854980ca9aad75b80dacbd3ca5c1f209831e1933b65eee1d190c950",
+        "width": 64,
+        "height": 64
+      },
+      "avatar": {
+        "sha256": "93d88489c20c7d5e7191d32a8becca6f9bc17e0bb05e5b92e6d8632ab5c4d8a6",
+        "width": 500,
+        "height": 500
+      }
+    },
+    "brush": {
+      "name": "The Wizard's Brush",
+      "accent": "#994D34",
+      "accentDark": "#E5AD99",
+      "art": {
+        "sha256": "2eec191afdcc226528a7b87fa19f89352a6d5873bc6f75c2196d1722b45b3567",
+        "width": 639,
+        "height": 312
+      },
+      "lockup": {
+        "sha256": "ec5ad0a78ea8c91fea733d10ec83ff107d31ca2778786f7fd1e9ae1790c0ca94",
+        "width": 1200,
+        "height": 520
+      },
+      "header": {
+        "sha256": "56ad3a5d92ca9011eec96784910f673ae192f554525a7279dedcfc33e02754b2",
+        "width": 1200,
+        "height": 480
+      },
+      "social": {
+        "sha256": "9e849a248560591606c9a16b3a8f86c4908950cd2f3f075fc473de27698bd31f",
+        "width": 1200,
+        "height": 630
+      },
+      "icon": {
+        "sha256": "ac6abedb6674d79c06d8f3f9e15215a56f20cb197234c1306a5e0e02230b6bde",
+        "width": 64,
+        "height": 64
+      },
+      "avatar": {
+        "sha256": "35c64748594b13d2101a79446b533a834438d7864c6492284c19cff2fd6a4393",
+        "width": 500,
+        "height": 500
+      }
+    },
+    "pick": {
+      "name": "The Wizard's Pick",
+      "accent": "#285E63",
+      "accentDark": "#95C6CA",
+      "art": {
+        "sha256": "e2bf787f8bb66cafeb097af7d0c3a7941cf066c931baf3e823f9c94ec3d00da4",
+        "width": 547,
+        "height": 268
+      },
+      "lockup": {
+        "sha256": "b5b8943de06227498370ab7cf97b92d8a7442f71ba663c76c6e662d65de6b766",
+        "width": 1200,
+        "height": 520
+      },
+      "header": {
+        "sha256": "b27eb6e9e341d956717f6fac2b3bb18b456f7f67dbd22e45fdc9cea42fe9a3ef",
+        "width": 1200,
+        "height": 480
+      },
+      "social": {
+        "sha256": "f315d436447bde8008f508610018dcec87370eab290fc438fbc92819351cf004",
+        "width": 1200,
+        "height": 630
+      },
+      "icon": {
+        "sha256": "0b6ede870fe9a55047c746ded88d11ef39dda3388a4adc048fa49bb80a3402cd",
+        "width": 64,
+        "height": 64
+      },
+      "avatar": {
+        "sha256": "0ce8fd48d9312f4431c576aa75afd5d90e5049f5eceae16887a5824fc56ce40e",
+        "width": 500,
+        "height": 500
+      }
+    }
+  }
+}

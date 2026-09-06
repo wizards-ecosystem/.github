@@ -1,229 +1,163 @@
-# Brand
+# The Wizard's Ecosystem brand
 
-How the ecosystem and its projects are named, written, and drawn. Decided 2026-09-05.
-This document is the authority. Where a repository disagrees, the repository is out of
-date.
+Status: canonical v1, approved and produced 2026-09-05.
 
-## The name
+This document is the authority for naming, visual identity, voice, and status language
+across The Wizard's Ecosystem. The distributable artwork, semantic tokens, build tools,
+and production guidance live in [`brand/`](brand/).
 
-**The Wizard's Ecosystem.**
+> Software that carries its own guarantees and runs on your machine.
 
-There is no company. This is a family of interoperating free-software projects with one
-maintainer. "Ecosystem" names breadth and interoperation, and it is chosen for the shape
-this becomes as much as the shape it has today.
+## Brand idea
 
-The GitHub login is `wizards-ecosystem`, so the display name and the login are the same
-string. That consistency is worth more to a FOSS project than a cleverer name would be:
-one findable name everywhere.
+The Wizard's Ecosystem is a singular toolsmith studio of free, local-first software. It
+should feel human before it feels technical, then reveal rigor on inspection. The useful
+tensions are old-world soul with modern execution, warmth with precision, and distinct
+projects made by one recognizable hand.
 
-Write it **The Wizard's Ecosystem** in full, **the ecosystem** in running prose after
-first mention. Never *Wizards Ecosystem*, never *TWE*.
+The wizard identity lives in names, calligraphy, tangible tools, material cues, and a
+little wit. It does not require fantasy scenery, occult symbols, glowing effects, or a
+purple-everything palette.
 
-## Naming model
+Permanent brand truths:
 
-Every project is **The Wizard's ___**. The possessive is typographical and always
-present in the display name.
+- Free and open source by design. The behavior should feel inspectable and user-owned.
+- Local-first by design. Prefer tangible instruments over cloud or network metaphors.
+- Evidence-bound. Public claims never outrun retained evidence.
+- Serious work without a serious face. Personality is welcome; safety and status stay
+  unmistakable.
 
-| Display name | Repository / package | Note |
+## Naming
+
+Write the organization name exactly as **The Wizard's Ecosystem**. After first mention,
+use **the ecosystem** in running prose.
+
+| Display name | Repository or package | Note |
 | --- | --- | --- |
-| **The Wizard's Ink** | `wizards-ink` | The project. **Wizzy** is the language it produces. |
-| **The Wizard's OS** | `the-wizards-os` | Already correct; 197 references predate the convention. |
-| **The Wizard's Conclave** | `wizards-conclave` | |
-| **The Wizard's Courier** | `wizards-courier` | |
-| **The Wizard's Lyre** | `wizards-lyre` | |
-| **The Wizard's Brush** | `wizards-brush` | |
-| **The Wizard's Pick** | `wizards-pick` | |
+| **The Wizard's Ink** | `wizards-ink` | The project and home of the Wizzy language |
+| **The Wizard's OS** | `the-wizards-os` | The operating system |
+| **The Wizard's Conclave** | `wizards-conclave` | The orchestrator |
+| **The Wizard's Courier** | `wizards-courier` | The durable job vendor |
+| **The Wizard's Lyre** | `wizards-lyre` | The music studio |
+| **The Wizard's Brush** | `wizards-brush` | The image and video studio |
+| **The Wizard's Pick** | `wizards-pick` | The security tool |
 
-### Ink and Wizzy
+Use the full display name in a title, heading, or first prose mention. Afterwards, use the
+project word: Ink, OS, Conclave, Courier, Lyre, Brush, or Pick. Slugs, commands, package
+names, binary names, and file paths do not take apostrophes.
 
-**The Wizard's Ink is the project. Wizzy is the language.** The ink is the medium, Wizzy
-is what you write with it. This parallels `rust-lang/rust`, where the repository and the
-language are named separately and both are correct.
+Wizzy is the language. The Wizard's Ink is its project and repository. Do not replace
+language-context uses of `Wizzy` with the project name.
 
-Wizzy is the primary name in all language contexts: the compiler, the tooling, the `.wzi`
-extension, the documentation, error messages. All 3,366 existing `Wizzy` references are
-correct and **must not be changed**. Use "The Wizard's Ink" when you mean the repository
-or the project.
+## Identity architecture
 
-### How to write a project name
+Every identity has two layers:
 
-- **First mention** in a document, and any title or heading: the full name, **The
-  Wizard's Lyre**.
-- **Afterwards**: the bare product word. *Lyre*, *Conclave*, *Brush*. The reader knows
-  what they're reading by then.
-- **Never** *Wizards Lyre*, *Wizard's Lyre* (no article), or the slug `wizards-lyre` as a
-  display name.
+1. the one fixed `The Wizard's` family signature;
+2. the project's own watercolor word and recognizable tool drawing.
 
-The possessive never touches a URL, a package name, or a command, because those are all
-slugs. The apostrophe lives only in prose.
+The approved direction uses option 1's fine, sharp family signature with option 2's
+softer project lettering, illustrations, pigment, colors, and flourishes. The signature
+is never retyped, regenerated, or recolored per project. Project marks are related by
+medium and motion, not by swapping one generic icon's color.
 
-## Machine names
+Use the checked-in assets according to [`brand/README.md`](brand/README.md). The signature
+and compact marks are vector artwork. Watercolor artwork and complete lockups are raster
+PNG assets by design.
 
-Repository slugs, package names, and binaries are consistent already and are not
-changing:
+## Color
 
-`wizards-ink`, `wizards-conclave`, `wizards-courier`, `wizards-lyre`, `wizards-brush`,
-`wizards-pick`, `the-wizards-os`
+The foundation is warm and neutral:
 
-Binaries: `wzi`, `wizc`, `wizrt`, `wizrun`, `lyre`
-
-### Registry status, verified 2026-09-05
-
-The `wizards-*` namespace is **free across every registry**, verified with controls in
-both directions.
-
-| Name | crates.io | npm | PyPI |
-| --- | --- | --- | --- |
-| `wizards-ink` `-conclave` `-courier` `-lyre` `-brush` `-pick` | free | free | free |
-| `wizzy` | free | **taken** | free |
-| `wizards` *(bare)* | free | **taken** | **taken** |
-| `wzi`, `wizc` | **reserved 2026-08-29 by `limbwizard`** | free | n/a |
-| `wizrt`, `wizrun` | free | free | n/a |
-
-**Reserve names before you need them.** `wzi` and `wizc` were reserved on 2026-08-29.
-`wizrt`, `wizrun`, and `wizzy` were not, and remain open on crates.io. A half-reserved
-toolchain is the state most likely to get sniped.
-
-This namespace is the ecosystem's most valuable naming asset: coherent, distinctive, and
-unclaimed everywhere that matters. It is also what makes the projects findable, which for
-free software *is* the distribution channel.
-
-## Palette
-
-Promoted from Wizzy's documentation site, which already had a settled system. Projects
-adopt these as they touch their own styling. There is no urgency to restyle working
-software.
-
-### Core
-
-| Token | Hex | Use |
+| Role | Light | Dark |
 | --- | --- | --- |
-| `--wz-ink` | `#100d15` | The ground. Dark backgrounds, deepest surface. |
-| `--wz-violet` | `#241345` | The mark's field. Raised dark surfaces. |
-| `--wz-arcane` | `#bd94ef` | Accent on dark. Links, active state. |
-| `--wz-arcane-deep` | `#5d32a8` | Accent on light. Same role, light ground. |
-| `--wz-gold` | `#f2b85e` | The highlight. One thing per view. |
-| `--wz-teal` | `#75c8ba` | The keystone. Secondary accent, success, the small bright point. |
-| `--wz-parchment` | `#fffaf0` | The ground. Light backgrounds. |
-| `--wz-vellum` | `#fffdf8` | Text on dark. |
+| Canvas | `#F7F6F2` | `#232522` |
+| Surface | `#FFFFFF` | `#2D302C` |
+| Muted surface | `#ECE8DF` | `#383B36` |
+| Text | `#272522` | `#F7F6F2` |
+| Muted text | `#625F59` | `#C9C4BA` |
+| Line | `#D8D3C9` | `#4A4D47` |
+| Focus | `#285E63` | `#E3C477` |
 
-### Supporting
+Project accents:
 
-Dark-mode ramp: `#f3eee7`, `#d8cfe0`, `#a69bab`, `#877c8c`, `#342c3a`, `#201925`
+| Project | Light canvas | Dark canvas |
+| --- | --- | --- |
+| Ecosystem | `#6F4738` | `#D8CFC3` |
+| Ink | `#7A303B` | `#E2A3AC` |
+| OS | `#485F79` | `#A9C0D8` |
+| Conclave | `#65516D` | `#C9B0D3` |
+| Courier | `#85621D` | `#E3C477` |
+| Lyre | `#456348` | `#AFC9AE` |
+| Brush | `#994D34` | `#E5AD99` |
+| Pick | `#285E63` | `#95C6CA` |
 
-Light-mode ramp: `#342c3a`, `#5f5565`, `#746a77`, `#b1a795`, `#e5ddce`, `#f5eee2`
+These are semantic pairs, not interchangeable decoration. The light values meet or
+exceed 4.5:1 against the light canvas; the dark companions do the same against the dark
+canvas. Color never carries status alone. Exact machine-readable values live in
+[`brand/tokens.json`](brand/tokens.json) and [`brand/tokens.css`](brand/tokens.css).
 
-Accent low/high on dark: `#2a1b3e` / `#eadcff`. On light: `#e9ddff` / `#32185f`
+## Type and material
 
-Hairlines on dark: `#2d2634` / `#3d3446`
+- Newsreader is the editorial and display face.
+- Instrument Sans is the interface face.
+- Product code and terminal content retain an established monospace stack.
 
-### Discipline
+Use the supplied local font files where a product needs self-contained web assets. A
+system-serif fallback is acceptable in repository prose and generated documents.
 
-Gold is the scarcest color. One gold element per view, and it should be the thing you
-want looked at. Teal is smaller still: it marks a single point, never a region. Violet
-carries everything else. A surface that is mostly gold has failed.
+Texture should be visible but refined: watercolor pigment, ink tooth, subtle paper fiber,
+and controlled dry-brush edges. Do not bake paper texture into the vector signature or
+compact marks. Avoid parchment aging, distress, burned edges, heavy glow, and fantasy
+effects.
 
-## The mark
+## Interface application
 
-**TODO. Not designed yet.** There is no organization mark, wordmark, or avatar. The
-GitHub profile currently shows the default identicon.
+Interfaces are capable instruments, not branded posters. Apply the palette, typography,
+focus treatment, compact mark, and small material details while preserving established
+behavior and information density.
 
-What exists to build from:
-
-- **Wizzy's favicon** (`wizards-ink/site/public/favicon.svg`) is the only mark in the
-  ecosystem today: a rounded square in `#241345`, a gold `W` stroke at weight 7, a teal
-  point at the apex. Whatever gets made should share its construction so the family reads
-  as one hand.
-- **The palette above** is settled and does not need revisiting.
-- **One idea worth keeping:** a keystone arch, held up by the single stone at its top.
-  Six projects rest on one language, and three of them have written down that they will
-  wait for it.
-
-Deliverables when the time comes: a mark on a dark field, the same on parchment, and a
-500x500 PNG for the GitHub org avatar. The avatar cannot be set through the API; it is a
-UI upload at the org profile settings page.
+- Decorative artwork stays outside dense controls and generated-media overlays.
+- Light documentation surfaces use the watercolor header. Dark products use the compact
+  mark in chrome and keep full watercolor artwork on a dedicated light surface.
+- Focus is obvious, keyboard-reachable, and not encoded by color alone.
+- Corners are modest. Prefer fine rules and clear grouping to pill-shaped decoration.
+- Motion is calm and functional. Reduced-motion preferences always win.
 
 ## Voice
 
-**The rule, taken from Wizzy and applied everywhere: public wording never outruns the
-strongest retained evidence.**
+Public wording never outruns the strongest retained evidence.
 
-In practice:
+- Name what is built, what is specified, and what is gated.
+- Name the dependency or record that holds a gate.
+- Prefer a concrete number or artifact over an impression.
+- Avoid hype: revolutionary, seamless, magical, blazing, effortless.
+- Write plainly for an engineer who will check.
+- Use sentence case in headings.
+- Keep humor away from safety, authorization, status, and failure messages.
 
-- Name the status. If something is specified and unbuilt, the sentence says "specified,
-  not built."
-- Name the gate. "Blocked" is not a status. "Gated on Wizzy's process spawning, tracked
-  as `WZ-*` in the conclave register" is.
-- No hype adjectives. Not *revolutionary*, *seamless*, *magical*, *blazing*. The subject
-  matter supplies enough magic. The prose should not.
-- Prefer the concrete number to the impression. "197 references" beats "widely used."
-- Write plainly. The reader is an engineer who will check.
-
-This discipline is a real differentiator and should be visible in public copy, not only
-in decision records.
-
-### Punctuation and structure
-
-- **No em dashes.** Use a colon to introduce, a period to separate, parentheses to
-  subordinate, or commas for an aside. If a sentence needs a dash to hold together, it is
-  two sentences.
-- **No decorative Unicode.** Write `->` not an arrow glyph, `x` not a multiplication
-  sign, `[live]` not a check mark. Box-drawing in diagrams is acceptable; ASCII is
-  better.
-- **Sentence case in headings.** Never title case.
-- **Vary sentence and paragraph length.** Three consecutive sentences of the same shape
-  and length flatten into noise.
-
-### Constructions to avoid
-
-- **"X, not Y."** Defining a thing by what it isn't accumulates fast and says little.
-  State the thing. Use the contrast only where a reader would otherwise land on the wrong
-  reading, at most once per document.
-- **Inflating adverbs.** *Quietly*, *deliberately*, *genuinely*, *actually*, *simply*,
-  *entirely*. Cut them, then check whether the sentence lost anything. Usually it did
-  not.
-- **Section-ending aphorisms.** A short quotable line landed after the explanation is
-  decoration. End on the last real point.
-- **The rule of three**, where the third item is a grander restatement of the second. Two
-  concrete items beat three with one inflated.
-- **Bold lead-ins on every bullet.** Fine occasionally, wearying when every item in every
-  list has one.
-- **Restating the point before making it**, and restating it again at the end.
+Projects with ASCII-only rules keep straight punctuation and ASCII separators. Other
+surfaces may use typographic punctuation when their local style allows it.
 
 ## Status vocabulary
 
-Four words, used identically everywhere.
-
-| Word | Means |
+| Word | Meaning |
 | --- | --- |
-| **Working** | It runs, it is used, it is not finished. |
-| **Frozen** | It runs and is not being extended, because a successor is coming. |
-| **Specified** | Designed and pinned by a conformance corpus. No implementation exists. |
-| **Gated** | Blocked on a named dependency, with the gate written down. |
+| **Working** | It runs and is used; it is not finished. |
+| **Frozen** | It runs and is not being extended because a successor is coming. |
+| **Specified** | It is designed and pinned by a conformance corpus; no implementation exists. |
+| **Gated** | It is blocked on a named dependency with a written gate. |
 
-Pair with visibility where relevant: *Working, private*. *Specified, private*. *Working,
-public*.
+Pair status with visibility when relevant: Working, private. Specified, private. Working,
+public. Version numbers do not replace these words.
 
-## Rollout, outstanding
+## Governance and production
 
-Seven title lines and a handful of first mentions. Body prose is already correct in every
-repository, because every repo already used bare product names in running text.
+The artwork manifest identifies exact outputs. The production build and asset validator
+are pinned under `brand/tooling/`. Source and generation history are in
+[`brand/PROVENANCE.md`](brand/PROVENANCE.md).
 
-| Repo | Current H1 | Change to |
-| --- | --- | --- |
-| `wizards-ink` | `# Wizzy` | correct; Wizzy is the language |
-| `the-wizards-os` | `# The Wizard's OS` | correct |
-| `wizards-conclave` | `# Wizard's Conclave` | `# The Wizard's Conclave` |
-| `wizards-courier` | `# Wizards Courier` | `# The Wizard's Courier` |
-| `wizards-lyre` | `# Wizard's Lyre` | `# The Wizard's Lyre` |
-| `wizards-brush` | `# Wizards Brush` | `# The Wizard's Brush` |
-| `wizards-pick` | `# wizards-pick` | `# The Wizard's Pick` |
-
-Prose mentions to update alongside: `Wizards Ink` (6) becomes `Wizzy` or `The Wizard's
-Ink` depending on whether the language or the project is meant. `Wizard's Conclave` (5)
-and `Wizards Courier` (3) gain the article. The 197 `Wizard's OS` references stay.
-
-**Do not touch** the 3,366 `Wizzy` references across 616 files.
-
-Also outstanding: Wizzy's `STATUS.md` says "no crates.io reservation," which stopped
-being true on 2026-08-29 when `wzi` and `wizc` were reserved. Correct that line.
+Do not silently modify a master asset. Change the source or builder, rebuild all families,
+run the validator, visually inspect every header/icon, and record the change in provenance.
+A standalone trademark/artwork policy is still an explicit maintainer decision; do not
+imply that a software license makes derivative branding official.
