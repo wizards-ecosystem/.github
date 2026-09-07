@@ -17,14 +17,20 @@ They are two different documents, not two versions of one.
 GitHub falls back to the files here for any repository in the organization that does not
 have its own. A repository's own copy always wins.
 
+Overrides as of 2026-09-06. A repository absent from a row inherits this repository's
+copy of that file.
+
 | File | Overridden today by |
 | --- | --- |
 | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | Lyre, Brush |
-| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Wizzy, Conclave, Lyre, Brush |
-| [`SECURITY.md`](SECURITY.md) | Wizzy, Lyre, Brush |
-| [`SUPPORT.md`](SUPPORT.md) | Wizzy, Brush |
-| [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE/) | none |
-| [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md) | none |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Wizzy, Lyre, Brush, Pick, Herald |
+| [`SECURITY.md`](SECURITY.md) | Wizzy, Lyre, Brush, Pick, Familiar, Herald |
+| [`SUPPORT.md`](SUPPORT.md) | Wizzy, Lyre, Brush, Herald |
+| [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE/) | Lyre, Brush, Pick, Conclave, Herald |
+| [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md) | Wizzy, Lyre, Brush, Pick, Conclave, Herald |
+
+The OS, Courier, Charter, and Press override nothing and inherit all six. Conclave has
+its own templates but no `CONTRIBUTING.md`, `SECURITY.md`, or `SUPPORT.md`.
 
 ## Also here
 
