@@ -35,7 +35,7 @@ use **the ecosystem** in running prose.
 | Display name | Repository or package | Note |
 | --- | --- | --- |
 | **The Wizard's Ink** | `wizards-ink` | The project and home of the Wizzy language |
-| **The Wizard's OS** | `the-wizards-os` | The operating system |
+| **The Wizard's OS** | `wizards-os` | The operating system |
 | **The Wizard's Conclave** | `wizards-conclave` | The orchestrator |
 | **The Wizard's Courier** | `wizards-courier` | The durable job vendor |
 | **The Wizard's Lyre** | `wizards-lyre` | The music studio |
