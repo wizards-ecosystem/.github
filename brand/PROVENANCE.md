@@ -1,6 +1,17 @@
 # Production artwork provenance
 
-## Vector refresh, 2026-09-08
+## Design correction, 2026-09-08
+
+The owner rejected the vector refresh's typeset project names and abstract icons after
+review. The original board and option 1 signature / option 2 artwork combination remain
+the reference. Review each identity separately before replacement. The approved new
+organization proof combines calligraphy, a mountain ridge, an ink flourish, and a spaced
+ECOSYSTEM caption. Its generated PNG has a baked checkerboard and is not a production
+master. The proof and subsequent production decisions are retained in private review.
+
+The sections below record prior implementation, not current design approval.
+
+## Superseded vector refresh, 2026-09-08
 
 The owner requested backgroundless logos that occupy the header, consistent icons across
 every service, and removal of stale banner guidance. Version 3 retains the exact shared

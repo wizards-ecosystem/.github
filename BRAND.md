@@ -1,6 +1,7 @@
 # The Wizard's Ecosystem brand
 
-Status: canonical v3, refreshed 2026-09-08. Replaces the opaque banner treatment.
+Status: design review, 2026-09-08. The owner rejected the version 3 typeset project
+wordmarks and abstract icons. Existing exports await individual replacement approval.
 
 This document is the authority for naming, visual identity, voice, and status language
 across The Wizard's Ecosystem. The distributable artwork, semantic tokens, build tools,
@@ -55,19 +56,25 @@ language-context uses of `Wizzy` with the project name.
 
 ## Identity architecture
 
-Each identity combines the fixed `The Wizard's` calligraphic signature, an outlined
-Newsreader italic project word, and a distinct instrument mark. The horizontal logo is
-the title on repository pages and the identity in application headers. It has no
-background, frame, shadow, or surrounding card. Light and dark exports preserve the
-same geometry and use the corresponding neutral and project pigments.
+The original [approved board](brand/source/approved-sheet.png) establishes the direction:
+option 1's `The Wizard's` signature with option 2's expressive project lettering,
+recognizable drawings, watercolor pigment, and ink flourishes. Project names need their
+own drawn character. A typeset italic word and an abstract line icon do not reproduce it.
 
-The signature geometry is never retyped or regenerated. The original watercolor
-drawings remain available as large editorial illustrations; they are not UI headers.
-All twelve identities have a vector logo and a compact mark, including the internal
-tools. Artwork availability says nothing about product readiness.
+Keep the existing signature master. Integrate each project's drawing with its lettering,
+and let the illustration remain part of the logo. Production logos must have real
+transparency, without a paper rectangle, frame, shadow, or enclosing card. Native vector
+and transparent watercolor raster assets are both appropriate.
 
-Use the exports in [`brand/README.md`](brand/README.md) and inspect the complete family
-in the [identity collection](brand/index.html).
+The owner approved the new organization composition on 2026-09-08: calligraphy above a
+charcoal and sage mountain ridge, joined by a sweeping ink flourish, with a small spaced
+`ECOSYSTEM` caption. The proof is a composition reference; its baked checkerboard is not
+production transparency. Its final extraction and small mountain icon still need review.
+
+Review one identity with the owner before replacing its exports or moving to another
+project. Review the full logo and compact icon together at actual display sizes. The
+existing [identity collection](brand/index.html) contains superseded version 3 proposals,
+not approval to distribute those designs further. Artwork says nothing about readiness.
 
 ## Color
 
@@ -107,7 +114,7 @@ canvas. Color never carries status alone. Exact machine-readable values live in
 
 ## Type and material
 
-- Newsreader is the editorial and display face.
+- Newsreader is the editorial face; it is not a substitute for drawn logo lettering.
 - Instrument Sans is the interface face.
 - Product code and terminal content retain an established monospace stack.
 
@@ -126,7 +133,8 @@ focus treatment, compact mark, and small material details while preserving estab
 behavior and information density.
 
 - Decorative artwork stays outside dense controls and generated-media overlays.
-- Repository logos replace the title heading; do not add a duplicate title below them.
+- Center repository logo headings and their introductory header groups. The logo replaces
+  the title heading; do not add a duplicate title below it.
 - Application logos sit in the existing header, normally 44-56 CSS pixels high. Use a
   compact mark in a narrow rail. Keep page titles as real text.
 - Select light or dark artwork from the actual application theme. Automatic SVGs are
@@ -170,7 +178,10 @@ The artwork manifest identifies exact outputs. The production build and asset va
 are pinned under `brand/tooling/`. Source and generation history are in
 [`brand/PROVENANCE.md`](brand/PROVENANCE.md).
 
-Do not silently modify a master asset. Change the source or builder, rebuild all families,
-run the validator, visually inspect every logo/icon, and record the change in provenance.
+Preserve approved masters. Record the source and approval for each revised identity,
+inspect its light/dark and small-size rendering, then distribute that identity only.
+Do not rebuild and synchronize every family during individual design review. Tests should
+protect behavior, working links, licenses, and usable files; do not pin banner names,
+lettering, decorative punctuation, palette hex values, or layout choices in product tests.
 A standalone trademark/artwork policy is still an explicit maintainer decision; do not
 imply that a software license makes derivative branding official.
