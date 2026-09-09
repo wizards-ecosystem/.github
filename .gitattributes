@@ -1,2 +1,5 @@
 # Shared vector assets retain the same bytes on every platform.
 *.svg text eol=lf
+/brand/*.html text eol=lf
+/brand/*.css text eol=lf
+/brand/*.json text eol=lf
