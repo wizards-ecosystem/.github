@@ -1,4 +1,4 @@
-<h1>
+<h1 align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="brand/ecosystem/ecosystem-logo-dark.svg">
     <img src="brand/ecosystem/ecosystem-logo.svg" alt="The Wizard's Ecosystem" width="420">

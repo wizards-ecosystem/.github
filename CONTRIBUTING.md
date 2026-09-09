@@ -37,6 +37,12 @@ namespace that never appears as a display name.
 
 ## Pull requests
 
+Contributors work through pull requests. Public repositories require review and their
+applicable application checks. The owner may commit directly to `main` through the
+administrator exception; repository validation, licenses, and attribution still apply.
+Documentation and artwork changes need relevant file and visual checks, without tests
+that freeze banner filenames, palette values, punctuation, or decorative layout.
+
 Say what changed and why, name the decision record or issue it serves, and state what you
 ran to check it. If a gate or a status word changed, say so explicitly. Those are the
 edits that need the most scrutiny.

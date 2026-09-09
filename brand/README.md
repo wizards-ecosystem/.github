@@ -1,7 +1,7 @@
 # The Wizard's Ecosystem identity package
 
-Design review, 2026-09-08. The owner rejected version 3's typeset project names and abstract
-icons. The [original approved board](source/approved-sheet.png) is the visual reference.
+Identity refresh, 2026-09-08. The [original approved board](source/approved-sheet.png) is
+the visual reference for expressive calligraphy, ink drawings, and watercolor.
 The new mountain-and-ink organization composition is approved; production extraction and
 the compact icon are pending. Review and replace one identity at a time.
 

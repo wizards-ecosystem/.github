@@ -1,7 +1,7 @@
 # The Wizard's Ecosystem brand
 
-Status: design review, 2026-09-08. The owner rejected the version 3 typeset project
-wordmarks and abstract icons. Existing exports await individual replacement approval.
+Status: identity refresh in progress, 2026-09-08. The original calligraphy and watercolor
+board defines the direction. Revised identities are reviewed individually before release.
 
 This document is the authority for naming, visual identity, voice, and status language
 across The Wizard's Ecosystem. The distributable artwork, semantic tokens, build tools,
@@ -59,7 +59,7 @@ language-context uses of `Wizzy` with the project name.
 The original [approved board](brand/source/approved-sheet.png) establishes the direction:
 option 1's `The Wizard's` signature with option 2's expressive project lettering,
 recognizable drawings, watercolor pigment, and ink flourishes. Project names need their
-own drawn character. A typeset italic word and an abstract line icon do not reproduce it.
+own drawn character and a recognizable instrument or landscape.
 
 Keep the existing signature master. Integrate each project's drawing with its lettering,
 and let the illustration remain part of the logo. Production logos must have real
