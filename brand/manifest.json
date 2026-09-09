@@ -1,14 +1,14 @@
 {
-  "version": 3,
-  "direction": "The toolsmith signature: transparent vector wordmarks and distinct instrument marks",
+  "version": 4,
+  "direction": "Calligraphy and watercolor: released mountain organization identity; projects under individual review",
   "signature": {
     "sha256": "759ee828875140b2284ca03dad26f00f947d44a16b1cd07a33edc60bdba26fd4"
   },
   "projects": {
     "ecosystem": {
       "name": "Ecosystem",
-      "accent": "#6F4738",
-      "accentDark": "#D8CFC3"
+      "accent": "#3F5F56",
+      "accentDark": "#ADC6BA"
     },
     "ink": {
       "name": "Ink",
@@ -67,96 +67,157 @@
     }
   },
   "files": {
-    "ecosystem/ecosystem-art.png": {
-      "sha256": "1b0ae6867e19867a1b69eee93269bc6ccd44a3e2333441f3b629a4cd855b08be",
-      "width": 1319,
-      "height": 498,
-      "bytes": 367382,
-      "transparent": true,
-      "role": "illustration"
-    },
-    "ecosystem/ecosystem-lockup.png": {
-      "sha256": "0e4ae5d2e5d93b820ee61abc361eaad16fee8a37e6848ffe6bc53d6f20cf4e28",
-      "width": 1200,
-      "height": 520,
-      "bytes": 178823,
-      "transparent": true,
-      "role": "illustration"
-    },
     "ecosystem/ecosystem-logo.svg": {
-      "sha256": "065b32b9d377a243458cdd2cd5a55a1efa0e3d99d8533b64fbff04cfd320c2d1",
-      "width": 618,
-      "height": 112,
-      "bytes": 16434,
-      "transparent": true,
+      "sha256": "acf1fcaa53ef293919be093316f419d8f23059d499a5d266cb9ab79c74603eb1",
+      "width": 1536,
+      "height": 860,
+      "bytes": 486954,
       "role": "logo",
-      "theme": "light"
+      "transparent": true
+    },
+    "ecosystem/ecosystem-logo.png": {
+      "sha256": "1c67f1d17b96d47d979ee95863f7cb377ab74cfb162180268f0f0c1893c54a18",
+      "width": 1200,
+      "height": 672,
+      "bytes": 264749,
+      "role": "logo",
+      "transparent": true
     },
     "ecosystem/ecosystem-icon.svg": {
-      "sha256": "294e907752ae9ef4bb0c4497e730a98e1144ef0cee51628b2e2f3256624a14cd",
-      "width": 64,
-      "height": 64,
-      "bytes": 584,
-      "transparent": true,
+      "sha256": "6c7816633752292c1ea352a4909d5bb54f63c8f498fd318cb6e2dbd8854e1e2e",
+      "width": 128,
+      "height": 128,
+      "bytes": 741,
       "role": "icon",
-      "theme": "light"
+      "transparent": true
+    },
+    "ecosystem/ecosystem-icon.png": {
+      "sha256": "5fe16a247b958ee1908823688e6ae1ab66be8089339b121f95f7a5146d652e29",
+      "width": 256,
+      "height": 256,
+      "bytes": 8906,
+      "role": "icon",
+      "transparent": true
     },
     "ecosystem/ecosystem-logo-dark.svg": {
-      "sha256": "f1234cbe2102b14e4b535ed18e95d212928004caf1df5387269f9df937ad0eba",
-      "width": 618,
-      "height": 112,
-      "bytes": 16434,
-      "transparent": true,
+      "sha256": "0cf5ec706e06d5e6d3e8e1b0857e5edc042be0c6cab3413add4f75a44f275d7c",
+      "width": 1536,
+      "height": 860,
+      "bytes": 379690,
       "role": "logo",
-      "theme": "dark"
+      "transparent": true
+    },
+    "ecosystem/ecosystem-logo-dark.png": {
+      "sha256": "abdd3130e61ce7793deab53b15eb25b6728fb607e7855dd76665930cf3c9ad51",
+      "width": 1200,
+      "height": 672,
+      "bytes": 221615,
+      "role": "logo",
+      "transparent": true
     },
     "ecosystem/ecosystem-icon-dark.svg": {
-      "sha256": "118220f8049baf38ccf8fa770df9921de4dbc5cbdff3b332e8fe4c70544a886b",
-      "width": 64,
-      "height": 64,
-      "bytes": 584,
-      "transparent": true,
+      "sha256": "7cbb89f6c7f6945bc93e984205a2421b9e15411e90184dfc34e6eb38753d52b6",
+      "width": 128,
+      "height": 128,
+      "bytes": 741,
       "role": "icon",
-      "theme": "dark"
+      "transparent": true
+    },
+    "ecosystem/ecosystem-icon-dark.png": {
+      "sha256": "c57f6386b85e5ee817011acea36ca523fbdb96aaf23434f8307bbef3f52ffa15",
+      "width": 256,
+      "height": 256,
+      "bytes": 8829,
+      "role": "icon",
+      "transparent": true
     },
     "ecosystem/ecosystem-logo-auto.svg": {
-      "sha256": "eaba3b35edf94ca04d9909479e2842270d1a6e65622971df462ccbc85316236d",
-      "width": 618,
-      "height": 112,
-      "bytes": 16612,
-      "transparent": true,
+      "sha256": "b27b8643744f0b223a776f819f21ad58c615fb0733667234e519c53c13645af6",
+      "width": 1536,
+      "height": 860,
+      "bytes": 866613,
       "role": "logo",
-      "theme": "auto"
+      "transparent": true
     },
     "ecosystem/ecosystem-icon-auto.svg": {
-      "sha256": "1d859ccbc4609ae61fed3c05df55dc9c0949547aafb1f3548614b505b81f2f72",
-      "width": 64,
-      "height": 64,
-      "bytes": 762,
-      "transparent": true,
+      "sha256": "2c7f35e97eed5f41475c6ae3963f3313290d152386c93ea6380d9f76d2b5a2c1",
+      "width": 128,
+      "height": 128,
+      "bytes": 1426,
       "role": "icon",
-      "theme": "auto"
+      "transparent": true
     },
     "ecosystem/ecosystem-social.svg": {
-      "sha256": "97d64655dd02df4ec2973585889412e097ae2ff8fb4fdeb179cf9b2114afc30a",
+      "sha256": "2fd4ab5621f3d4db9611270a5ca2bcda04245afcfd2f2025a3ec5c34db8ca4e4",
       "width": 1200,
       "height": 630,
-      "bytes": 16577,
-      "role": "social"
+      "bytes": 487077,
+      "role": "social",
+      "transparent": false
     },
     "ecosystem/ecosystem-social.png": {
-      "sha256": "7f7d086349d094eff1d266e5a8179ee5bbf7f130e8992c4e1e42318b9f9dbadb",
+      "sha256": "06b818ff0a15d65e5773058f8348cb35513de0d86d36f746ca4ce0c6a20b9b29",
       "width": 1200,
       "height": 630,
-      "bytes": 32601,
-      "role": "social"
+      "bytes": 192975,
+      "role": "social",
+      "transparent": false
     },
     "ecosystem/ecosystem-avatar.png": {
-      "sha256": "339443839bc5c580386a18e87bca11e65f0fc5803713b04482b41a8d88a513b7",
+      "sha256": "7f3c007bcb4c0374c1d2f12641907220a0ef2090d7207e5aa8d00d02e4b8736e",
       "width": 500,
       "height": 500,
-      "bytes": 13810,
-      "role": "avatar"
+      "bytes": 14889,
+      "role": "avatar",
+      "transparent": false
+    },
+    "ecosystem/apple-touch-icon.png": {
+      "sha256": "2101521d333bcf7c9baba7c6b1910f279cb9a6f4e5437642c97c05467baf6381",
+      "width": 180,
+      "height": 180,
+      "bytes": 5856,
+      "role": "touch-icon",
+      "transparent": false
+    },
+    "ecosystem/favicon-16.png": {
+      "sha256": "a81152347212847c2594d8d79245f70fc446c58dc5a8971ccb2c5a6997a6d47f",
+      "width": 16,
+      "height": 16,
+      "bytes": 533,
+      "role": "favicon",
+      "transparent": true
+    },
+    "ecosystem/favicon-32.png": {
+      "sha256": "da59171683e9f37ca72ef2c7a657d258634f7374c87777680621847d4caa09c9",
+      "width": 32,
+      "height": 32,
+      "bytes": 1191,
+      "role": "favicon",
+      "transparent": true
+    },
+    "ecosystem/favicon.ico": {
+      "sha256": "2b25d98362bf320939c3cc7106fe19238cd5ef3b34251f162952bb9d9161f112",
+      "width": 256,
+      "height": 256,
+      "bytes": 9271,
+      "role": "favicon",
+      "transparent": true
+    },
+    "ecosystem/ecosystem-art.png": {
+      "sha256": "bcff1a8940c55caf67d3ad7fdc71db8fbaa08a104adbf306b303ea1b955c9edb",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 327949,
+      "role": "illustration",
+      "transparent": true
+    },
+    "ecosystem/ecosystem-lockup.png": {
+      "sha256": "1c67f1d17b96d47d979ee95863f7cb377ab74cfb162180268f0f0c1893c54a18",
+      "width": 1200,
+      "height": 672,
+      "bytes": 264749,
+      "role": "illustration",
+      "transparent": true
     },
     "ink/ink-art.png": {
       "sha256": "a985d731497b302ba03e3f84f9e569c9f049877c8b1736e164e7f57db8f91e07",

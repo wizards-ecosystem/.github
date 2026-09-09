@@ -1,7 +1,7 @@
 # The Wizard's Ecosystem brand
 
-Status: identity refresh in progress, 2026-09-08. The original calligraphy and watercolor
-board defines the direction. Revised identities are reviewed individually before release.
+Status: organization mountain identity released, 2026-09-08. The original calligraphy and
+watercolor board defines the direction. Project identities remain under individual review.
 
 This document is the authority for naming, visual identity, voice, and status language
 across The Wizard's Ecosystem. The distributable artwork, semantic tokens, build tools,
@@ -68,15 +68,17 @@ and transparent watercolor raster assets are both appropriate.
 
 The owner approved the new organization composition on 2026-09-08: calligraphy above a
 charcoal and sage mountain ridge, joined by a sweeping ink flourish, with a small spaced
-`ECOSYSTEM` caption. The private review set now includes finished transparent exports,
-the exact existing signature, and a compact mountain-and-ink favicon. The complete set
-is awaiting visual review before publication. The original RGB proof remains a source
-reference; its baked checkerboard is not production transparency.
+`ECOSYSTEM` caption. The finished [organization exports](brand/ecosystem/) are released
+and used in the public and private README headers. They retain the exact existing
+signature and pair the illustration with a compact mountain-and-ink favicon. The
+original RGB proof remains a source reference; its baked checkerboard is removed by
+the production extraction recipe.
 
 Review one identity with the owner before replacing its exports or moving to another
 project. Review the full logo and compact icon together at actual display sizes. The
-existing [identity collection](brand/index.html) contains superseded version 3 proposals,
-not approval to distribute those designs further. Artwork says nothing about readiness.
+existing [identity collection](brand/index.html) includes the released organization set
+and earlier project proposals. Project designs still require individual review. Artwork
+says nothing about readiness.
 
 ## Color
 
@@ -96,7 +98,7 @@ Project accents:
 
 | Project | Light canvas | Dark canvas |
 | --- | --- | --- |
-| Ecosystem | `#6F4738` | `#D8CFC3` |
+| Ecosystem | `#3F5F56` | `#ADC6BA` |
 | Ink | `#7A303B` | `#E2A3AC` |
 | OS | `#485F79` | `#A9C0D8` |
 | Conclave | `#65516D` | `#C9B0D3` |

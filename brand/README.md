@@ -2,12 +2,13 @@
 
 Identity refresh, 2026-09-08. The [original approved board](source/approved-sheet.png) is
 the visual reference for expressive calligraphy, ink drawings, and watercolor.
-The new mountain-and-ink organization composition is approved. Its transparent exports
-and compact icon are finished in the private review set and awaiting visual review
-together. Review and replace one identity at a time.
+The [mountain-and-ink organization identity](ecosystem/) is released, including the
+original signature, transparent light/dark logos, and a compact mountain favicon.
+The public and private README headers use its transparent PNG exports. Project identities
+continue through individual review.
 
-The existing [identity collection](index.html), exports, and builder retain the previous
-proposal. They are available for existing consumers, not approval for further rollout.
+The [identity collection](index.html) includes the released organization set and previous
+project proposals retained for existing consumers.
 
 ## Choose an export
 
@@ -16,11 +17,14 @@ proposal. They are available for existing consumers, not approval for further ro
 | `*-logo.svg` | Transparent horizontal logo for light surfaces |
 | `*-logo-dark.svg` | The same geometry for dark surfaces |
 | `*-logo-auto.svg` | System-theme logo for surfaces without a manual theme |
+| `ecosystem-logo.png`, `ecosystem-logo-dark.png` | Transparent organization README headers |
 | `*-icon.svg`, `*-icon-dark.svg` | Backgroundless marks for rails and compact UI |
 | `*-icon-auto.svg` | A favicon that follows the browser color scheme |
 | `*-social.png` | Opaque 1200 x 630 social preview; use PNG for social crawlers |
 | `*-social.svg` | Standalone outlined source for that preview |
 | `*-avatar.png` | Opaque 500 x 500 avatar with space for circular cropping |
+| `ecosystem/favicon.ico`, `favicon-16.png`, `favicon-32.png` | Organization favicon fallbacks |
+| `ecosystem/apple-touch-icon.png` | Organization touch icon |
 | `*-art.png`, `*-lockup.png` | Original watercolor illustrations for light editorial surfaces, in the eight original families |
 
 Existing version 3 logos and icons contain outlined paths. Their replacements may combine
@@ -56,16 +60,15 @@ and [W3C's guidance for functional images](https://www.w3.org/WAI/tutorials/imag
 
 ## Build and distribute
 
-The commands below maintain the existing version 3 package. Do not run the family-wide
-build or sync to distribute unapproved artwork during review. Update an approved
-identity's consumers individually. From this directory:
+The build reproduces the released organization identity and the retained project exports.
+Distribution is scoped to the approved identity. From this directory:
 
 ```sh
 npm --prefix tooling ci
 npm --prefix tooling run build
 npm --prefix tooling run check
-node tooling/sync-assets.mjs --workspace /path/to/wizards-ecosystem --wsl-home /path/to/wsl/home
-node tooling/sync-assets.mjs --workspace /path/to/wizards-ecosystem --wsl-home /path/to/wsl/home --check
+node tooling/sync-assets.mjs --workspace /path/to/wizards-ecosystem --project ecosystem
+node tooling/sync-assets.mjs --workspace /path/to/wizards-ecosystem --project ecosystem --check
 ```
 
 Both roots are explicit and independent; omit one to operate on only the other.
@@ -74,7 +77,9 @@ On Windows, the WSL root can be a UNC path to the user's Linux home. The
 Synchronization writes only those copies; check mode is read-only and fails on drift.
 Products serve their own local assets and never require the central checkout at runtime.
 
-The build owns the project geometry and accent definitions in `tooling/build-assets.mjs`.
+The organization source and editable mountain marks live in [source/ecosystem](source/ecosystem/).
+`tooling/build-ecosystem.mjs` owns extraction, exact-signature composition, and export.
+The retained project geometry and accent definitions live in `tooling/build-assets.mjs`.
 [Tokens](tokens.json) expose semantic palettes, and generated [CSS](tokens.css) follows
 the system theme unless a light or dark theme is selected explicitly. Newsreader and
 Instrument Sans are bundled with their OFL texts in [fonts](fonts/).

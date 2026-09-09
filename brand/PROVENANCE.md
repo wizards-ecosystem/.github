@@ -1,5 +1,20 @@
 # Production artwork provenance
 
+## Organization release, 2026-09-08
+
+The owner approved the mountain-and-ink composition and then explicitly requested its
+publication in the public and private README headers. The unchanged generated reference
+is `source/ecosystem/approved-composition.png`. The exact existing signature paths are
+composed with the extracted mountain, flourish, and ECOSYSTEM caption by
+`tooling/build-ecosystem.mjs`. The native mountain icon masters are retained beside the
+reference. The owner authorized deterministic image processing to remove the baked
+checkerboard. Source pixels remain unchanged; released logos have real alpha.
+
+The PNG README variants avoid depending on embedded raster support in SVG viewers.
+SVG, PNG, adaptive favicon, ICO, touch icon, avatar, and social exports are built from
+the same source and recorded in the manifest. The original tool-bundle source is retained
+as `source/archive/ecosystem-tool-bundle.png`; it is no longer a production input.
+
 ## Design correction, 2026-09-08
 
 The owner rejected the vector refresh's typeset project names and abstract icons after

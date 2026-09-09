@@ -6,7 +6,7 @@ const { projects } = JSON.parse(
   await fs.readFile(path.join(root, "manifest.json"), "utf8"),
 );
 const descriptions = {
-  ecosystem: "A shared orbit of independent tools.",
+  ecosystem: "The original signature, a watercolor mountain ridge, and a sweeping ink loop.",
   ink: "A split nib and a line of ink.",
   os: "An open mechanism around a stable axis.",
   conclave: "Three strokes meet at one working point.",
@@ -33,6 +33,6 @@ await fs.writeFile(
   `<!doctype html>
 <html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Wizard's Ecosystem | Identity collection</title><link rel="icon" href="ecosystem/ecosystem-icon-auto.svg" type="image/svg+xml"><link rel="stylesheet" href="gallery.css"></head>
 <body><header><a href="#" aria-label="The Wizard's Ecosystem home"><img class="light-logo" src="ecosystem/ecosystem-logo.svg" width="340" alt=""><img class="dark-logo" src="ecosystem/ecosystem-logo-dark.svg" width="340" alt=""></a><button type="button" id="theme" aria-pressed="false">Dark canvas</button></header>
-<main><section class="intro"><p class="eyebrow">Previous identity proposal / Edition 03</p><h1>Design review<br><em>in progress.</em></h1><p>The original calligraphy and watercolor board defines the next collection. A mountain-and-ink organization composition is approved; project identities are reviewed individually before release. These earlier exports remain available for existing consumers.</p><nav aria-label="Brand resources"><a href="README.md">Review status</a><a href="../BRAND.md">Brand guide</a><a href="source/approved-sheet.png">Original board</a></nav></section><section aria-label="Previous project proposals">${rows}</section><footer>These exports remain for existing consumers while individually approved replacements are prepared. Their presence here does not establish design approval.</footer></main><script src="gallery.js"></script></body></html>\n`,
+<main><section class="intro"><p class="eyebrow">Organization identity / Edition 04</p><h1>One maker.<br><em>Distinct instruments.</em></h1><p>The mountain-and-ink organization identity is released, with the original signature and transparent watercolor artwork. Project identities are being reviewed individually against the original board; their earlier exports remain available for existing consumers.</p><nav aria-label="Brand resources"><a href="README.md">Release and review status</a><a href="../BRAND.md">Brand guide</a><a href="source/approved-sheet.png">Original board</a></nav></section><section aria-label="Organization identity and project proposals">${rows}</section><footer>The organization identity is released. The remaining project exports are earlier proposals awaiting individual replacement.</footer></main><script src="gallery.js"></script></body></html>\n`,
 );
 console.log("Built identity gallery.");

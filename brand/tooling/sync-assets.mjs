@@ -8,6 +8,7 @@ const { values } = parseArgs({
   options: {
     workspace: { type: "string" },
     "wsl-home": { type: "string" },
+    project: { type: "string" },
     check: { type: "boolean", default: false },
   },
 });
@@ -17,6 +18,9 @@ const roots = { workspace: values.workspace, wsl: values["wsl-home"] };
 const consumers = JSON.parse(
   await fs.readFile(path.join(brand, "consumers.json"), "utf8"),
 );
+if (values.project && !Object.values(consumers.workspace).concat(Object.values(consumers.wsl))
+  .some((families) => values.project in families))
+  throw new Error("Unknown project: " + values.project);
 const pending = [];
 const failures = [];
 function target(root, relative) {
@@ -30,16 +34,19 @@ function target(root, relative) {
 for (const [kind, root] of Object.entries(roots)) {
   if (!root) continue;
   for (const [repo, families] of Object.entries(consumers[kind])) {
-    await fs.access(target(root, repo));
-    for (const [id, folders] of Object.entries(families))
+    for (const [id, folders] of Object.entries(families)) {
+      if (values.project && id !== values.project) continue;
+      await fs.access(target(root, repo));
       for (const folder of folders) {
-        for (const suffix of [
+        const suffixes = [
           "logo.svg",
           "logo-dark.svg",
           "icon.svg",
           "icon-dark.svg",
           "icon-auto.svg",
-        ]) {
+        ];
+        if (id === "ecosystem") suffixes.push("logo.png", "logo-dark.png");
+        for (const suffix of suffixes) {
           const source = id + "/" + id + "-" + suffix;
           pending.push({
             source,
@@ -50,10 +57,11 @@ for (const [kind, root] of Object.entries(roots)) {
           });
         }
       }
+    }
   }
 }
 for (const alias of consumers.aliases)
-  if (roots[alias.root])
+  if (roots[alias.root] && (!values.project || alias.source.startsWith(values.project + "/")))
     pending.push({
       source: alias.source,
       destination: target(roots[alias.root], alias.target),

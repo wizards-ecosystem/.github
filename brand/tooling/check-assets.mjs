@@ -16,7 +16,10 @@ for (const [relative, expected] of Object.entries(manifest.files)) {
         data.length !== expected.bytes) {
       failures.push(relative + ": file differs from manifest");
     }
-    const metadata = await sharp(data).metadata();
+    const raster = relative.endsWith(".ico")
+      ? data.subarray(data.readUInt32LE(18))
+      : data;
+    const metadata = await sharp(raster).metadata();
     if (metadata.width !== expected.width || metadata.height !== expected.height) {
       failures.push(relative + ": dimensions differ from manifest");
     }
@@ -31,7 +34,7 @@ for (const [relative, expected] of Object.entries(manifest.files)) {
         failures.push(relative + ": no alpha channel");
         continue;
       }
-      const { data: pixels, info } = await sharp(data).ensureAlpha().raw()
+      const { data: pixels, info } = await sharp(raster).ensureAlpha().raw()
         .toBuffer({ resolveWithObject: true });
       let clear = false;
       let painted = false;

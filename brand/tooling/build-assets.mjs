@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import { openSync } from "fontkit";
+import { buildEcosystem } from "./build-ecosystem.mjs";
 
 const brandRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -15,7 +16,7 @@ const canvas = "#F7F6F2";
 const charcoal = "#272522";
 
 const projects = {
-  ecosystem: { name: "Ecosystem", accent: "#6F4738", accentDark: "#D8CFC3" },
+  ecosystem: { name: "Ecosystem", accent: "#3F5F56", accentDark: "#ADC6BA" },
   ink: { name: "Ink", accent: "#7A303B", accentDark: "#E2A3AC" },
   os: { name: "OS", accent: "#485F79", accentDark: "#A9C0D8" },
   conclave: { name: "Conclave", accent: "#65516D", accentDark: "#C9B0D3" },
@@ -73,10 +74,6 @@ const iconBodies = {
   charter: (accent) => `
     <path d="M19 10h27v43H19c-8 0-8-11 0-11h27M19 10c-8 0-8 11 0 11h27" fill="none" stroke="${charcoal}" stroke-width="2.8" stroke-linejoin="round"/>
     <path d="m24 31 5 5 10-10M22 47h17" fill="none" stroke="${accent}" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>`,
-  ecosystem: (accent) => `
-    <circle cx="32" cy="32" r="19" fill="none" stroke="${accent}" stroke-width="3"/>
-    <path d="M18 37c8-15 20-19 29-9M18 37c10 5 20 6 29-1" fill="none" stroke="${charcoal}" stroke-width="2.5" stroke-linecap="round"/>
-    <g fill="${accent}"><circle cx="20" cy="26" r="2.5"/><circle cx="32" cy="17" r="2.5"/><circle cx="45" cy="24" r="2.5"/><circle cx="45" cy="39" r="2.5"/><circle cx="30" cy="47" r="2.5"/></g>`,
   ink: (accent) => `
     <path d="M32 10 45 30 32 50 19 30Z" fill="none" stroke="${charcoal}" stroke-width="2.8" stroke-linejoin="round"/>
     <path d="M32 11v23m-6 6h12" fill="none" stroke="${accent}" stroke-width="3" stroke-linecap="round"/>
@@ -304,7 +301,11 @@ function logo(id, project, signature, mode) {
 
 async function emit(relative, data, extra = {}) {
   await write(relative, data);
-  const metadata = await sharp(Buffer.from(data)).metadata();
+  const buffer = Buffer.from(data);
+  const raster = relative.endsWith(".ico")
+    ? buffer.subarray(buffer.readUInt32LE(18))
+    : buffer;
+  const metadata = await sharp(raster).metadata();
   files[relative] = {
     sha256: sha256(data),
     width: metadata.width,
@@ -317,7 +318,7 @@ async function emit(relative, data, extra = {}) {
 async function buildIllustration(id, signature) {
   if (
     !approvedCrops[id] &&
-    !["ecosystem", "os", "conclave", "courier"].includes(id)
+    !["os", "conclave", "courier"].includes(id)
   )
     return;
   const raw = approvedCrops[id]
@@ -358,6 +359,10 @@ async function buildIllustration(id, signature) {
 
 const signature = await buildSignature();
 for (const [id, project] of Object.entries(projects)) {
+  if (id === "ecosystem") {
+    await buildEcosystem(brandRoot, emit);
+    continue;
+  }
   await buildIllustration(id, signature);
   for (const mode of ["light", "dark", "auto"]) {
     const suffix = mode === "light" ? "" : "-" + mode;
@@ -441,7 +446,7 @@ for (const [id, project] of Object.entries(projects)) {
 const tokens = JSON.parse(
   await fs.readFile(path.join(brandRoot, "tokens.json"), "utf8"),
 );
-tokens.version = 3;
+tokens.version = 4;
 tokens.projects = Object.fromEntries(
   Object.entries(projects).map(([id, p]) => [
     id,
@@ -483,9 +488,9 @@ await write(
   "manifest.json",
   JSON.stringify(
     {
-      version: 3,
+      version: 4,
       direction:
-        "The toolsmith signature: transparent vector wordmarks and distinct instrument marks",
+        "Calligraphy and watercolor: released mountain organization identity; projects under individual review",
       signature: { sha256: sha256(signature.vector) },
       projects,
       files,
@@ -495,7 +500,7 @@ await write(
   ) + "\n",
 );
 console.log(
-  "Built brand package v3: " +
+  "Built brand package v4: " +
     Object.keys(projects).length +
     " families, " +
     Object.keys(files).length +

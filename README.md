@@ -1,7 +1,7 @@
 <h1 align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="brand/ecosystem/ecosystem-logo-dark.svg">
-    <img src="brand/ecosystem/ecosystem-logo.svg" alt="The Wizard's Ecosystem" width="420">
+    <source media="(prefers-color-scheme: dark)" srcset="brand/ecosystem/ecosystem-logo-dark.png">
+    <img src="brand/ecosystem/ecosystem-logo.png" alt="The Wizard's Ecosystem" width="420">
   </picture>
 </h1>
 

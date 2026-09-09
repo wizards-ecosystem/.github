@@ -22,8 +22,8 @@
 }
 :root,
 :root[data-project="ecosystem"] {
-  --wz-accent-light: #6F4738;
-  --wz-accent-on-dark: #D8CFC3;
+  --wz-accent-light: #3F5F56;
+  --wz-accent-on-dark: #ADC6BA;
 }
 :root[data-project="ink"] {
   --wz-accent-light: #7A303B;
