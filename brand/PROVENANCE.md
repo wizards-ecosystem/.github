@@ -1,12 +1,32 @@
 # Production artwork provenance
 
+## Vector refresh, 2026-09-08
+
+The owner requested backgroundless logos that occupy the header, consistent icons across
+every service, and removal of stale banner guidance. Version 3 retains the exact shared
+signature paths and the eight original watercolor illustration exports. Primary logos
+now pair that signature with paths shaped from the bundled Newsreader italic face and
+the project's instrument mark. No font installation or raster embedding is required.
+
+Familiar (an attentive cat), Herald (a horn), Press (a screw press), and Charter (a
+decision scroll) extend the vector family. Their accent pairs are recorded in the
+manifest and checked for contrast. These identities do not imply a software release.
+Light, dark, and browser-theme variants share geometry. Only social and avatar exports
+carry opaque canvases. The 1200 x 480 banner exports are retired.
+
+Production uses the pinned Sharp and Fontkit toolchain. No new AI-generated bitmap
+artwork was needed for this vector extension. Existing watercolor pixels and their
+reconstruction remain unchanged. Current usage lives in README.md and ../BRAND.md.
+
+## Original illustration production, 2026-09-05
+
 Approved reference: `source/approved-sheet.png` (the local
 `brand-option-03-combined.png`), approved by Isaac 2026-09-05. The direction is
 option 1's family signature with option 2's project lettering, drawings, pigment, and
 watercolor treatment.
 
 The initial built-in imagegen extraction attempts are retained outside this public
-package in the ecosystem workspace's `brand/archive/production-drafts/` directory. They
+package in the private repository's `brand/archive/production-drafts/` directory. They
 were rejected because several returned baked checkerboards, false transparency, or dark
 halos. They are not production masters.
 

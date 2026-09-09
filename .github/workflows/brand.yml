@@ -1,0 +1,33 @@
+name: Brand assets
+
+on:
+  push:
+    paths: ["brand/**", ".gitattributes", ".github/workflows/brand.yml"]
+  pull_request:
+    paths: ["brand/**", ".gitattributes", ".github/workflows/brand.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: "22.22.2"
+          cache: npm
+          cache-dependency-path: brand/tooling/package-lock.json
+      - run: npm --prefix brand/tooling ci
+      - run: npm --prefix brand/tooling run check
+      - run: npm --prefix brand/tooling run build
+      - name: Generated files match the sources
+        shell: pwsh
+        run: |
+          $changes = git status --porcelain -- brand
+          if ($changes) {
+            $changes | Write-Output
+            throw "Rebuild and commit the canonical brand exports."
+          }

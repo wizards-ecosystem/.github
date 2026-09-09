@@ -1,83 +1,88 @@
-# The Wizard's Ecosystem brand package
+# The Wizard's Ecosystem identity package
 
-This directory is the canonical distributable identity package for The Wizard's
-Ecosystem. The approved direction combines the sharp shared signature from brand option
-1 with the watercolor project lettering and illustrated treatment from brand option 2.
+Version 3 replaces the opaque README banners with transparent vector logos. All eleven
+projects and the ecosystem use the same signature, outlined italic lettering, and their
+own instrument mark. Open [the identity collection](index.html) to inspect every family
+on light and dark canvases and download its assets.
 
-The family rule is simple: use the same `The Wizard's` signature every time, then pair it
-with the project's own artwork and accent. Never regenerate, retype, recolor, or redraw
-the family signature for an individual project.
+## Choose an export
 
-## Choose the right asset
+| File in each project folder | Use |
+| --- | --- |
+| `*-logo.svg` | Transparent horizontal logo for light surfaces |
+| `*-logo-dark.svg` | The same geometry for dark surfaces |
+| `*-logo-auto.svg` | System-theme logo for surfaces without a manual theme |
+| `*-icon.svg`, `*-icon-dark.svg` | Backgroundless marks for rails and compact UI |
+| `*-icon-auto.svg` | A favicon that follows the browser color scheme |
+| `*-social.png` | Opaque 1200 x 630 social preview; use PNG for social crawlers |
+| `*-social.svg` | Standalone outlined source for that preview |
+| `*-avatar.png` | Opaque 500 x 500 avatar with space for circular cropping |
+| `*-art.png`, `*-lockup.png` | Original watercolor illustrations for light editorial surfaces, in the eight original families |
 
-| Asset | Use | Background |
-| --- | --- | --- |
-| `signature/the-wizards.svg` | Shared family signature | Light surfaces |
-| `signature/the-wizards-reversed.svg` | Shared signature only | Dark surfaces |
-| `<project>/<project>-art.png` | Project word and watercolor drawing without the signature | Compositing on light surfaces |
-| `<project>/<project>-lockup.png` | Transparent complete lockup | Light surfaces |
-| `<project>/<project>-header.png` | README and documentation header, 1200 x 480 | Ready to use |
-| `<project>/<project>-social.png` | Social preview, 1200 x 630 | Ready to use |
-| `<project>/<project>-icon.svg` | Favicons and compact product chrome | Ready to use |
-| `<project>/<project>-avatar.png` | Repository or organization avatar, 500 x 500 | Ready to use |
+Logos and icons contain paths, not embedded raster images, external fonts, or live text.
+The original [signature](signature/) and [watercolor sources](source/) remain intact.
+The retired `*-header.png` exports must not return to a README or application.
 
-The watercolor art is intentionally raster. The signature and compact marks are true
-vector assets. There are no SVG wrappers that pretend embedded PNG artwork is a vector
-master.
+## Layout
 
-## Usage rules
+Use the logo as a repository's H1, about 360-420 CSS pixels wide. Let it shrink on a
+narrow page. Do not follow it with another heading saying the same name. In application
+chrome, use a 44-56 pixel high logo or a 24-40 pixel compact mark; 16 pixels is reserved
+for favicons. Keep the supplied clear space and aspect ratio. Do not stretch the artwork,
+add a background, border, glow, shadow, rounded container, or full-width banner.
 
-- Keep the signature charcoal on light surfaces and soft white on dark surfaces.
-- Put full watercolor lockups on the soft-white canvas (`#F7F6F2`) or a near-white
-  untextured surface. On dark UI, use the compact mark or place the header on its own
-  light card.
-- Display a full header at 600 CSS pixels wide or more when practical. Below 360 pixels,
-  prefer the compact mark plus a typeset product name.
-- Display the shared signature at least 180 CSS pixels wide. Display compact marks at
-  least 24 x 24 CSS pixels.
-- Keep clear space around a lockup equal to the height of the lowercase `e` in the
-  signature. Do not crop flourishes or watercolor edges.
-- Do not add drop shadows, gradients, glow, parchment distress, or project-colored
-  signatures.
-- Use the full project name in headings and first mentions. Keep package names, commands,
-  binary names, and repository slugs unchanged.
+For GitHub, select the theme with a picture element:
 
-## Color and type
-
-[`tokens.css`](tokens.css) and [`tokens.json`](tokens.json) define the shared semantic
-surfaces, text, focus, status colors, and each project's light/dark accent pair. Every
-listed text/accent pair was checked against the corresponding canvas at 4.5:1 or better.
-
-Use Newsreader for editorial display text and Instrument Sans for interface text. The
-font files and their SIL Open Font License texts are in [`fonts/`](fonts/). Code and
-terminal content keeps the product's established monospace stack.
-
-## Rebuild and verify
-
-The build is self-contained. It reads only files inside this package and writes only the
-documented generated exports.
-
-```sh
-cd brand/tooling
-npm ci
-npm run build
-npm run check
+```html
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/ink-logo-dark.svg">
+    <img src="docs/assets/ink-logo.svg" alt="The Wizard's Ink" width="420">
+  </picture>
+</h1>
 ```
 
-The check validates dimensions, alpha requirements, size budgets, accessible SVG titles,
-vector signature integrity, and project-specific compact marks. SHA-256 identities and
-dimensions are recorded in [`manifest.json`](manifest.json).
+In apps with a theme selector, select the logo using the actual application theme.
+The automatic favicon may follow the browser independently. A linked logo needs a
+destination name such as "Wizzy home" on the link; its child image can then have empty
+alt text. An unlinked logo heading uses the full project name as its image alternative.
+These patterns follow [GitHub's picture support](https://github.blog/changelog/2022-05-19-specify-theme-context-for-images-in-markdown-beta/)
+and [W3C's guidance for functional images](https://www.w3.org/WAI/tutorials/images/functional/).
 
-The generated outputs are deterministic for the checked-in source images and pinned
-toolchain. The four approved project drawings (Ink, Lyre, Brush, Pick) are mechanically
-isolated from the approved sheet. OS, Conclave, Courier, and the ecosystem lockup use the
-approved extension drawings in [`source/`](source/). See [`PROVENANCE.md`](PROVENANCE.md)
-for the complete production record.
+## Build and distribute
 
-## Artwork policy
+From this directory:
 
-These marks identify projects in The Wizard's Ecosystem. The software licenses in the
-individual repositories do not automatically grant permission to present a derivative
-project as an official ecosystem project. A standalone trademark/artwork policy has not
-yet been recorded; keep external redistribution and derivative branding out of release
-claims until the maintainer records one.
+```sh
+npm --prefix tooling ci
+npm --prefix tooling run build
+npm --prefix tooling run check
+node tooling/sync-assets.mjs --workspace /path/to/wizards-ecosystem --wsl-home /path/to/wsl/home
+node tooling/sync-assets.mjs --workspace /path/to/wizards-ecosystem --wsl-home /path/to/wsl/home --check
+```
+
+Both roots are explicit and independent; omit one to operate on only the other.
+On Windows, the WSL root can be a UNC path to the user's Linux home. The
+[consumer map](consumers.json) records exactly which files belong in each checkout.
+Synchronization writes only those copies; check mode is read-only and fails on drift.
+Products serve their own local assets and never require the central checkout at runtime.
+
+The build owns the project geometry and accent definitions in `tooling/build-assets.mjs`.
+[Tokens](tokens.json) expose semantic palettes, and generated [CSS](tokens.css) follows
+the system theme unless a light or dark theme is selected explicitly. Newsreader and
+Instrument Sans are bundled with their OFL texts in [fonts](fonts/).
+
+The [manifest](manifest.json) records hashes, byte sizes, dimensions, roles, and themes.
+The check verifies those against the actual bytes, real transparent pixels, clear edges,
+SVG independence, family completeness, signature identity, and 4.5:1 accent contrast on
+the corresponding canvas. Inspect the gallery after rebuilding: these checks do not
+judge the drawing or establish full application accessibility.
+
+## History and policy
+
+[Provenance](PROVENANCE.md) records the original illustration work and the vector refresh.
+Superseded proposals and rollout screenshots live in the private repository's brand
+archive; they are historical references, not current instructions.
+
+These marks identify ecosystem projects. Existing repository software licenses and
+artwork notices remain in force; this refresh makes no change to trademark policy.

@@ -3,10 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build-assets.mjs",
-    "check": "node validate-assets.mjs"
+    "build": "node build-assets.mjs && node build-gallery.mjs",
+    "check": "node check-assets.mjs",
+    "sync": "node sync-assets.mjs",
+    "sync:check": "node sync-assets.mjs --check"
   },
   "dependencies": {
+    "fontkit": "2.0.4",
     "sharp": "0.35.4"
   }
 }

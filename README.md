@@ -1,4 +1,11 @@
-# `.github`, organization defaults
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="brand/ecosystem/ecosystem-logo-dark.svg">
+    <img src="brand/ecosystem/ecosystem-logo.svg" alt="The Wizard's Ecosystem" width="420">
+  </picture>
+</h1>
+
+`.github`, organization defaults.
 
 This repository is **public** and does two jobs.
 

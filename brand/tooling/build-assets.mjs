@@ -3,8 +3,12 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
+import { openSync } from "fontkit";
 
-const brandRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const brandRoot = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "..",
+);
 const sourceRoot = path.join(brandRoot, "source");
 const approvedSheet = path.join(sourceRoot, "approved-sheet.png");
 const canvas = "#F7F6F2";
@@ -19,16 +23,56 @@ const projects = {
   lyre: { name: "Lyre", accent: "#456348", accentDark: "#AFC9AE" },
   brush: { name: "Brush", accent: "#994D34", accentDark: "#E5AD99" },
   pick: { name: "Pick", accent: "#285E63", accentDark: "#95C6CA" },
+  familiar: { name: "Familiar", accent: "#52634A", accentDark: "#BACBAD" },
+  herald: { name: "Herald", accent: "#824631", accentDark: "#E4B098" },
+  press: { name: "Press", accent: "#4D596D", accentDark: "#BAC6DD" },
+  charter: { name: "Charter", accent: "#70582E", accentDark: "#D9C297" },
 };
 
 const approvedCrops = {
-  lyre: { left: 80, top: 128, width: 658, height: 373, signature: [20, 0, 395, 127] },
-  pick: { left: 820, top: 144, width: 650, height: 369, signature: [0, 0, 370, 116] },
-  brush: { left: 80, top: 560, width: 664, height: 400, signature: [0, 0, 430, 130] },
-  ink: { left: 824, top: 560, width: 660, height: 400, signature: [0, 0, 395, 125] },
+  lyre: {
+    left: 80,
+    top: 128,
+    width: 658,
+    height: 373,
+    signature: [20, 0, 395, 127],
+  },
+  pick: {
+    left: 820,
+    top: 144,
+    width: 650,
+    height: 369,
+    signature: [0, 0, 370, 116],
+  },
+  brush: {
+    left: 80,
+    top: 560,
+    width: 664,
+    height: 400,
+    signature: [0, 0, 430, 130],
+  },
+  ink: {
+    left: 824,
+    top: 560,
+    width: 660,
+    height: 400,
+    signature: [0, 0, 395, 125],
+  },
 };
 
 const iconBodies = {
+  familiar: (accent) => `
+    <path d="M16 29 15 12l14 10h6l14-10-1 17c6 18-5 25-16 25S10 47 16 29Z" fill="none" stroke="${charcoal}" stroke-width="2.8" stroke-linejoin="round"/>
+    <path d="m21 34 5 2m17-2-5 2m-9 7 3 3 3-3M9 40l11 2m24 0 11-2" fill="none" stroke="${accent}" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>`,
+  herald: (accent) => `
+    <path d="M12 30h11l27-15v34L23 36H12Z" fill="none" stroke="${charcoal}" stroke-width="2.8" stroke-linejoin="round"/>
+    <path d="M23 30v6m8-14v20M20 37v11c0 5 10 5 10 0v-8" fill="none" stroke="${accent}" stroke-width="2.8" stroke-linecap="round"/>`,
+  press: (accent) => `
+    <path d="M16 14h32M21 14v37m22-37v37M12 52h40M32 10v21" fill="none" stroke="${charcoal}" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M15 22h34M26 32h12v7H26Zm-1 13h14" fill="none" stroke="${accent}" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>`,
+  charter: (accent) => `
+    <path d="M19 10h27v43H19c-8 0-8-11 0-11h27M19 10c-8 0-8 11 0 11h27" fill="none" stroke="${charcoal}" stroke-width="2.8" stroke-linejoin="round"/>
+    <path d="m24 31 5 5 10-10M22 47h17" fill="none" stroke="${accent}" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>`,
   ecosystem: (accent) => `
     <circle cx="32" cy="32" r="19" fill="none" stroke="${accent}" stroke-width="3"/>
     <path d="M18 37c8-15 20-19 29-9M18 37c10 5 20 6 29-1" fill="none" stroke="${charcoal}" stroke-width="2.5" stroke-linecap="round"/>
@@ -65,14 +109,6 @@ const iconBodies = {
 
 const sha256 = (data) => createHash("sha256").update(data).digest("hex");
 
-async function removeV1Wrappers() {
-  for (const id of Object.keys(projects)) {
-    for (const suffix of ["art", "lockup", "header", "social"]) {
-      await fs.rm(path.join(brandRoot, id, `${id}-${suffix}.svg`), { force: true });
-    }
-  }
-}
-
 async function write(relative, data) {
   const destination = path.join(brandRoot, relative);
   await fs.mkdir(path.dirname(destination), { recursive: true });
@@ -84,12 +120,24 @@ function svg(width, height, title, body) {
 }
 
 async function buildSignature() {
-  const vector = await fs.readFile(path.join(sourceRoot, "the-wizards.svg"), "utf8");
-  const raster = await sharp(Buffer.from(vector)).resize({ width: 1512 }).png().toBuffer();
+  const vector = await fs.readFile(
+    path.join(sourceRoot, "the-wizards.svg"),
+    "utf8",
+  );
+  const raster = await sharp(Buffer.from(vector))
+    .resize({ width: 1512 })
+    .png()
+    .toBuffer();
   await write("signature/the-wizards.svg", vector);
   await write("signature/the-wizards.png", raster);
-  await write("signature/the-wizards-reversed.svg", vector.replaceAll(charcoal, canvas));
-  await write("signature/the-wizards-monochrome.svg", vector.replaceAll(charcoal, "#000000"));
+  await write(
+    "signature/the-wizards-reversed.svg",
+    vector.replaceAll(charcoal, canvas),
+  );
+  await write(
+    "signature/the-wizards-monochrome.svg",
+    vector.replaceAll(charcoal, "#000000"),
+  );
   return { vector, raster };
 }
 
@@ -106,7 +154,8 @@ async function approvedProjectSource(id) {
     for (let x = left; x < left + width; x += 1) {
       const index = (y * raw.info.width + x) * 3;
       const rgb = [...raw.data.subarray(index, index + 3)];
-      if (Math.max(...rgb) - Math.min(...rgb) < 26) raw.data.fill(255, index, index + 3);
+      if (Math.max(...rgb) - Math.min(...rgb) < 26)
+        raw.data.fill(255, index, index + 3);
     }
   }
   for (let y = height; y < 160; y += 1) {
@@ -131,7 +180,11 @@ async function removeWhite(raw) {
   for (let pixel = 0; pixel < pixels; pixel += 1) {
     const input = pixel * 3;
     const output = pixel * 4;
-    const minimum = Math.min(raw.data[input], raw.data[input + 1], raw.data[input + 2]);
+    const minimum = Math.min(
+      raw.data[input],
+      raw.data[input + 1],
+      raw.data[input + 2],
+    );
     const alpha = minimum > 249 ? 0 : 255 - minimum;
     rgba[output + 3] = alpha;
     for (let channel = 0; channel < 3; channel += 1) {
@@ -155,7 +208,118 @@ async function contain(buffer, width, height) {
     .toBuffer();
 }
 
-async function buildProject(id, project, signature) {
+const typeface = openSync(
+  path.join(brandRoot, "fonts/newsreader-latin-standard-italic.woff2"),
+);
+const font = typeface;
+const files = {};
+
+function lettering(word, size, face = font) {
+  const run = face.layout(word);
+  const scale = size / face.unitsPerEm;
+  let advance = 0;
+  const paths = run.glyphs.map((glyph, index) => {
+    const position = run.positions[index];
+    const shape =
+      '<path transform="translate(' +
+      ((advance + position.xOffset) * scale).toFixed(3) +
+      " " +
+      (-position.yOffset * scale).toFixed(3) +
+      ") scale(" +
+      scale +
+      " " +
+      -scale +
+      ')" d="' +
+      glyph.path.toSVG() +
+      '"/>';
+    advance += position.xAdvance;
+    return shape;
+  });
+  return { body: paths.join(""), width: advance * scale };
+}
+
+function theme(project, mode) {
+  if (mode !== "auto") return "";
+  return (
+    "<style>@media(prefers-color-scheme:dark){" +
+    ["fill", "stroke"]
+      .map(
+        (attr) =>
+          "[" +
+          attr +
+          '="' +
+          charcoal +
+          '"]{' +
+          attr +
+          ":" +
+          canvas +
+          "}[" +
+          attr +
+          '="' +
+          project.accent +
+          '"]{' +
+          attr +
+          ":" +
+          project.accentDark +
+          "}",
+      )
+      .join("") +
+    "}</style>"
+  );
+}
+
+function mark(id, project, mode = "light") {
+  const body = iconBodies[id](
+    mode === "dark" ? project.accentDark : project.accent,
+  ).replaceAll(canvas, "none");
+  return mode === "dark" ? body.replaceAll(charcoal, canvas) : body;
+}
+
+function logo(id, project, signature, mode) {
+  const word = lettering(project.name, 72);
+  const width = Math.ceil(262 + word.width + 78);
+  const family = signature.vector
+    .match(/<path[\s\S]*?(?=<\/svg>)/)[0]
+    .replaceAll(charcoal, mode === "dark" ? canvas : charcoal);
+  return svg(
+    width,
+    112,
+    "The Wizard's " + project.name,
+    theme(project, mode) +
+      '<g transform="translate(0 9) scale(.64)">' +
+      family +
+      "</g>" +
+      '<g transform="translate(256 82)" fill="' +
+      (mode === "dark" ? project.accentDark : project.accent) +
+      '">' +
+      word.body +
+      "</g>" +
+      '<g transform="translate(' +
+      (width - 66) +
+      ' 29) scale(.85)">' +
+      mark(id, project, mode) +
+      "</g>",
+  );
+}
+
+async function emit(relative, data, extra = {}) {
+  await write(relative, data);
+  const metadata = await sharp(Buffer.from(data)).metadata();
+  files[relative] = {
+    sha256: sha256(data),
+    width: metadata.width,
+    height: metadata.height,
+    bytes: Buffer.byteLength(data),
+    ...extra,
+  };
+}
+
+async function buildIllustration(id, signature) {
+  if (
+    !approvedCrops[id] &&
+    !["ecosystem", "os", "conclave", "courier"].includes(id)
+  )
+    return;
   const raw = approvedCrops[id]
     ? await approvedProjectSource(id)
     : await generatedProjectSource(id);
@@ -163,95 +327,177 @@ async function buildProject(id, project, signature) {
   const artFitted = await contain(art, 1040, 294);
   const artMeta = await sharp(artFitted).metadata();
   const signatureFitted = await contain(signature.raster, 470, 174);
-  const signatureMeta = await sharp(signatureFitted).metadata();
   const artLeft = Math.round((1200 - artMeta.width) / 2);
-  const signatureLeft = Math.max(72, Math.min(658, artLeft + 36));
-
   const lockup = await sharp({
-    create: { width: 1200, height: 520, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } },
+    create: {
+      width: 1200,
+      height: 520,
+      channels: 4,
+      background: { r: 0, g: 0, b: 0, alpha: 0 },
+    },
   })
     .composite([
-      { input: signatureFitted, left: signatureLeft, top: 20 },
+      {
+        input: signatureFitted,
+        left: Math.max(72, Math.min(658, artLeft + 36)),
+        top: 20,
+      },
       { input: artFitted, left: artLeft, top: 194 },
     ])
     .png({ compressionLevel: 9 })
     .toBuffer();
-
-  const headerLockup = await contain(lockup, 1104, 432);
-  const headerMeta = await sharp(headerLockup).metadata();
-  const header = await sharp({
-    create: { width: 1200, height: 480, channels: 4, background: canvas },
-  })
-    .composite([
-      {
-        input: headerLockup,
-        left: Math.round((1200 - headerMeta.width) / 2),
-        top: Math.round((480 - headerMeta.height) / 2),
-      },
-    ])
-    .png({ compressionLevel: 9 })
-    .toBuffer();
-
-  const socialLockup = await contain(lockup, 1080, 520);
-  const socialMeta = await sharp(socialLockup).metadata();
-  const social = await sharp({
-    create: { width: 1200, height: 630, channels: 4, background: canvas },
-  })
-    .composite([
-      {
-        input: socialLockup,
-        left: Math.round((1200 - socialMeta.width) / 2),
-        top: Math.round((630 - socialMeta.height) / 2),
-      },
-    ])
-    .png({ compressionLevel: 9 })
-    .toBuffer();
-
-  const icon = svg(
-    64,
-    64,
-    `The Wizard's ${project.name} compact mark`,
-    `<rect width="64" height="64" rx="10" fill="${canvas}"/>${iconBodies[id](project.accent)}`,
-  );
-  const avatar = await sharp(Buffer.from(icon)).resize(500, 500).png({ compressionLevel: 9 }).toBuffer();
-
-  await write(`${id}/${id}-art.png`, art);
-  await write(`${id}/${id}-lockup.png`, lockup);
-  await write(`${id}/${id}-header.png`, header);
-  await write(`${id}/${id}-social.png`, social);
-  await write(`${id}/${id}-icon.svg`, icon);
-  await write(`${id}/${id}-avatar.png`, avatar);
-
-  return {
-    name: `The Wizard's ${project.name}`,
-    accent: project.accent,
-    accentDark: project.accentDark,
-    art: { sha256: sha256(art), width: (await sharp(art).metadata()).width, height: (await sharp(art).metadata()).height },
-    lockup: { sha256: sha256(lockup), width: 1200, height: 520 },
-    header: { sha256: sha256(header), width: 1200, height: 480 },
-    social: { sha256: sha256(social), width: 1200, height: 630 },
-    icon: { sha256: sha256(icon), width: 64, height: 64 },
-    avatar: { sha256: sha256(avatar), width: 500, height: 500 },
-  };
+  await emit(id + "/" + id + "-art.png", art, {
+    transparent: true,
+    role: "illustration",
+  });
+  await emit(id + "/" + id + "-lockup.png", lockup, {
+    transparent: true,
+    role: "illustration",
+  });
 }
 
-await removeV1Wrappers();
 const signature = await buildSignature();
-const manifest = {
-  version: 2,
-  approvedDirection: "option 1 family signature with option 2 project artwork",
-  approvedStudy: "source/approved-sheet.png",
-  canvas,
-  signature: {
-    sha256: sha256(signature.vector),
-    rasterSha256: sha256(signature.raster),
-  },
-  projects: {},
-};
-
 for (const [id, project] of Object.entries(projects)) {
-  manifest.projects[id] = await buildProject(id, project, signature);
+  await buildIllustration(id, signature);
+  for (const mode of ["light", "dark", "auto"]) {
+    const suffix = mode === "light" ? "" : "-" + mode;
+    await emit(
+      id + "/" + id + "-logo" + suffix + ".svg",
+      logo(id, project, signature, mode),
+      { transparent: true, role: "logo", theme: mode },
+    );
+    const icon = svg(
+      64,
+      64,
+      "The Wizard's " + project.name + " mark",
+      theme(project, mode) + mark(id, project, mode),
+    );
+    await emit(id + "/" + id + "-icon" + suffix + ".svg", icon, {
+      transparent: true,
+      role: "icon",
+      theme: mode,
+    });
+  }
+  const logoSvg = logo(id, project, signature, "light");
+  const width = Number(logoSvg.match(/width="(\d+)"/)[1]);
+  const scale = 1000 / width;
+  const body = logoSvg
+    .replace(/^<svg[^>]*><title[^>]*>[^<]*<\/title>/, "")
+    .replace(/<\/svg>\s*$/, "");
+  let caption = "";
+  if (id === "ink") {
+    const text = lettering(
+      "Wizzy / experimental / pre-0.1 / source-only",
+      26,
+      openSync(
+        path.join(brandRoot, "fonts/instrument-sans-latin-wght-normal.woff2"),
+      ),
+    );
+    caption =
+      '<g transform="translate(' +
+      (1200 - text.width) / 2 +
+      ' 480)" fill="#625F59">' +
+      text.body +
+      "</g>";
+  }
+  const socialSvg = svg(
+    1200,
+    630,
+    "The Wizard's " + project.name + " social preview",
+    '<rect width="1200" height="630" fill="' +
+      canvas +
+      '"/><g transform="translate(100 ' +
+      ((630 - 112 * scale) / 2 - (caption ? 32 : 0)) +
+      ") scale(" +
+      scale +
+      ')">' +
+      body +
+      "</g>" +
+      caption,
+  );
+  const social = await sharp(Buffer.from(socialSvg))
+    .png({ compressionLevel: 9 })
+    .toBuffer();
+  await emit(id + "/" + id + "-social.svg", socialSvg, { role: "social" });
+  await emit(id + "/" + id + "-social.png", social, { role: "social" });
+  const avatarSvg = svg(
+    500,
+    500,
+    "The Wizard's " + project.name,
+    '<rect width="500" height="500" fill="' +
+      canvas +
+      '"/><g transform="translate(74 74) scale(5.5)">' +
+      mark(id, project) +
+      "</g>",
+  );
+  await emit(
+    id + "/" + id + "-avatar.png",
+    await sharp(Buffer.from(avatarSvg)).png({ compressionLevel: 9 }).toBuffer(),
+    { role: "avatar" },
+  );
+  await fs.rm(path.join(brandRoot, id, id + "-header.png"), { force: true });
 }
 
-await write("manifest.json", `${JSON.stringify(manifest, null, 2)}\n`);
-console.log(`Built brand package v${manifest.version}; signature ${manifest.signature.sha256}`);
+const tokens = JSON.parse(
+  await fs.readFile(path.join(brandRoot, "tokens.json"), "utf8"),
+);
+tokens.version = 3;
+tokens.projects = Object.fromEntries(
+  Object.entries(projects).map(([id, p]) => [
+    id,
+    { light: p.accent, dark: p.accentDark },
+  ]),
+);
+await write("tokens.json", JSON.stringify(tokens, null, 2) + "\n");
+const cssRole = (name) => name.replace(/[A-Z]/g, (c) => "-" + c.toLowerCase());
+const palette = (mode) =>
+  Object.entries(tokens[mode])
+    .map(([name, value]) => "  --wz-" + cssRole(name) + ": " + value + ";")
+    .join("\n");
+let css =
+  "/* Generated by tooling/build-assets.mjs. */\n:root {\n  color-scheme: light;\n" +
+  palette("light") +
+  '\n  --wz-font-display: "Newsreader", Georgia, serif;\n  --wz-font-interface: "Instrument Sans", system-ui, sans-serif;\n  --wz-font-mono: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;\n  --wz-radius-small: .35rem;\n  --wz-radius-medium: .7rem;\n  --wz-shadow-raised: 0 18px 48px rgb(39 37 34 / .12);\n  --wz-accent: var(--wz-accent-light);\n}\n';
+for (const [id, p] of Object.entries(projects))
+  css +=
+    (id === "ecosystem" ? ":root,\n" : "") +
+    ':root[data-project="' +
+    id +
+    '"] {\n  --wz-accent-light: ' +
+    p.accent +
+    ";\n  --wz-accent-on-dark: " +
+    p.accentDark +
+    ";\n}\n";
+const darkCss =
+  "  color-scheme: dark;\n" +
+  palette("dark") +
+  "\n  --wz-accent: var(--wz-accent-on-dark);\n  --wz-shadow-raised: 0 20px 54px rgb(0 0 0 / .34);\n";
+css +=
+  ':root[data-theme="dark"] {\n' +
+  darkCss +
+  '}\n@media (prefers-color-scheme: dark) {\n:root:not([data-theme="light"]) {\n' +
+  darkCss +
+  "}\n}\n";
+await write("tokens.css", css);
+await write(
+  "manifest.json",
+  JSON.stringify(
+    {
+      version: 3,
+      direction:
+        "The toolsmith signature: transparent vector wordmarks and distinct instrument marks",
+      signature: { sha256: sha256(signature.vector) },
+      projects,
+      files,
+    },
+    null,
+    2,
+  ) + "\n",
+);
+console.log(
+  "Built brand package v3: " +
+    Object.keys(projects).length +
+    " families, " +
+    Object.keys(files).length +
+    " exports.",
+);

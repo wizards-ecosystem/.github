@@ -1,0 +1,47 @@
+{
+  "workspace": {
+    ".github-private": { "ecosystem": ["profile/assets"] },
+    "language/wizards-ink": {
+      "ink": ["docs/assets/brand", "site/public/brand"]
+    },
+    "systems/wizards-os": { "os": ["docs/assets"] },
+    "services/wizards-conclave": { "conclave": ["docs/assets", "web/assets"] },
+    "services/wizards-courier": { "courier": ["docs/assets"] },
+    "tools/wizards-familiar": { "familiar": ["docs/assets"] },
+    "tools/wizards-herald": { "herald": ["docs/assets"] },
+    "tools/wizards-press": { "press": ["docs/assets"] },
+    "tools/wizards-charter": { "charter": ["docs/assets"] }
+  },
+  "wsl": {
+    "wizards-lyre": { "lyre": ["docs/assets", "web/public/brand"] },
+    "wizards-brush": { "brush": ["docs/assets", "frontend/public/brand"] },
+    "wizards-pick": { "pick": ["docs/assets"] }
+  },
+  "aliases": [
+    {
+      "root": "workspace",
+      "source": "ink/ink-social.svg",
+      "target": "language/wizards-ink/site/public/social-card.svg"
+    },
+    {
+      "root": "workspace",
+      "source": "ink/ink-social.png",
+      "target": "language/wizards-ink/site/public/social-card.png"
+    },
+    {
+      "root": "wsl",
+      "source": "brush/brush-social.png",
+      "target": "wizards-brush/docs/assets/readme-social.png"
+    },
+    {
+      "root": "workspace",
+      "source": "ink/ink-icon-auto.svg",
+      "target": "language/wizards-ink/site/public/favicon.svg"
+    },
+    {
+      "root": "wsl",
+      "source": "brush/brush-icon-auto.svg",
+      "target": "wizards-brush/frontend/public/favicon.svg"
+    }
+  ]
+}

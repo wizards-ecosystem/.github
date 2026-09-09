@@ -1,6 +1,6 @@
 # The Wizard's Ecosystem brand
 
-Status: canonical v1, approved and produced 2026-09-05.
+Status: canonical v3, refreshed 2026-09-08. Replaces the opaque banner treatment.
 
 This document is the authority for naming, visual identity, voice, and status language
 across The Wizard's Ecosystem. The distributable artwork, semantic tokens, build tools,
@@ -42,9 +42,12 @@ use **the ecosystem** in running prose.
 | **The Wizard's Brush** | `wizards-brush` | The image and video studio |
 | **The Wizard's Pick** | `wizards-pick` | The security tool |
 | **The Wizard's Familiar** | `wizards-familiar` | The local coding agent |
+| **The Wizard's Herald** | `wizards-herald` | The local job-application workspace |
+| **The Wizard's Press** | `wizards-press` | Internal publishing infrastructure; specified, not built |
+| **The Wizard's Charter** | `wizards-charter` | Internal project assessment; specified, not built |
 
 Use the full display name in a title, heading, or first prose mention. Afterwards, use the
-project word: Ink, OS, Conclave, Courier, Lyre, Brush, Pick, or Familiar. Slugs, commands, package
+project word: Ink, OS, Conclave, Courier, Lyre, Brush, Pick, Familiar, Herald, Press, or Charter. Slugs, commands, package
 names, binary names, and file paths do not take apostrophes.
 
 Wizzy is the language. The Wizard's Ink is its project and repository. Do not replace
@@ -52,19 +55,19 @@ language-context uses of `Wizzy` with the project name.
 
 ## Identity architecture
 
-Every identity has two layers:
+Each identity combines the fixed `The Wizard's` calligraphic signature, an outlined
+Newsreader italic project word, and a distinct instrument mark. The horizontal logo is
+the title on repository pages and the identity in application headers. It has no
+background, frame, shadow, or surrounding card. Light and dark exports preserve the
+same geometry and use the corresponding neutral and project pigments.
 
-1. the one fixed `The Wizard's` family signature;
-2. the project's own watercolor word and recognizable tool drawing.
+The signature geometry is never retyped or regenerated. The original watercolor
+drawings remain available as large editorial illustrations; they are not UI headers.
+All twelve identities have a vector logo and a compact mark, including the internal
+tools. Artwork availability says nothing about product readiness.
 
-The approved direction uses option 1's fine, sharp family signature with option 2's
-softer project lettering, illustrations, pigment, colors, and flourishes. The signature
-is never retyped, regenerated, or recolored per project. Project marks are related by
-medium and motion, not by swapping one generic icon's color.
-
-Use the checked-in assets according to [`brand/README.md`](brand/README.md). The signature
-and compact marks are vector artwork. Watercolor artwork and complete lockups are raster
-PNG assets by design.
+Use the exports in [`brand/README.md`](brand/README.md) and inspect the complete family
+in the [identity collection](brand/index.html).
 
 ## Color
 
@@ -92,9 +95,10 @@ Project accents:
 | Lyre | `#456348` | `#AFC9AE` |
 | Brush | `#994D34` | `#E5AD99` |
 | Pick | `#285E63` | `#95C6CA` |
-
-Familiar has no accent pair yet. Its artwork has not been produced, so it ships with
-the shared signature until that family exists.
+| Familiar | `#52634A` | `#BACBAD` |
+| Herald | `#824631` | `#E4B098` |
+| Press | `#4D596D` | `#BAC6DD` |
+| Charter | `#70582E` | `#D9C297` |
 
 These are semantic pairs, not interchangeable decoration. The light values meet or
 exceed 4.5:1 against the light canvas; the dark companions do the same against the dark
@@ -122,8 +126,13 @@ focus treatment, compact mark, and small material details while preserving estab
 behavior and information density.
 
 - Decorative artwork stays outside dense controls and generated-media overlays.
-- Light documentation surfaces use the watercolor header. Dark products use the compact
-  mark in chrome and keep full watercolor artwork on a dedicated light surface.
+- Repository logos replace the title heading; do not add a duplicate title below them.
+- Application logos sit in the existing header, normally 44-56 CSS pixels high. Use a
+  compact mark in a narrow rail. Keep page titles as real text.
+- Select light or dark artwork from the actual application theme. Automatic SVGs are
+  for browser favicons; a manually selected application theme takes precedence in UI.
+- Never put a pale card behind a logo. Social previews and avatar uploads have their own
+  opaque exports because those surfaces require a complete image.
 - Focus is obvious, keyboard-reachable, and not encoded by color alone.
 - Corners are modest. Prefer fine rules and clear grouping to pill-shaped decoration.
 - Motion is calm and functional. Reduced-motion preferences always win.
@@ -162,6 +171,6 @@ are pinned under `brand/tooling/`. Source and generation history are in
 [`brand/PROVENANCE.md`](brand/PROVENANCE.md).
 
 Do not silently modify a master asset. Change the source or builder, rebuild all families,
-run the validator, visually inspect every header/icon, and record the change in provenance.
+run the validator, visually inspect every logo/icon, and record the change in provenance.
 A standalone trademark/artwork policy is still an explicit maintainer decision; do not
 imply that a software license makes derivative branding official.

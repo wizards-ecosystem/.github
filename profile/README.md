@@ -1,12 +1,13 @@
-<div align="center">
-
-<img src="../brand/ecosystem/ecosystem-header.png" alt="The Wizard's Ecosystem" width="100%" />
-
-# The Wizard's Ecosystem
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../brand/ecosystem/ecosystem-logo-dark.svg">
+    <img src="../brand/ecosystem/ecosystem-logo.svg" alt="The Wizard's Ecosystem" width="420">
+  </picture>
+</h1>
 
 **Software that carries its own guarantees and runs on your machine.**
 
-</div>
+
 
 We build local software for programming, media creation, and authorized security
 testing. Four projects have public releases. Four more are private while they are built.
