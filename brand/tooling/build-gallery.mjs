@@ -6,15 +6,16 @@ const { projects } = JSON.parse(
   await fs.readFile(path.join(root, "manifest.json"), "utf8"),
 );
 const descriptions = {
-  ecosystem: "The original signature, a watercolor mountain ridge, and a sweeping ink loop.",
-  ink: "A split nib and a line of ink.",
-  os: "An open mechanism around a stable axis.",
-  conclave: "Three strokes meet at one working point.",
+  ecosystem:
+    "The original signature, a watercolor mountain ridge, and a sweeping ink loop.",
+  ink: "A drawn pen nib, oxblood ink wash, and flowing lettering.",
+  os: "A watercolor armillary instrument and drawn slate lettering.",
+  conclave: "Three pens gather around a shared manuscript.",
   courier: "A tied parcel and its returning thread.",
   lyre: "Three strings held by an open frame.",
   brush: "A brush tip finishing one flowing stroke.",
   pick: "A pick and tension tool, held apart.",
-  familiar: "An attentive companion at the workbench.",
+  familiar: "An attentive sage cat and expressive drawn lettering.",
   herald: "An open horn carrying a clear voice.",
   press: "A screw press turning a record into print.",
   charter: "A scroll with a considered decision.",
@@ -33,6 +34,6 @@ await fs.writeFile(
   `<!doctype html>
 <html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Wizard's Ecosystem | Identity collection</title><link rel="icon" href="ecosystem/ecosystem-icon-auto.svg" type="image/svg+xml"><link rel="stylesheet" href="gallery.css"></head>
 <body><header><a href="#" aria-label="The Wizard's Ecosystem home"><img class="light-logo" src="ecosystem/ecosystem-logo.svg" width="340" alt=""><img class="dark-logo" src="ecosystem/ecosystem-logo-dark.svg" width="340" alt=""></a><button type="button" id="theme" aria-pressed="false">Dark canvas</button></header>
-<main><section class="intro"><p class="eyebrow">Organization identity / Edition 04</p><h1>One maker.<br><em>Distinct instruments.</em></h1><p>The mountain-and-ink organization identity is released, with the original signature and transparent watercolor artwork. Project identities are being reviewed individually against the original board; their earlier exports remain available for existing consumers.</p><nav aria-label="Brand resources"><a href="README.md">Release and review status</a><a href="../BRAND.md">Brand guide</a><a href="source/approved-sheet.png">Original board</a></nav></section><section aria-label="Organization identity and project proposals">${rows}</section><footer>The organization identity is released. The remaining project exports are earlier proposals awaiting individual replacement.</footer></main><script src="gallery.js"></script></body></html>\n`,
+<main><section class="intro"><p class="eyebrow">Complete identity collection / Edition 05</p><h1>One maker.<br><em>Distinct instruments.</em></h1><p>All twelve approved identities share the original signature, expressive drawn lettering, and transparent watercolor artwork. Full illustrations belong in README headings; compact horizontal logos and instrument marks fit application headers.</p><nav aria-label="Brand resources"><a href="README.md">Export guide</a><a href="../BRAND.md">Brand guide</a><a href="source/approved-sheet.png">Original board</a></nav></section><section aria-label="Released organization and project identities">${rows}</section><footer>All twelve identities approved and released, September 2026. Original masters and production provenance are retained.</footer></main><script src="gallery.js"></script></body></html>\n`,
 );
 console.log("Built identity gallery.");

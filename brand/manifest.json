@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "direction": "Calligraphy and watercolor: released mountain organization identity; projects under individual review",
+  "version": 5,
+  "direction": "Calligraphy and watercolor: approved original signature, drawn project lettering, and instrument marks",
   "signature": {
     "sha256": "759ee828875140b2284ca03dad26f00f947d44a16b1cd07a33edc60bdba26fd4"
   },
@@ -219,942 +219,2095 @@
       "role": "illustration",
       "transparent": true
     },
+    "ink/ink-logo.svg": {
+      "sha256": "37610f966119d4968c3640caaed71742ed03d7ce4328e7d092e9c5f5bc853448",
+      "width": 623,
+      "height": 368,
+      "bytes": 183123,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "ink/ink-logo.png": {
+      "sha256": "d37687c6c44545b4abe173d92db699cec8d6b989ac79abf5efc128d337d141b8",
+      "width": 1200,
+      "height": 709,
+      "bytes": 476218,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "ink/ink-header.svg": {
+      "sha256": "ae757850c9bd782e7bf9a1190b9d9186d361c080323421ff554814e6be739af8",
+      "width": 687,
+      "height": 164,
+      "bytes": 183113,
+      "role": "header",
+      "transparent": true,
+      "theme": "light"
+    },
+    "ink/ink-icon.svg": {
+      "sha256": "e84479ba2511e6ea5f75bb0b590fc2b848192063b837259dd3d6d4a430908850",
+      "width": 128,
+      "height": 128,
+      "bytes": 1029,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "ink/ink-icon.png": {
+      "sha256": "9f30a8f877b06774fd16213398c23d1509b5ecac9ed8878d061de1920418ef3d",
+      "width": 256,
+      "height": 256,
+      "bytes": 10678,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
     "ink/ink-art.png": {
       "sha256": "a985d731497b302ba03e3f84f9e569c9f049877c8b1736e164e7f57db8f91e07",
       "width": 583,
       "height": 328,
       "bytes": 129996,
+      "role": "illustration",
       "transparent": true,
-      "role": "illustration"
-    },
-    "ink/ink-lockup.png": {
-      "sha256": "c6fd33b5e7f63711b3aec2554845ca34dd16a0c4c46d3d9fe897217f0fbdc299",
-      "width": 1200,
-      "height": 520,
-      "bytes": 145685,
-      "transparent": true,
-      "role": "illustration"
-    },
-    "ink/ink-logo.svg": {
-      "sha256": "151b7c8ef5f970ac9fbf4f0f1634ecef98c26d731cebdaa69876099d721e4777",
-      "width": 431,
-      "height": 112,
-      "bytes": 11810,
-      "transparent": true,
-      "role": "logo",
-      "theme": "light"
-    },
-    "ink/ink-icon.svg": {
-      "sha256": "e175ea94520bebab8bace375d666915517cac458124550e5065e65b5f5a3dd14",
-      "width": 64,
-      "height": 64,
-      "bytes": 548,
-      "transparent": true,
-      "role": "icon",
       "theme": "light"
     },
     "ink/ink-logo-dark.svg": {
-      "sha256": "5a34135a78d8bf7edb05aa1135700ed8a177fc727fb2bce9ca8525fcad0069d0",
-      "width": 431,
-      "height": 112,
-      "bytes": 11810,
-      "transparent": true,
+      "sha256": "ee03e96d4af38a96dfc0934cc3309c5426efec189b0e8cc39c063daae910adc3",
+      "width": 623,
+      "height": 368,
+      "bytes": 171151,
       "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "ink/ink-logo-dark.png": {
+      "sha256": "ac86c794e0bcd5727cf8754a8aa85c735079c81d34ea564a7bc1851066803d99",
+      "width": 1200,
+      "height": 709,
+      "bytes": 504126,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "ink/ink-header-dark.svg": {
+      "sha256": "21a59176f247b4b28aaeb9c746fafe6db622c4d94437b709fb2332a34dad6f6d",
+      "width": 687,
+      "height": 164,
+      "bytes": 171141,
+      "role": "header",
+      "transparent": true,
       "theme": "dark"
     },
     "ink/ink-icon-dark.svg": {
-      "sha256": "d2e54249fb14dca565b63b6ad4997eaa165a37fc5bc95a1cb4cd802410dafb4c",
-      "width": 64,
-      "height": 64,
-      "bytes": 548,
-      "transparent": true,
+      "sha256": "6805898edef74c08e599650d39cfa188f9938350c4cbfad6fb35537a46f5e793",
+      "width": 128,
+      "height": 128,
+      "bytes": 1029,
       "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "ink/ink-icon-dark.png": {
+      "sha256": "4ebf54495f5bb0d922b8ca333dfa3110d4db2a02c71da650a3fbb5d0f506f548",
+      "width": 256,
+      "height": 256,
+      "bytes": 10423,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "ink/ink-art-dark.png": {
+      "sha256": "e38f1c018920b6ca80494e997ae190ae210229e3c075d60b6ab15b08f57c8a58",
+      "width": 583,
+      "height": 328,
+      "bytes": 121017,
+      "role": "illustration",
+      "transparent": true,
       "theme": "dark"
     },
     "ink/ink-logo-auto.svg": {
-      "sha256": "f5ea76d7260990255a04a1590239db4a46800dafb705f15fff69c41c11b45c06",
-      "width": 431,
-      "height": 112,
-      "bytes": 11988,
-      "transparent": true,
+      "sha256": "200715ab06659fa759f1c308e1424186bf65431e00ce555bc3bb79af66bc8f0d",
+      "width": 623,
+      "height": 368,
+      "bytes": 354252,
       "role": "logo",
+      "transparent": true,
       "theme": "auto"
     },
     "ink/ink-icon-auto.svg": {
-      "sha256": "2c88c55d27fa2e156dfdad226ac5b3e5de8668d692d6ae4bcde9dea73bc90e35",
-      "width": 64,
-      "height": 64,
-      "bytes": 726,
-      "transparent": true,
+      "sha256": "62beaf99316250dbd96c82f32ea2d9ab6498716a7763e4770fd0694110c82865",
+      "width": 128,
+      "height": 128,
+      "bytes": 1190,
       "role": "icon",
+      "transparent": true,
       "theme": "auto"
     },
+    "ink/ink-lockup.png": {
+      "sha256": "d37687c6c44545b4abe173d92db699cec8d6b989ac79abf5efc128d337d141b8",
+      "width": 1200,
+      "height": 709,
+      "bytes": 476218,
+      "role": "illustration",
+      "transparent": true
+    },
     "ink/ink-social.svg": {
-      "sha256": "6085d1a00c0a7bda8124ae20871b15c85f2f2aa29032e19576c65b60dffc152d",
+      "sha256": "cc28b1c22dbb40a710939b0d6c88e5ee77e8c975311ec081e7f5682cf69779a6",
       "width": 1200,
       "height": 630,
-      "bytes": 23109,
-      "role": "social"
+      "bytes": 194421,
+      "role": "social",
+      "transparent": false
     },
     "ink/ink-social.png": {
-      "sha256": "cf17ede125d2943acadeec18da2c63166783e12ea7588c92ae67caa151420c0b",
+      "sha256": "a6e8c5bdfa7bebeb685c5a8fa446aa756d462111c1e342d5bf6947afc0e4bbcb",
       "width": 1200,
       "height": 630,
-      "bytes": 41649,
-      "role": "social"
+      "bytes": 227537,
+      "role": "social",
+      "transparent": false
     },
     "ink/ink-avatar.png": {
-      "sha256": "752afb699248fe4213a97f61114ce80d2ad66dce9a652f944f75e325f2d540eb",
+      "sha256": "b83d5637f285027d507fd5e1a0ff1262e5c4a9823a9cc74beac082cd394a4106",
       "width": 500,
       "height": 500,
-      "bytes": 8917,
-      "role": "avatar"
+      "bytes": 22477,
+      "role": "avatar",
+      "transparent": false
     },
-    "os/os-art.png": {
-      "sha256": "d3cdef393b57ad906d595af5a2eca310a80679072363ef64fa512e95ce2671fa",
-      "width": 1116,
-      "height": 623,
-      "bytes": 501510,
-      "transparent": true,
-      "role": "illustration"
+    "ink/apple-touch-icon.png": {
+      "sha256": "85da1b5a85fc46c8db9949ff76ba79f72389274fa46db629797d4e8523b18c95",
+      "width": 180,
+      "height": 180,
+      "bytes": 6421,
+      "role": "touch-icon",
+      "transparent": false
     },
-    "os/os-lockup.png": {
-      "sha256": "448ec7ab8c7ef78af8e4e10e0ccf78465a88242323760be0ef459d770ef1fed1",
-      "width": 1200,
-      "height": 520,
-      "bytes": 158914,
-      "transparent": true,
-      "role": "illustration"
+    "ink/favicon-16.png": {
+      "sha256": "fe3f22c0a83c43a5a9e973be601ef98023d905a9e7f574eedeed6e3367dac701",
+      "width": 16,
+      "height": 16,
+      "bytes": 502,
+      "role": "favicon",
+      "transparent": true
+    },
+    "ink/favicon-32.png": {
+      "sha256": "83a11e0b5b7480541ac8daee61e9baa2e42f98f1a48e804747d11b52fe375344",
+      "width": 32,
+      "height": 32,
+      "bytes": 1154,
+      "role": "favicon",
+      "transparent": true
+    },
+    "ink/favicon.ico": {
+      "sha256": "e663c08feb1cd8ccac31ef4ed7be28c1639d53b001b4aef9b24590f8c80bee7f",
+      "width": 256,
+      "height": 256,
+      "bytes": 10700,
+      "role": "favicon",
+      "transparent": true
     },
     "os/os-logo.svg": {
-      "sha256": "ce0f8a0fe6c1265bd4313eb0a2658db0aaca68feb9ea9fe0227b7c3616e0e9c1",
-      "width": 431,
-      "height": 112,
-      "bytes": 11532,
-      "transparent": true,
+      "sha256": "184b8a48901dc4877e04d7d0811e076e91f7bd176f7f28c8849e52a56fe3fa7a",
+      "width": 1140,
+      "height": 844,
+      "bytes": 689705,
       "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "os/os-logo.png": {
+      "sha256": "938a5b029f527cfce911e4e166c6f01986d3e6357a5570e52186a64f6923aa4e",
+      "width": 1200,
+      "height": 888,
+      "bytes": 569835,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "os/os-header.svg": {
+      "sha256": "1e5dd65b0f92ab5e6f8950bea4b39f549874fbacdfcc9654f997557349ee294a",
+      "width": 689,
+      "height": 164,
+      "bytes": 689674,
+      "role": "header",
+      "transparent": true,
       "theme": "light"
     },
     "os/os-icon.svg": {
-      "sha256": "12f063ce7a253fc4c78066a12cd3f7121089eaecfd49cc8fbe3834c50a236fce",
-      "width": 64,
-      "height": 64,
-      "bytes": 489,
-      "transparent": true,
+      "sha256": "2a3588e17694be5d6366c511b6f36a5165ea0ddbea95884a3d8e08980e58129a",
+      "width": 128,
+      "height": 128,
+      "bytes": 1006,
       "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "os/os-icon.png": {
+      "sha256": "b58ca3e0967f4ff82cfd58135b9ef3891a69878bd25577ea7051d00c7747bac0",
+      "width": 256,
+      "height": 256,
+      "bytes": 14575,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "os/os-art.png": {
+      "sha256": "b69e78bf1e55211013051013a0c1aee25cddf42b2a64c799600c419ee89483c2",
+      "width": 1100,
+      "height": 614,
+      "bytes": 509917,
+      "role": "illustration",
+      "transparent": true,
       "theme": "light"
     },
     "os/os-logo-dark.svg": {
-      "sha256": "7e04a79602aa14bc72a9751d2b79b7c56e7a64b17d59adab54e8cce7e39c99fb",
-      "width": 431,
-      "height": 112,
-      "bytes": 11532,
-      "transparent": true,
+      "sha256": "023e64d2167d3d2c7890275c9f93911b077251c72a52f44ec42edddeead2b068",
+      "width": 1140,
+      "height": 844,
+      "bytes": 713565,
       "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "os/os-logo-dark.png": {
+      "sha256": "dc8ee669a7dac5b6297abb92d34c86cd6281e479bbfdf60075d1629f59e87241",
+      "width": 1200,
+      "height": 888,
+      "bytes": 680788,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "os/os-header-dark.svg": {
+      "sha256": "b414cbd9964eee2d8355bb5c19827964b527744770d1933a02e4759641269a55",
+      "width": 689,
+      "height": 164,
+      "bytes": 713534,
+      "role": "header",
+      "transparent": true,
       "theme": "dark"
     },
     "os/os-icon-dark.svg": {
-      "sha256": "b4fa67c6f775779c2ad228bab36629f0cb36154ac45003b95960e9b8abce7d09",
-      "width": 64,
-      "height": 64,
-      "bytes": 489,
-      "transparent": true,
+      "sha256": "ea70f575ee89f587181beeedd7b1b41ac19e6cd0d77e9b6c52b324b358f6b741",
+      "width": 128,
+      "height": 128,
+      "bytes": 1006,
       "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "os/os-icon-dark.png": {
+      "sha256": "2343c590a9c15bea727adcced53900ab5f7e8e0a9d2387cd4ffca840eda999bd",
+      "width": 256,
+      "height": 256,
+      "bytes": 14330,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "os/os-art-dark.png": {
+      "sha256": "abd750e74eb7027de4ee2fc6a9f21db4af41975515e2a505649a3fcf44530fc7",
+      "width": 1100,
+      "height": 614,
+      "bytes": 527814,
+      "role": "illustration",
+      "transparent": true,
       "theme": "dark"
     },
     "os/os-logo-auto.svg": {
-      "sha256": "4e08ac9cf8fe4c2d4761075d62808f3e3ea4c1d1d43c4208d82a99634fa3f09d",
-      "width": 431,
-      "height": 112,
-      "bytes": 11710,
-      "transparent": true,
+      "sha256": "439f41f03fd6e20c4b2469ce59cb397002f14e6c7f395c309da6a7781d6fe643",
+      "width": 1140,
+      "height": 844,
+      "bytes": 1403247,
       "role": "logo",
+      "transparent": true,
       "theme": "auto"
     },
     "os/os-icon-auto.svg": {
-      "sha256": "415d3943efe22f0ae0258021db8c40f0cbd120e1eba68210680ca02309819449",
-      "width": 64,
-      "height": 64,
-      "bytes": 667,
-      "transparent": true,
+      "sha256": "5ef3597a3aa4b560bf578e9a5a39369dfc0c24a0a08798e559c8a59381983af8",
+      "width": 128,
+      "height": 128,
+      "bytes": 1167,
       "role": "icon",
+      "transparent": true,
       "theme": "auto"
     },
+    "os/os-lockup.png": {
+      "sha256": "938a5b029f527cfce911e4e166c6f01986d3e6357a5570e52186a64f6923aa4e",
+      "width": 1200,
+      "height": 888,
+      "bytes": 569835,
+      "role": "illustration",
+      "transparent": true
+    },
     "os/os-social.svg": {
-      "sha256": "0f5dc343886ca12601be8ece2b9ca41c53cd7a6d097a295b1497f315a95397a6",
+      "sha256": "506416fd24b1fc28746bdc6bb96b949ade1176a5d10736db87209c9a4d524bf7",
       "width": 1200,
       "height": 630,
-      "bytes": 11675,
-      "role": "social"
+      "bytes": 689846,
+      "role": "social",
+      "transparent": false
     },
     "os/os-social.png": {
-      "sha256": "5308823fad4f9c326a86f55ca99e68e0805457fb8745e9f98179e132bde3b03e",
+      "sha256": "e801c853926d0e68fc37614fb5757724d18db443954b2808ada1d55f41f2b6d1",
       "width": 1200,
       "height": 630,
-      "bytes": 34064,
-      "role": "social"
+      "bytes": 226704,
+      "role": "social",
+      "transparent": false
     },
     "os/os-avatar.png": {
-      "sha256": "394df5738fe198f94f11bd04fac7b65de96a36c53f9161ee0a6ababb15f06fda",
+      "sha256": "a00ff9612e89e5bd68761f666d1260c12c2e6c0fcf17831f75328c71ea1c5973",
       "width": 500,
       "height": 500,
-      "bytes": 10175,
-      "role": "avatar"
+      "bytes": 28273,
+      "role": "avatar",
+      "transparent": false
     },
-    "conclave/conclave-art.png": {
-      "sha256": "ef3aa840b91132f6c8ad6d504fdc1249e95edf11614012f2fafb73e33d694a93",
-      "width": 1430,
-      "height": 619,
-      "bytes": 408243,
-      "transparent": true,
-      "role": "illustration"
+    "os/apple-touch-icon.png": {
+      "sha256": "acc27b9acd1b2b4a7d065796775f7e1e85bc5402c476e06a7b4e403e615f95e5",
+      "width": 180,
+      "height": 180,
+      "bytes": 8466,
+      "role": "touch-icon",
+      "transparent": false
     },
-    "conclave/conclave-lockup.png": {
-      "sha256": "2a7335418aa982e489fe2d6738f760301e29e94fbb5bb24649aa2d799d073834",
-      "width": 1200,
-      "height": 520,
-      "bytes": 140256,
-      "transparent": true,
-      "role": "illustration"
+    "os/favicon-16.png": {
+      "sha256": "cd657256065efbf5718b386a415d9bca04f21cb41681da17af7659dfcb520d46",
+      "width": 16,
+      "height": 16,
+      "bytes": 711,
+      "role": "favicon",
+      "transparent": true
+    },
+    "os/favicon-32.png": {
+      "sha256": "2eed93f4ea5e2aaabb2b6b66070b3a7e561cb9656e90dcd3151386e5d701195d",
+      "width": 32,
+      "height": 32,
+      "bytes": 1664,
+      "role": "favicon",
+      "transparent": true
+    },
+    "os/favicon.ico": {
+      "sha256": "49ddfaa85b99d0d517c13264f958261fbd85d72491efa4b5eedaa213ecc8b03f",
+      "width": 256,
+      "height": 256,
+      "bytes": 14597,
+      "role": "favicon",
+      "transparent": true
     },
     "conclave/conclave-logo.svg": {
-      "sha256": "fb25b51b96425c0d2dfad0699212cde6b0b01383b29ed112375835fa3a112a31",
-      "width": 590,
-      "height": 112,
-      "bytes": 15051,
-      "transparent": true,
+      "sha256": "97c54ea93157fff95d9b31a8f81807ae30504aa30dc30e2003895f373debee11",
+      "width": 1140,
+      "height": 706,
+      "bytes": 366795,
       "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "conclave/conclave-logo.png": {
+      "sha256": "5c83f90fbc5aa737d8e82dde18b579b54911defaeb5f0c778895542b5e542a44",
+      "width": 1200,
+      "height": 743,
+      "bytes": 310326,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "conclave/conclave-header.svg": {
+      "sha256": "eba558a5d66f9cf8c8d562d38cc9cb88f6fb632f6497b9d96a08995fb6c89f34",
+      "width": 762,
+      "height": 164,
+      "bytes": 366766,
+      "role": "header",
+      "transparent": true,
       "theme": "light"
     },
     "conclave/conclave-icon.svg": {
-      "sha256": "7a7baf6556571438d2dca809ef60e5a6d4d471549ad5d2ae07e45081da535c2e",
-      "width": 64,
-      "height": 64,
-      "bytes": 437,
-      "transparent": true,
+      "sha256": "fe42b912ea7d5745e01e54f851fb58daf07d7cadeb06f35c68f097d02ebf0f5f",
+      "width": 128,
+      "height": 128,
+      "bytes": 1134,
       "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "conclave/conclave-icon.png": {
+      "sha256": "2c0a160a93bcf5c4a054ea5684c741c2a876b7c1ffbffd97c91faa2d79eea800",
+      "width": 256,
+      "height": 256,
+      "bytes": 12957,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "conclave/conclave-art.png": {
+      "sha256": "5f056f98f6ee688b0cacb6a98366742a44a86fba6ee82d316e282ad9e22dbe16",
+      "width": 1100,
+      "height": 476,
+      "bytes": 267730,
+      "role": "illustration",
+      "transparent": true,
       "theme": "light"
     },
     "conclave/conclave-logo-dark.svg": {
-      "sha256": "bec9e163e50c9554992697606306373ad3fede8d4e571b91924a2f862a2e14a5",
-      "width": 590,
-      "height": 112,
-      "bytes": 15051,
-      "transparent": true,
+      "sha256": "bd495c1c1cba7b22a9a5201fc72581eb2daa102f741eaf8c8d5e621ab9ec4279",
+      "width": 1140,
+      "height": 706,
+      "bytes": 371983,
       "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "conclave/conclave-logo-dark.png": {
+      "sha256": "689b8cfd2183b62bb53f22bb8da32b5c820d6ce2369189e8c6787426ac5d65f2",
+      "width": 1200,
+      "height": 743,
+      "bytes": 366845,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "conclave/conclave-header-dark.svg": {
+      "sha256": "30e5f361d36021569528f97ba41469d0a0c6217c280aa9058a6b0108ab78c6aa",
+      "width": 762,
+      "height": 164,
+      "bytes": 371954,
+      "role": "header",
+      "transparent": true,
       "theme": "dark"
     },
     "conclave/conclave-icon-dark.svg": {
-      "sha256": "aa430c6f7c411a9752cc53d51203a5f66cda916657c9a2fb93c233683300cf25",
-      "width": 64,
-      "height": 64,
-      "bytes": 437,
-      "transparent": true,
+      "sha256": "d6a9128b11bf5b0d3835c0e1be640e38a6035fd3d001bbd40e5c17400250b65d",
+      "width": 128,
+      "height": 128,
+      "bytes": 1134,
       "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "conclave/conclave-icon-dark.png": {
+      "sha256": "f67131b78ae9f1bb5f2b5651a6a26d694251a3e21099ac26aeed2d622fe7985b",
+      "width": 256,
+      "height": 256,
+      "bytes": 11904,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "conclave/conclave-art-dark.png": {
+      "sha256": "3a99655b02f6bf279d4556c185475c1ff96903454eaba6034afbe27f110cb934",
+      "width": 1100,
+      "height": 476,
+      "bytes": 271621,
+      "role": "illustration",
+      "transparent": true,
       "theme": "dark"
     },
     "conclave/conclave-logo-auto.svg": {
-      "sha256": "66fc4009f257a8fe1d32edea3bfbef801163ed79be5f1bae1dff78af11a27f8a",
-      "width": 590,
-      "height": 112,
-      "bytes": 15229,
-      "transparent": true,
+      "sha256": "d3cfd272fe220d47fa276a346253f6320f6deef25d76d58f93b99530dec625a1",
+      "width": 1140,
+      "height": 706,
+      "bytes": 738749,
       "role": "logo",
+      "transparent": true,
       "theme": "auto"
     },
     "conclave/conclave-icon-auto.svg": {
-      "sha256": "c9ad22757016409aa0cd2d0cfb2a6137bb33b7564d9c89a8d25d723fd8d11e0c",
-      "width": 64,
-      "height": 64,
-      "bytes": 615,
-      "transparent": true,
+      "sha256": "66258aff2022ea930f894a44c014cf8058c832cc18eb0eb93ac90f5f94c70d8a",
+      "width": 128,
+      "height": 128,
+      "bytes": 1295,
       "role": "icon",
+      "transparent": true,
       "theme": "auto"
     },
+    "conclave/conclave-lockup.png": {
+      "sha256": "5c83f90fbc5aa737d8e82dde18b579b54911defaeb5f0c778895542b5e542a44",
+      "width": 1200,
+      "height": 743,
+      "bytes": 310326,
+      "role": "illustration",
+      "transparent": true
+    },
     "conclave/conclave-social.svg": {
-      "sha256": "a5a136fb98c4f2dc3b5af1666880e30d60c4f28aca107c4f41e5036d93b77ffc",
+      "sha256": "76def14cba87e440fd81ec0c5033c381c74bd8d980e7bccaad54935b6c748ad8",
       "width": 1200,
       "height": 630,
-      "bytes": 15194,
-      "role": "social"
+      "bytes": 366935,
+      "role": "social",
+      "transparent": false
     },
     "conclave/conclave-social.png": {
-      "sha256": "575df906e30e510459874dacd5db4585856f021a09e1c6185b64838c8ba1be67",
+      "sha256": "9846d4f1874f1423fbaf19b790e830da02c09b20dffedb1f4e09ca34c73ff133",
       "width": 1200,
       "height": 630,
-      "bytes": 32090,
-      "role": "social"
+      "bytes": 175020,
+      "role": "social",
+      "transparent": false
     },
     "conclave/conclave-avatar.png": {
-      "sha256": "42d6091422c391508fd34464f89fcfbe8ce28144837fbabd430552a17debf996",
+      "sha256": "974393125267da24b6e82f317cffc30f05a98ca84163edb7351c73d9859d5abb",
       "width": 500,
       "height": 500,
-      "bytes": 9493,
-      "role": "avatar"
+      "bytes": 26081,
+      "role": "avatar",
+      "transparent": false
     },
-    "courier/courier-art.png": {
-      "sha256": "0c374d0256c3aa3ff1372fdfe9c0ad52c9771fffe65ebf38854c40a27846b069",
-      "width": 1355,
-      "height": 443,
-      "bytes": 441584,
-      "transparent": true,
-      "role": "illustration"
+    "conclave/apple-touch-icon.png": {
+      "sha256": "1c359bd9204eda3f74c1f6b57a0326ee1765e282dd0e0740fc0cc6e4e46de2c7",
+      "width": 180,
+      "height": 180,
+      "bytes": 8327,
+      "role": "touch-icon",
+      "transparent": false
     },
-    "courier/courier-lockup.png": {
-      "sha256": "f25bf1e142bc719f04bdccab2822eaeadb51f779f187fbbbafbec8bb4938b90d",
-      "width": 1200,
-      "height": 520,
-      "bytes": 247753,
-      "transparent": true,
-      "role": "illustration"
+    "conclave/favicon-16.png": {
+      "sha256": "794aeb36830bbf9f42571065b0e7f815aebe30687e4385167b08b933b458db54",
+      "width": 16,
+      "height": 16,
+      "bytes": 699,
+      "role": "favicon",
+      "transparent": true
+    },
+    "conclave/favicon-32.png": {
+      "sha256": "268f01296d653ee071b8345fc28193f2c2718acc55d194ab38d251f7bfbcdbc8",
+      "width": 32,
+      "height": 32,
+      "bytes": 1688,
+      "role": "favicon",
+      "transparent": true
+    },
+    "conclave/favicon.ico": {
+      "sha256": "28c13a57475c14b486bd9de2b1f4d847a759e4970a729de6a0a5d0abf16260c2",
+      "width": 256,
+      "height": 256,
+      "bytes": 12979,
+      "role": "favicon",
+      "transparent": true
     },
     "courier/courier-logo.svg": {
-      "sha256": "1cdd832990a84d475880fc29b17d022f611c3b141ea0ab9a56a6ff6d0018185a",
-      "width": 553,
-      "height": 112,
-      "bytes": 14602,
-      "transparent": true,
+      "sha256": "5893d81d380f3a44e3fda7b4f38bfd1ff93b382f73b672e1eeef206b5e706207",
+      "width": 1140,
+      "height": 590,
+      "bytes": 433270,
       "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "courier/courier-logo.png": {
+      "sha256": "2155d190480245cc847577e61336385415a06bd64b45e3e3dc3ae8c4fadb5d45",
+      "width": 1200,
+      "height": 621,
+      "bytes": 367390,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "courier/courier-header.svg": {
+      "sha256": "42b93a0f4afd9b73e69ea77f6436e6ae625ccfa57c990f07f5d77fb8e2dfd13e",
+      "width": 866,
+      "height": 164,
+      "bytes": 433241,
+      "role": "header",
+      "transparent": true,
       "theme": "light"
     },
     "courier/courier-icon.svg": {
-      "sha256": "85bb5df6a568028de92b6a700501bc2f47f342539691e26c08ca381f5d0a25f9",
-      "width": 64,
-      "height": 64,
-      "bytes": 543,
-      "transparent": true,
+      "sha256": "b6b70a3da3f57188631f7bc2e2c42ad6a16f3edee1428cdc25bd960a188ccdce",
+      "width": 128,
+      "height": 128,
+      "bytes": 942,
       "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "courier/courier-icon.png": {
+      "sha256": "fced8edb59231bd4f4b1fb5fe3a0217b165793ed43a1442e8a0957703bc97d19",
+      "width": 256,
+      "height": 256,
+      "bytes": 14535,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "courier/courier-art.png": {
+      "sha256": "bbd0be5a85517fa93e984d99646ba40eee069495e77968ab9e10753b6f6fb7fa",
+      "width": 1100,
+      "height": 360,
+      "bytes": 317589,
+      "role": "illustration",
+      "transparent": true,
       "theme": "light"
     },
     "courier/courier-logo-dark.svg": {
-      "sha256": "41d5724798e8378c729138c2858893ec2f5918d78e30bc98b27cf74ae1b87a38",
-      "width": 553,
-      "height": 112,
-      "bytes": 14602,
-      "transparent": true,
+      "sha256": "4ebb5251a22428999f8a659eb4de62fc6747cf844e367ef20004f2bf31d50b0c",
+      "width": 1140,
+      "height": 590,
+      "bytes": 431254,
       "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "courier/courier-logo-dark.png": {
+      "sha256": "639fb64b4bb11442d6bccbf2b7257ebebacde17a5ec37ac8b875fc7d903676b1",
+      "width": 1200,
+      "height": 621,
+      "bytes": 406432,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "courier/courier-header-dark.svg": {
+      "sha256": "37f3f13d7724baa470d766756ffe35f2f877b9e14db1b1148d91b886f0e109c8",
+      "width": 866,
+      "height": 164,
+      "bytes": 431225,
+      "role": "header",
+      "transparent": true,
       "theme": "dark"
     },
     "courier/courier-icon-dark.svg": {
-      "sha256": "43a3b8f041e78c7ca2c1dcd48621225ebf1447f22621017e712227976e6d2474",
-      "width": 64,
-      "height": 64,
-      "bytes": 543,
-      "transparent": true,
+      "sha256": "66d0e64f9d9c8014fdc2ee811320375fac577d085e66e0268145bed0231c92e9",
+      "width": 128,
+      "height": 128,
+      "bytes": 942,
       "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "courier/courier-icon-dark.png": {
+      "sha256": "581b2828275ad80de113f42489bf2db8ee95ef29fbeef421bd9fd82a8acb08ac",
+      "width": 256,
+      "height": 256,
+      "bytes": 13942,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "courier/courier-art-dark.png": {
+      "sha256": "ce615f937f7db21e2605c0b8c059a3b237ccf8e8c6499d7578b98224e8365513",
+      "width": 1100,
+      "height": 360,
+      "bytes": 316075,
+      "role": "illustration",
+      "transparent": true,
       "theme": "dark"
     },
     "courier/courier-logo-auto.svg": {
-      "sha256": "6edb49d0878d00a14a3b3e17acb5cb62c8f042b8aac5854a3036dc4ebc32e7e2",
-      "width": 553,
-      "height": 112,
-      "bytes": 14780,
-      "transparent": true,
+      "sha256": "57f6307d595369a4be6bf76396f3390844bcce6ec66b966dcebc384a2a55cc3c",
+      "width": 1140,
+      "height": 590,
+      "bytes": 864496,
       "role": "logo",
+      "transparent": true,
       "theme": "auto"
     },
     "courier/courier-icon-auto.svg": {
-      "sha256": "9a2cb3bc84a9db792d4ee0735224bcc6ec15b28a9d2f8f261d4b3a9004c8a2d6",
-      "width": 64,
-      "height": 64,
-      "bytes": 721,
-      "transparent": true,
+      "sha256": "4729a473f02a664c3813bc487f84690e63cc77c30564a0995ee7f30ca8065ddc",
+      "width": 128,
+      "height": 128,
+      "bytes": 1103,
       "role": "icon",
+      "transparent": true,
       "theme": "auto"
     },
+    "courier/courier-lockup.png": {
+      "sha256": "2155d190480245cc847577e61336385415a06bd64b45e3e3dc3ae8c4fadb5d45",
+      "width": 1200,
+      "height": 621,
+      "bytes": 367390,
+      "role": "illustration",
+      "transparent": true
+    },
     "courier/courier-social.svg": {
-      "sha256": "0fb43283028db445349f4326eb75b87669e4f97fe3e68a272b108be715568b52",
+      "sha256": "c944c2d4f98d73003c836d8ae6520bcf3146d87087101ad326b56822460ecee9",
       "width": 1200,
       "height": 630,
-      "bytes": 14746,
-      "role": "social"
+      "bytes": 433411,
+      "role": "social",
+      "transparent": false
     },
     "courier/courier-social.png": {
-      "sha256": "5a417d9ec42ee8da73dba9308fa62f952314b966d0533c40bbc17a0d5641b0f4",
+      "sha256": "6f73001c0835406e2b69d52618c61af34fe243c809e65e4dab75279a71a900d7",
       "width": 1200,
       "height": 630,
-      "bytes": 32478,
-      "role": "social"
+      "bytes": 264143,
+      "role": "social",
+      "transparent": false
     },
     "courier/courier-avatar.png": {
-      "sha256": "168733736877baacf35c0e8a504137ae070245f714b0cc2b51f7df47160e50c3",
+      "sha256": "7befca7fc59e48df6199fe8074af0a69abb8acbf733f35de4cfb0aad72bc2d39",
       "width": 500,
       "height": 500,
-      "bytes": 6680,
-      "role": "avatar"
+      "bytes": 29944,
+      "role": "avatar",
+      "transparent": false
+    },
+    "courier/apple-touch-icon.png": {
+      "sha256": "1c4331dbceedaa0a306a91c421bedc4a4da27638a71208bfad539e373fb89a59",
+      "width": 180,
+      "height": 180,
+      "bytes": 8693,
+      "role": "touch-icon",
+      "transparent": false
+    },
+    "courier/favicon-16.png": {
+      "sha256": "ab85cfcdacbdf83f9ca2ac09ac7a15d9aa0eca1425a36b9362d846373348c208",
+      "width": 16,
+      "height": 16,
+      "bytes": 709,
+      "role": "favicon",
+      "transparent": true
+    },
+    "courier/favicon-32.png": {
+      "sha256": "32b54696200d88699ab0132536c2d728aac904800169525535997e02a6baa193",
+      "width": 32,
+      "height": 32,
+      "bytes": 1688,
+      "role": "favicon",
+      "transparent": true
+    },
+    "courier/favicon.ico": {
+      "sha256": "9a4e3661ed08b4c3714f3676a7985bad63161fa8df2da91aef2ad93946edd84a",
+      "width": 256,
+      "height": 256,
+      "bytes": 14557,
+      "role": "favicon",
+      "transparent": true
+    },
+    "lyre/lyre-logo.svg": {
+      "sha256": "5b3758e96dbee8ca47afac2ea61178895dfc889e5460e1c6c679cb2a2971ef94",
+      "width": 632,
+      "height": 395,
+      "bytes": 204628,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "lyre/lyre-logo.png": {
+      "sha256": "2e88a31c54b24e5677536d77cfc0e16a3db958cd263994499320074cfa1b6ceb",
+      "width": 1200,
+      "height": 750,
+      "bytes": 535252,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "lyre/lyre-header.svg": {
+      "sha256": "70fe411f27c2893e01301b1b4649aa85215d5a38ad47ce06a6e17eebb27830f0",
+      "width": 672,
+      "height": 164,
+      "bytes": 204618,
+      "role": "header",
+      "transparent": true,
+      "theme": "light"
+    },
+    "lyre/lyre-icon.svg": {
+      "sha256": "2978c6e38507ce76ca4b68366587f9ba396d3d2f1762190938034a214d285c84",
+      "width": 128,
+      "height": 128,
+      "bytes": 1127,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "lyre/lyre-icon.png": {
+      "sha256": "ab5d5408b4617083571d52865e528337326d805a6464056f3f872f850a5bd8f8",
+      "width": 256,
+      "height": 256,
+      "bytes": 15802,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
     },
     "lyre/lyre-art.png": {
       "sha256": "fd5feed1ace8e9435950ecf69269a404059b7f33aaeeff031056bcc36a13948b",
       "width": 592,
       "height": 355,
       "bytes": 146124,
+      "role": "illustration",
       "transparent": true,
-      "role": "illustration"
-    },
-    "lyre/lyre-lockup.png": {
-      "sha256": "f3ee03444ec13e0440891220c551dc3637984f49aedacfcfb802afe773b7d7be",
-      "width": 1200,
-      "height": 520,
-      "bytes": 145036,
-      "transparent": true,
-      "role": "illustration"
-    },
-    "lyre/lyre-logo.svg": {
-      "sha256": "f4b1ae62ceb24d5aa91b982119cea43a61c5f1126d1dfc7428208c8673465278",
-      "width": 462,
-      "height": 112,
-      "bytes": 12580,
-      "transparent": true,
-      "role": "logo",
-      "theme": "light"
-    },
-    "lyre/lyre-icon.svg": {
-      "sha256": "e4519f39da82c90411e8631f4fde0fbe1fd93147cd4297d652c0b1161f149fb0",
-      "width": 64,
-      "height": 64,
-      "bytes": 444,
-      "transparent": true,
-      "role": "icon",
       "theme": "light"
     },
     "lyre/lyre-logo-dark.svg": {
-      "sha256": "41991cdeed516a5068b0ca569fe4afb930eaa2991022ff5003bc5cab94126c59",
-      "width": 462,
-      "height": 112,
-      "bytes": 12580,
-      "transparent": true,
+      "sha256": "6322196fff8007d361f523c0229623396747176ef58025c540de08188751eb26",
+      "width": 632,
+      "height": 395,
+      "bytes": 214456,
       "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "lyre/lyre-logo-dark.png": {
+      "sha256": "d39eebcc2a18ed38deb141d93fa4b2ff522b8e878f20157b694d56dbc5422d33",
+      "width": 1200,
+      "height": 750,
+      "bytes": 661723,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "lyre/lyre-header-dark.svg": {
+      "sha256": "aa7d43260069d9aa445bbf58487678e19e3c68620aa27be481b1073223fa5bc1",
+      "width": 672,
+      "height": 164,
+      "bytes": 214446,
+      "role": "header",
+      "transparent": true,
       "theme": "dark"
     },
     "lyre/lyre-icon-dark.svg": {
-      "sha256": "3d9d852f9e22aa6af483a745f57ca4389211eb95d221545d64804fd79c2db140",
-      "width": 64,
-      "height": 64,
-      "bytes": 444,
-      "transparent": true,
+      "sha256": "76eec8accb2ff0c9e444e056e44b1293c9a7e4a2628bf05f4446be980c3b2f54",
+      "width": 128,
+      "height": 128,
+      "bytes": 1127,
       "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "lyre/lyre-icon-dark.png": {
+      "sha256": "8c8b70f9f770169cc0ee27a3acbf7648df13ddc172ac068ba4c588edfbf5218e",
+      "width": 256,
+      "height": 256,
+      "bytes": 15462,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "lyre/lyre-art-dark.png": {
+      "sha256": "b433a7747b1cc30525bdf7c7da136f142667d1fe6a1e83094fe8e383a3598685",
+      "width": 592,
+      "height": 355,
+      "bytes": 153493,
+      "role": "illustration",
+      "transparent": true,
       "theme": "dark"
     },
     "lyre/lyre-logo-auto.svg": {
-      "sha256": "a32e4709d00c21c9cf8f847bade14a07045f573b534268523e2c4c69e3554793",
-      "width": 462,
-      "height": 112,
-      "bytes": 12758,
-      "transparent": true,
+      "sha256": "31af9f50a74f5c150c0dd476f1b680796e307cc792e206ed49314b371b0befa6",
+      "width": 632,
+      "height": 395,
+      "bytes": 419061,
       "role": "logo",
+      "transparent": true,
       "theme": "auto"
     },
     "lyre/lyre-icon-auto.svg": {
-      "sha256": "ae0167fadeba1b04c2a64a2dfb24600f5f84ab5f7471cbd78d3425a5554c33b7",
-      "width": 64,
-      "height": 64,
-      "bytes": 622,
-      "transparent": true,
+      "sha256": "31b2d2e9d9d3a6affaee23845a7d43e8b5882213bf3405d5719491b1603cc1ba",
+      "width": 128,
+      "height": 128,
+      "bytes": 1288,
       "role": "icon",
+      "transparent": true,
       "theme": "auto"
     },
+    "lyre/lyre-lockup.png": {
+      "sha256": "2e88a31c54b24e5677536d77cfc0e16a3db958cd263994499320074cfa1b6ceb",
+      "width": 1200,
+      "height": 750,
+      "bytes": 535252,
+      "role": "illustration",
+      "transparent": true
+    },
     "lyre/lyre-social.svg": {
-      "sha256": "e584205ca1fc6da2f532247e8a0626bedfe4fbb8a1eedcff4defe03e421d6de4",
+      "sha256": "c0da0b9a90818e6c3e00f9a2155902bc50f2223fdb9f31366636939ce9df8797",
       "width": 1200,
       "height": 630,
-      "bytes": 12724,
-      "role": "social"
+      "bytes": 204756,
+      "role": "social",
+      "transparent": false
     },
     "lyre/lyre-social.png": {
-      "sha256": "00228165c7c31fa69150e46cf6ace421beb583ae4a70d6401c18f5690fb55a33",
+      "sha256": "62881ffea461bb146bd4f996685f113ebff0ef1b011077bab725488a82ff07c5",
       "width": 1200,
       "height": 630,
-      "bytes": 33185,
-      "role": "social"
+      "bytes": 286591,
+      "role": "social",
+      "transparent": false
     },
     "lyre/lyre-avatar.png": {
-      "sha256": "98571680d64c7cbf693e9a1785b664f3e9355cdd0ea0c23ac5304a3f1a98edf2",
+      "sha256": "388df5b562db8bfb6b8fba3418677b45fb29ce54222e9d7c46205c981fff97f3",
       "width": 500,
       "height": 500,
-      "bytes": 8603,
-      "role": "avatar"
+      "bytes": 30617,
+      "role": "avatar",
+      "transparent": false
+    },
+    "lyre/apple-touch-icon.png": {
+      "sha256": "77dfa15138584ebd5f8e23d306daf8745443a5f9b8f302c295964b3e856e9e99",
+      "width": 180,
+      "height": 180,
+      "bytes": 9062,
+      "role": "touch-icon",
+      "transparent": false
+    },
+    "lyre/favicon-16.png": {
+      "sha256": "a95937659618fe54ff344a721e02c9b2d82564e9fff4ef4d5fa368f916b06a24",
+      "width": 16,
+      "height": 16,
+      "bytes": 668,
+      "role": "favicon",
+      "transparent": true
+    },
+    "lyre/favicon-32.png": {
+      "sha256": "f5175632384e898fca075ac74c4ff4fdfeb6a02a2374c3fc3a809e79eda07edf",
+      "width": 32,
+      "height": 32,
+      "bytes": 1652,
+      "role": "favicon",
+      "transparent": true
+    },
+    "lyre/favicon.ico": {
+      "sha256": "9687b089f0171b91963c48d2087969188b967271604ec47e69d3d006ef8658f4",
+      "width": 256,
+      "height": 256,
+      "bytes": 15824,
+      "role": "favicon",
+      "transparent": true
+    },
+    "brush/brush-logo.svg": {
+      "sha256": "41048abf704fea4a73dcc66bd73a898fa8d24b8301bf6cf43fc4d2b023a26df7",
+      "width": 679,
+      "height": 495,
+      "bytes": 208369,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "brush/brush-logo.png": {
+      "sha256": "d508dac078ba67d74be7bda6d7e55db34107e5d417bcf1fc5f0b67f02000f51c",
+      "width": 1200,
+      "height": 875,
+      "bytes": 484846,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "brush/brush-header.svg": {
+      "sha256": "115cb5e3f782a5d8c040ddde63bd34196f669903d3fcbd9d3f668948c24c7eda",
+      "width": 725,
+      "height": 164,
+      "bytes": 208342,
+      "role": "header",
+      "transparent": true,
+      "theme": "light"
+    },
+    "brush/brush-icon.svg": {
+      "sha256": "c686eeae3f0d933ed0ba0d91619ac7682def20adb8c2d95d9418021b4a896bd6",
+      "width": 128,
+      "height": 128,
+      "bytes": 957,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "brush/brush-icon.png": {
+      "sha256": "2942e60c0ccbf9dce8c150f9da87ac479c4174f60a434a33b7871268f2cbd057",
+      "width": 256,
+      "height": 256,
+      "bytes": 8548,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
     },
     "brush/brush-art.png": {
       "sha256": "2eec191afdcc226528a7b87fa19f89352a6d5873bc6f75c2196d1722b45b3567",
       "width": 639,
       "height": 312,
       "bytes": 148917,
+      "role": "illustration",
       "transparent": true,
-      "role": "illustration"
-    },
-    "brush/brush-lockup.png": {
-      "sha256": "ec5ad0a78ea8c91fea733d10ec83ff107d31ca2778786f7fd1e9ae1790c0ca94",
-      "width": 1200,
-      "height": 520,
-      "bytes": 178862,
-      "transparent": true,
-      "role": "illustration"
-    },
-    "brush/brush-logo.svg": {
-      "sha256": "7ead956d1017659177f7911c11fa98859b32ebb204d08cd076ba6eaaad4a93f1",
-      "width": 502,
-      "height": 112,
-      "bytes": 13509,
-      "transparent": true,
-      "role": "logo",
-      "theme": "light"
-    },
-    "brush/brush-icon.svg": {
-      "sha256": "ad7f80ba8eaf38c77e5e9f300fa599350b8e32762681346217956a9d144fbfaf",
-      "width": 64,
-      "height": 64,
-      "bytes": 560,
-      "transparent": true,
-      "role": "icon",
       "theme": "light"
     },
     "brush/brush-logo-dark.svg": {
-      "sha256": "b99c70db8fbc021f26b82f1ce15c187cd8bc6e733102904973a9174201ac0716",
-      "width": 502,
-      "height": 112,
-      "bytes": 13509,
-      "transparent": true,
+      "sha256": "1d15e8e52e830cbfb9ac77f27d21cd149abc65cbf8dabe6e0c4acb6fec7310b2",
+      "width": 679,
+      "height": 495,
+      "bytes": 193613,
       "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "brush/brush-logo-dark.png": {
+      "sha256": "8b0e650aed74a6e5f9d0e1e0f71994f17ebeea105010936a6538eb826a3a7d40",
+      "width": 1200,
+      "height": 875,
+      "bytes": 489844,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "brush/brush-header-dark.svg": {
+      "sha256": "1f5b42a647807d5d2795a202cf53a60d90f5cddc1c5f20923bd68c4dcd756892",
+      "width": 725,
+      "height": 164,
+      "bytes": 193586,
+      "role": "header",
+      "transparent": true,
       "theme": "dark"
     },
     "brush/brush-icon-dark.svg": {
-      "sha256": "cb189e0edc6ef2c28c3d6c2da5c8e48e916ea9d1f4e787ad6248481c52fd22d3",
-      "width": 64,
-      "height": 64,
-      "bytes": 560,
-      "transparent": true,
+      "sha256": "4219dfdad8b4efe9e904a68c9a323693f79ba1917e037ee8888851079f2c34f3",
+      "width": 128,
+      "height": 128,
+      "bytes": 957,
       "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "brush/brush-icon-dark.png": {
+      "sha256": "56bd748ef7979cced37413249467d3d4da5e92a575381c5f309d82e6385a7e76",
+      "width": 256,
+      "height": 256,
+      "bytes": 8404,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "brush/brush-art-dark.png": {
+      "sha256": "cac5d7b1dbb7f618dd7a3cfed9942e0b7122de068ef6e06504d15ab7d7b30114",
+      "width": 639,
+      "height": 312,
+      "bytes": 137849,
+      "role": "illustration",
+      "transparent": true,
       "theme": "dark"
     },
     "brush/brush-logo-auto.svg": {
-      "sha256": "2933b9a53079b0925fb6cacc8e35fb6c688836351bf83644355f0dcab4338a0b",
-      "width": 502,
-      "height": 112,
-      "bytes": 13687,
-      "transparent": true,
+      "sha256": "410fa0e7fded40b8beadd3b5bf0b7fef5e34e35d64d6d18f5093fb3ac2482743",
+      "width": 679,
+      "height": 495,
+      "bytes": 401958,
       "role": "logo",
+      "transparent": true,
       "theme": "auto"
     },
     "brush/brush-icon-auto.svg": {
-      "sha256": "90e2ca805f20d767f0f3fe12f3fda4f03db2414da7e7a9147cb7b51874ec86d1",
-      "width": 64,
-      "height": 64,
-      "bytes": 738,
-      "transparent": true,
+      "sha256": "d97926d6dca5d148ac104badc918f45518884cac5d0b060f5a992ac0dcfcdabd",
+      "width": 128,
+      "height": 128,
+      "bytes": 1118,
       "role": "icon",
+      "transparent": true,
       "theme": "auto"
     },
+    "brush/brush-lockup.png": {
+      "sha256": "d508dac078ba67d74be7bda6d7e55db34107e5d417bcf1fc5f0b67f02000f51c",
+      "width": 1200,
+      "height": 875,
+      "bytes": 484846,
+      "role": "illustration",
+      "transparent": true
+    },
     "brush/brush-social.svg": {
-      "sha256": "e1360769af38d472d53ae01f43ef215f37aa755a99caf512f1d8a2430e238625",
+      "sha256": "81a30c785b8173161792527b0c785408c7c69fc1f2e7448f86df2e5a3847483d",
       "width": 1200,
       "height": 630,
-      "bytes": 13653,
-      "role": "social"
+      "bytes": 208512,
+      "role": "social",
+      "transparent": false
     },
     "brush/brush-social.png": {
-      "sha256": "12388964507f6a99e15c13e0826854d39904e12fd96a1149908ccd0fc16c2ce3",
+      "sha256": "4d775e876264a096b6eb06127a65be8774a8979a5f860b293ba058225d35a233",
       "width": 1200,
       "height": 630,
-      "bytes": 33847,
-      "role": "social"
+      "bytes": 194783,
+      "role": "social",
+      "transparent": false
     },
     "brush/brush-avatar.png": {
-      "sha256": "2a487609e161dfb5622c7f79b19cca7a02b7060721f5d0cb3d2d69814f5906cd",
+      "sha256": "b82e30d8542f67c6439f1ec61f499daf8d3f8b636461cf329023886c975d3213",
       "width": 500,
       "height": 500,
-      "bytes": 10554,
-      "role": "avatar"
+      "bytes": 20515,
+      "role": "avatar",
+      "transparent": false
+    },
+    "brush/apple-touch-icon.png": {
+      "sha256": "12c9547df0797a223771db5dc6ca17c92a55ff5b917de68a4ecc277d13e43cbf",
+      "width": 180,
+      "height": 180,
+      "bytes": 5697,
+      "role": "touch-icon",
+      "transparent": false
+    },
+    "brush/favicon-16.png": {
+      "sha256": "d41ced8470ba9d5e2bbdae3a144f97d9d44408eab0c755bee3bdb0dc1aa1b00c",
+      "width": 16,
+      "height": 16,
+      "bytes": 500,
+      "role": "favicon",
+      "transparent": true
+    },
+    "brush/favicon-32.png": {
+      "sha256": "676f4d6e49657b6d0400e439af9af0adbdafb26af369b8bb50c138ffed2e6cee",
+      "width": 32,
+      "height": 32,
+      "bytes": 1125,
+      "role": "favicon",
+      "transparent": true
+    },
+    "brush/favicon.ico": {
+      "sha256": "af7538f34e18d9cc923d41363a8f6927bbafe58e30dd69ed14ea16e8f3218667",
+      "width": 256,
+      "height": 256,
+      "bytes": 8570,
+      "role": "favicon",
+      "transparent": true
+    },
+    "pick/pick-logo.svg": {
+      "sha256": "718f5f433716696c8f8968ab7a02e4874e9488e75eefe5dec40e766aa01e08c7",
+      "width": 587,
+      "height": 432,
+      "bytes": 104448,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "pick/pick-logo.png": {
+      "sha256": "1a29184c8e3f91ddd2628c39cd0d9bd3b44289e9575963c93afa8c79674a9b95",
+      "width": 1200,
+      "height": 883,
+      "bytes": 307837,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "pick/pick-header.svg": {
+      "sha256": "bdb1ddcdb83c810e06b5854d069d4707bdd61639438fadcc8a739087ba963693",
+      "width": 724,
+      "height": 164,
+      "bytes": 104422,
+      "role": "header",
+      "transparent": true,
+      "theme": "light"
+    },
+    "pick/pick-icon.svg": {
+      "sha256": "0dd2972771a1bdb606eb5a2dad20d9e42f44c60abc1e44571690de1c5a95540b",
+      "width": 128,
+      "height": 128,
+      "bytes": 855,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "pick/pick-icon.png": {
+      "sha256": "d96d17c37e1fd169ed5a8d2b9747c392b56e0a42a417e9e8b755e11a507ea875",
+      "width": 256,
+      "height": 256,
+      "bytes": 12152,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
     },
     "pick/pick-art.png": {
       "sha256": "e2bf787f8bb66cafeb097af7d0c3a7941cf066c931baf3e823f9c94ec3d00da4",
       "width": 547,
       "height": 268,
       "bytes": 70976,
+      "role": "illustration",
       "transparent": true,
-      "role": "illustration"
-    },
-    "pick/pick-lockup.png": {
-      "sha256": "b5b8943de06227498370ab7cf97b92d8a7442f71ba663c76c6e662d65de6b766",
-      "width": 1200,
-      "height": 520,
-      "bytes": 102331,
-      "transparent": true,
-      "role": "illustration"
-    },
-    "pick/pick-logo.svg": {
-      "sha256": "7f5b1055584ab43701ae6306ae9c4f3f009855e2c0ba7d76f20a5aa5fe7dce3f",
-      "width": 459,
-      "height": 112,
-      "bytes": 12527,
-      "transparent": true,
-      "role": "logo",
-      "theme": "light"
-    },
-    "pick/pick-icon.svg": {
-      "sha256": "81e49284cb95655809c233afe56b4d31bc2faf7843ac34c89ce75d684282d0cc",
-      "width": 64,
-      "height": 64,
-      "bytes": 589,
-      "transparent": true,
-      "role": "icon",
       "theme": "light"
     },
     "pick/pick-logo-dark.svg": {
-      "sha256": "83880568107655325d271aa3e27ece24f2df8b84d11bbb8a0211084a188a2314",
-      "width": 459,
-      "height": 112,
-      "bytes": 12527,
-      "transparent": true,
+      "sha256": "2409d4833ffc1dae34fb5a8d318834a9681c0107a3bcf4648fb1ec952814b668",
+      "width": 587,
+      "height": 432,
+      "bytes": 109700,
       "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "pick/pick-logo-dark.png": {
+      "sha256": "9282ff9bda22386b759b971b954224a937f835d9559bb21c0a9a703d1f2f1a8e",
+      "width": 1200,
+      "height": 883,
+      "bytes": 393254,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "pick/pick-header-dark.svg": {
+      "sha256": "42d5ae4fe5ceb69157955336d546bef5a04feb3b4087168dec3d1ca78a1150a6",
+      "width": 724,
+      "height": 164,
+      "bytes": 109674,
+      "role": "header",
+      "transparent": true,
       "theme": "dark"
     },
     "pick/pick-icon-dark.svg": {
-      "sha256": "a771a10a5eef710a362d4ed6fe218f66cc6cb0ea998d278341fef250c86523a8",
-      "width": 64,
-      "height": 64,
-      "bytes": 589,
-      "transparent": true,
+      "sha256": "6cf668cfba127db4373301bf6e86b4f8b1ec2bc768b4d7d124488a325afadc51",
+      "width": 128,
+      "height": 128,
+      "bytes": 855,
       "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "pick/pick-icon-dark.png": {
+      "sha256": "5b1ea80f92443f2e8d8d71da437005e8ac31bbd3e402b44d461d3c0def6ebc75",
+      "width": 256,
+      "height": 256,
+      "bytes": 11473,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "pick/pick-art-dark.png": {
+      "sha256": "d5be6c924277d9c2d7401b5c0d43457f6f483323bf2d7a7100110320f9b7d356",
+      "width": 547,
+      "height": 268,
+      "bytes": 74915,
+      "role": "illustration",
+      "transparent": true,
       "theme": "dark"
     },
     "pick/pick-logo-auto.svg": {
-      "sha256": "1119ed09b122d310f8e0248812db2ce659a66e1dd2ba6522a055cc44df01baf1",
-      "width": 459,
-      "height": 112,
-      "bytes": 12705,
-      "transparent": true,
+      "sha256": "97a009932ab7d5c99919e9277f67e0d1164bafba5700c09f5a16af8e5adbb4d1",
+      "width": 587,
+      "height": 432,
+      "bytes": 214125,
       "role": "logo",
+      "transparent": true,
       "theme": "auto"
     },
     "pick/pick-icon-auto.svg": {
-      "sha256": "ca4aaadbfea0fb6c7dd8bbd189cc145e1426f8540242fdd6060733e72a432cde",
-      "width": 64,
-      "height": 64,
-      "bytes": 767,
-      "transparent": true,
+      "sha256": "d7c461fca74b4891256eb9e9173b9fffc063ac56e8a5e7e04972365c18b14f84",
+      "width": 128,
+      "height": 128,
+      "bytes": 1016,
       "role": "icon",
+      "transparent": true,
       "theme": "auto"
     },
+    "pick/pick-lockup.png": {
+      "sha256": "1a29184c8e3f91ddd2628c39cd0d9bd3b44289e9575963c93afa8c79674a9b95",
+      "width": 1200,
+      "height": 883,
+      "bytes": 307837,
+      "role": "illustration",
+      "transparent": true
+    },
     "pick/pick-social.svg": {
-      "sha256": "912675b317768140a85a0a76beb48b453dccf522d4bada4827e0f0b8ee503aa2",
+      "sha256": "4cfe89021e0d44b38f882ce397fbc456faf5eb112f2c945f77207cda6c956cb5",
       "width": 1200,
       "height": 630,
-      "bytes": 12670,
-      "role": "social"
+      "bytes": 104591,
+      "role": "social",
+      "transparent": false
     },
     "pick/pick-social.png": {
-      "sha256": "eb51837a526905983b8e8c01ba1bff8111095247b86d899b2be0691dff382673",
+      "sha256": "212d183e32a2a05ea6be608e9e34eb5b4945a6e9eb57c68d4f4b253d9f0e4bf8",
       "width": 1200,
       "height": 630,
-      "bytes": 33816,
-      "role": "social"
+      "bytes": 131416,
+      "role": "social",
+      "transparent": false
     },
     "pick/pick-avatar.png": {
-      "sha256": "9f4ab85f3e0d84d3721f5210d942d1c6df65f2b483415c51a6769a1af28a031f",
+      "sha256": "8138af567e3837f613bfe10f609d87c3920392f8cbdcdb8e9edf7b2f6c621b01",
       "width": 500,
       "height": 500,
-      "bytes": 9161,
-      "role": "avatar"
+      "bytes": 25653,
+      "role": "avatar",
+      "transparent": false
+    },
+    "pick/apple-touch-icon.png": {
+      "sha256": "496ed26df9f47e5f18c229779b7bdd9508cfdaf91a71f600c64d2c3c3a28d417",
+      "width": 180,
+      "height": 180,
+      "bytes": 7085,
+      "role": "touch-icon",
+      "transparent": false
+    },
+    "pick/favicon-16.png": {
+      "sha256": "3fb06cfadef274ee48ffc36d49f002cee17135292e8c3fdc01e7ab24d6775486",
+      "width": 16,
+      "height": 16,
+      "bytes": 557,
+      "role": "favicon",
+      "transparent": true
+    },
+    "pick/favicon-32.png": {
+      "sha256": "672b48a92d38b92dc8d1c3e75d1d834029c871c2ec9baf02a32aee4ae4d97cec",
+      "width": 32,
+      "height": 32,
+      "bytes": 1347,
+      "role": "favicon",
+      "transparent": true
+    },
+    "pick/favicon.ico": {
+      "sha256": "9b1ce380ceded43f9de02185a2714bd6a623bf565c338b5f043bb0de97bb4156",
+      "width": 256,
+      "height": 256,
+      "bytes": 12174,
+      "role": "favicon",
+      "transparent": true
     },
     "familiar/familiar-logo.svg": {
-      "sha256": "6986c94a9fe5ccc0a4fc617b276c9659c0228007437b6a13441537a17935499a",
-      "width": 579,
-      "height": 112,
-      "bytes": 15077,
-      "transparent": true,
+      "sha256": "28d3eda0b8dc5df8c6d7ea3a33d323ff6c8a2c14612f4d71250624f1917ce457",
+      "width": 1140,
+      "height": 670,
+      "bytes": 648091,
       "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "familiar/familiar-logo.png": {
+      "sha256": "7cb9be89b34fd60393965ec4e8f4aee95190218c45dc7e7cb93f29b1e01ed5b0",
+      "width": 1200,
+      "height": 705,
+      "bytes": 571132,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "familiar/familiar-header.svg": {
+      "sha256": "aac705ebeb767e25b094fdfb6f5f54bbe71bc2b1089bb0c501d2b003eaed5eb5",
+      "width": 788,
+      "height": 164,
+      "bytes": 648047,
+      "role": "header",
+      "transparent": true,
       "theme": "light"
     },
     "familiar/familiar-icon.svg": {
-      "sha256": "11b9c0b957179533940f05fc87117228e52415556d911eef22ec5b41e141825a",
-      "width": 64,
-      "height": 64,
-      "bytes": 490,
-      "transparent": true,
+      "sha256": "235d150b2fddea8a3877fd3eaa0ca6c38b620659b68ed26721acd2ebd3061353",
+      "width": 128,
+      "height": 128,
+      "bytes": 1077,
       "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "familiar/familiar-icon.png": {
+      "sha256": "9c8f7e976ceb3164449bc614d9eb2f90adec171f3ae011e6ebbef525d4e1dbc4",
+      "width": 256,
+      "height": 256,
+      "bytes": 11096,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "familiar/familiar-art.png": {
+      "sha256": "c6c49b80f9ab1d17c72450c16e601e0169c84a0065afa1849499e2729f554067",
+      "width": 1100,
+      "height": 440,
+      "bytes": 478703,
+      "role": "illustration",
+      "transparent": true,
       "theme": "light"
     },
     "familiar/familiar-logo-dark.svg": {
-      "sha256": "85bc15074ed9e2c4496303541c80fb300b1f0bbe94ad38a23048b01e3df00aa0",
-      "width": 579,
-      "height": 112,
-      "bytes": 15077,
-      "transparent": true,
+      "sha256": "bd803427a08c9fafe014ed322a904d152b9e1774471f6c1e33fe5ec1c740dff7",
+      "width": 1140,
+      "height": 670,
+      "bytes": 606955,
       "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "familiar/familiar-logo-dark.png": {
+      "sha256": "ac7eb69104a85e67ddd195710da96c6e0a53c1afe56080f6daa428a815dfcb6a",
+      "width": 1200,
+      "height": 705,
+      "bytes": 527402,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "familiar/familiar-header-dark.svg": {
+      "sha256": "d0241119a8d57dd0115d3b200cbf30a65beefa777bb5088e8fa679852a066c1a",
+      "width": 788,
+      "height": 164,
+      "bytes": 606911,
+      "role": "header",
+      "transparent": true,
       "theme": "dark"
     },
     "familiar/familiar-icon-dark.svg": {
-      "sha256": "bd4ccde7355a231e746cb558eb22d675eb8a2037b3b9f6ffdc38678d0861f002",
-      "width": 64,
-      "height": 64,
-      "bytes": 490,
-      "transparent": true,
+      "sha256": "8a9de02ca75c5910802eac7ac59cc5a68b669e2b4f21976a1db19e87d14f5c53",
+      "width": 128,
+      "height": 128,
+      "bytes": 1077,
       "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "familiar/familiar-icon-dark.png": {
+      "sha256": "22005982821e8417ad47e7a01b3dd66374ba19d44ed2d988cd856f2c9681c623",
+      "width": 256,
+      "height": 256,
+      "bytes": 11777,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "familiar/familiar-art-dark.png": {
+      "sha256": "0e69550ae6b9a550039e80c3d4a13c95fc03aad850dff8628a3f81138de46c01",
+      "width": 1100,
+      "height": 440,
+      "bytes": 447852,
+      "role": "illustration",
+      "transparent": true,
       "theme": "dark"
     },
     "familiar/familiar-logo-auto.svg": {
-      "sha256": "be4b06e839d8975809626daeb17758eb4c0a400cb143ae2cbfeb711881b641c2",
-      "width": 579,
-      "height": 112,
-      "bytes": 15255,
-      "transparent": true,
+      "sha256": "38d3032c3a4d7c1b4969097f56a8426c2763f52f38bcd65af8388aa29e7206ca",
+      "width": 1140,
+      "height": 670,
+      "bytes": 1255017,
       "role": "logo",
+      "transparent": true,
       "theme": "auto"
     },
     "familiar/familiar-icon-auto.svg": {
-      "sha256": "1a0820e51b8cc0a9c25ceead80b742de67eb155969a27cfce002109416ad3748",
-      "width": 64,
-      "height": 64,
-      "bytes": 668,
-      "transparent": true,
+      "sha256": "024f05e61d1e036a68a364c3d302f4a5d5527c369cd6baae87ee1c0440f56418",
+      "width": 128,
+      "height": 128,
+      "bytes": 1238,
       "role": "icon",
+      "transparent": true,
       "theme": "auto"
     },
+    "familiar/familiar-lockup.png": {
+      "sha256": "7cb9be89b34fd60393965ec4e8f4aee95190218c45dc7e7cb93f29b1e01ed5b0",
+      "width": 1200,
+      "height": 705,
+      "bytes": 571132,
+      "role": "illustration",
+      "transparent": true
+    },
     "familiar/familiar-social.svg": {
-      "sha256": "199c85fb6e3e72c22cb591f227895f9d5288a76f5148dae8b3c84e76c9ce81d6",
+      "sha256": "d1c09985280d8c287c74ffe192189b021141e2a22538d59cb353ea24213360c6",
       "width": 1200,
       "height": 630,
-      "bytes": 15221,
-      "role": "social"
+      "bytes": 648232,
+      "role": "social",
+      "transparent": false
     },
     "familiar/familiar-social.png": {
-      "sha256": "e76ef7a90b5840482ea302564f3e371d62b3ce17dc134cddf0f30946176ae845",
+      "sha256": "cb8663c6b94609d07f6c4a54302e5e48be379796aa9b6084d8e49c528f5c996d",
       "width": 1200,
       "height": 630,
-      "bytes": 33112,
-      "role": "social"
+      "bytes": 283150,
+      "role": "social",
+      "transparent": false
     },
     "familiar/familiar-avatar.png": {
-      "sha256": "fca05bc0b7358afe633dad4e7e51f86c6eb076fc44dd667629f37af9e3b079a8",
+      "sha256": "286266a5e69a91968d476ca9f110b180344b3b98203340e39de6969a4bb80a8a",
       "width": 500,
       "height": 500,
-      "bytes": 10266,
-      "role": "avatar"
+      "bytes": 22525,
+      "role": "avatar",
+      "transparent": false
+    },
+    "familiar/apple-touch-icon.png": {
+      "sha256": "972e57a756c7056c7eca8273b2060d683f196f8897bb6ee7d257f4c4d6903f39",
+      "width": 180,
+      "height": 180,
+      "bytes": 6988,
+      "role": "touch-icon",
+      "transparent": false
+    },
+    "familiar/favicon-16.png": {
+      "sha256": "cce76bb281be94edf7b25ed4e8593d764c0550c4228265137527b8f58273f581",
+      "width": 16,
+      "height": 16,
+      "bytes": 651,
+      "role": "favicon",
+      "transparent": true
+    },
+    "familiar/favicon-32.png": {
+      "sha256": "8b71743e677431611b42104201bee7e6c845c69ccd4523b17e054d3cbe31fe3c",
+      "width": 32,
+      "height": 32,
+      "bytes": 1460,
+      "role": "favicon",
+      "transparent": true
+    },
+    "familiar/favicon.ico": {
+      "sha256": "621debb53ee3dffa4f0f2aa6242a60b881074bb263360330900bf5e23e9ac616",
+      "width": 256,
+      "height": 256,
+      "bytes": 11118,
+      "role": "favicon",
+      "transparent": true
     },
     "herald/herald-logo.svg": {
-      "sha256": "f04260a1463bb0d3710ea4768a76098d44437aca2d8345fb2d0acb216e27c540",
-      "width": 531,
-      "height": 112,
-      "bytes": 13541,
-      "transparent": true,
+      "sha256": "b092091e137a320039ce552034d27831c303c69434ee20ad59affe0b731cea9f",
+      "width": 1140,
+      "height": 614,
+      "bytes": 510709,
       "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "herald/herald-logo.png": {
+      "sha256": "66bb3d74989e98ba074c6b6f43f11ffcaa256b0efd0a617c2aa612efbb455f70",
+      "width": 1200,
+      "height": 646,
+      "bytes": 453709,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "herald/herald-header.svg": {
+      "sha256": "82fac0c8ba299fb07bc5c544a49738fd9a87352b47c72aaca72a825f6e2c27e2",
+      "width": 840,
+      "height": 164,
+      "bytes": 510679,
+      "role": "header",
+      "transparent": true,
       "theme": "light"
     },
     "herald/herald-icon.svg": {
-      "sha256": "67d5348deac6b7bced8c991de27e8ed41391338f435c2273f5ecb69cf4ccf620",
-      "width": 64,
-      "height": 64,
-      "bytes": 422,
-      "transparent": true,
+      "sha256": "58f7d4d42d0584155a98b8442e6499342984e2a30bb3062d53623bdd90da292d",
+      "width": 128,
+      "height": 128,
+      "bytes": 1149,
       "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "herald/herald-icon.png": {
+      "sha256": "f71c017a39cf0df28451c27c0f7996fae60e9a7f3dc82fd20aef89a61cf16a97",
+      "width": 256,
+      "height": 256,
+      "bytes": 13566,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "herald/herald-art.png": {
+      "sha256": "405a19e34b0dd8a350eaad906c48f0c248dae6eac73881d8f2296c807a34ffad",
+      "width": 1100,
+      "height": 384,
+      "bytes": 375668,
+      "role": "illustration",
+      "transparent": true,
       "theme": "light"
     },
     "herald/herald-logo-dark.svg": {
-      "sha256": "c156f449e5d16bd284e9d9213a07e4592c33afbbb7050b93a398b71d84b49dbc",
-      "width": 531,
-      "height": 112,
-      "bytes": 13541,
-      "transparent": true,
+      "sha256": "7653b05fc17c02060f18806c4949108b08c9648e255caf354aae6086dc96bcf4",
+      "width": 1140,
+      "height": 614,
+      "bytes": 445793,
       "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "herald/herald-logo-dark.png": {
+      "sha256": "175cc8feebd8192215b88164f28e8ef2669334b72efa3983d356045e6c7db201",
+      "width": 1200,
+      "height": 646,
+      "bytes": 394158,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "herald/herald-header-dark.svg": {
+      "sha256": "14835a719abcaf78084f8130639ad2be9e53e77da3271f56ebb9d2eadbd0004c",
+      "width": 840,
+      "height": 164,
+      "bytes": 445763,
+      "role": "header",
+      "transparent": true,
       "theme": "dark"
     },
     "herald/herald-icon-dark.svg": {
-      "sha256": "d0c7dd59f343e3863f927b48ac8e6148b33bd8975b2f87ead8703e7fe4a5a3eb",
-      "width": 64,
-      "height": 64,
-      "bytes": 422,
-      "transparent": true,
+      "sha256": "f8881e92b74d484845a18185c55f4ca79214292e9ca92926651c5a7f9180fee6",
+      "width": 128,
+      "height": 128,
+      "bytes": 1149,
       "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "herald/herald-icon-dark.png": {
+      "sha256": "ccc84bbfa878181a0d155298fcb3824ccf88200f82d70f9d78ae2b07f0cc32a3",
+      "width": 256,
+      "height": 256,
+      "bytes": 13242,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "herald/herald-art-dark.png": {
+      "sha256": "847d264531a6b15a953b5621a5c143760730e3076896b917a76ae231f955a477",
+      "width": 1100,
+      "height": 384,
+      "bytes": 326980,
+      "role": "illustration",
+      "transparent": true,
       "theme": "dark"
     },
     "herald/herald-logo-auto.svg": {
-      "sha256": "56d44ba84ea4837a5588344766b0978b0f9ce83e6269d69241634e21ef6f0fbb",
-      "width": 531,
-      "height": 112,
-      "bytes": 13719,
-      "transparent": true,
+      "sha256": "6cb6deeaed9fe484216a67a07561c0585f9beac6983f1761e5035284492a5332",
+      "width": 1140,
+      "height": 614,
+      "bytes": 956475,
       "role": "logo",
+      "transparent": true,
       "theme": "auto"
     },
     "herald/herald-icon-auto.svg": {
-      "sha256": "cfbddc16fca9f805abbdfac72eebc372f4e71155a02f41d523e52daf5b1e8324",
-      "width": 64,
-      "height": 64,
-      "bytes": 600,
-      "transparent": true,
+      "sha256": "8e174aa75590a0867854368558182c0ac9e41984fe76f3d92f7628f7fe8d47df",
+      "width": 128,
+      "height": 128,
+      "bytes": 1310,
       "role": "icon",
+      "transparent": true,
       "theme": "auto"
     },
+    "herald/herald-lockup.png": {
+      "sha256": "66bb3d74989e98ba074c6b6f43f11ffcaa256b0efd0a617c2aa612efbb455f70",
+      "width": 1200,
+      "height": 646,
+      "bytes": 453709,
+      "role": "illustration",
+      "transparent": true
+    },
     "herald/herald-social.svg": {
-      "sha256": "00eaf1730488d383f60805950f88b5b322fa996b1b9b6623e609dc7e61ee1db1",
+      "sha256": "c05c4ff962640e7adb2bcd8daa7492ed39aec0e3098f269e1d87ae5211994983",
       "width": 1200,
       "height": 630,
-      "bytes": 13684,
-      "role": "social"
+      "bytes": 510850,
+      "role": "social",
+      "transparent": false
     },
     "herald/herald-social.png": {
-      "sha256": "e2236e0035bb98054006aa15822d3173d061a97484cf3ff576210c9117a6d2b0",
+      "sha256": "ed32c1791ed455e107927b09e683ca7483e532de8b28c6b86e9d0d6fb63e0649",
       "width": 1200,
       "height": 630,
-      "bytes": 32822,
-      "role": "social"
+      "bytes": 264847,
+      "role": "social",
+      "transparent": false
     },
     "herald/herald-avatar.png": {
-      "sha256": "636ecb648bf65339c4358f189395f9c64201f11cebfbca0fe758ab855f3ecba4",
+      "sha256": "4826a000ab4f87f25b8784633c3d89ada460114f068f77ba66084836518224dd",
       "width": 500,
       "height": 500,
-      "bytes": 5856,
-      "role": "avatar"
+      "bytes": 26730,
+      "role": "avatar",
+      "transparent": false
+    },
+    "herald/apple-touch-icon.png": {
+      "sha256": "8040b455d91c008e2205120c2e0bea7df8792425f92be7c44be7c7f0e98817ea",
+      "width": 180,
+      "height": 180,
+      "bytes": 7791,
+      "role": "touch-icon",
+      "transparent": false
+    },
+    "herald/favicon-16.png": {
+      "sha256": "5a4fed94de31b622359216ca96bcb7e00b64a285d2fd58c356a4abeb29ffbab2",
+      "width": 16,
+      "height": 16,
+      "bytes": 588,
+      "role": "favicon",
+      "transparent": true
+    },
+    "herald/favicon-32.png": {
+      "sha256": "8470c2352ed7cfee89e4d04a0d35da4a4a89f8b51510333f93460610e69f7ad3",
+      "width": 32,
+      "height": 32,
+      "bytes": 1408,
+      "role": "favicon",
+      "transparent": true
+    },
+    "herald/favicon.ico": {
+      "sha256": "441aac284e9756f2836881f2f320cf3ad582c02b96b3e5b0b968ea221c81614d",
+      "width": 256,
+      "height": 256,
+      "bytes": 13588,
+      "role": "favicon",
+      "transparent": true
     },
     "press/press-logo.svg": {
-      "sha256": "81bc3a1fde4198d6120b434bb76d08e94c267ed6ae1bb4abb772cd3530a9013d",
-      "width": 480,
-      "height": 112,
-      "bytes": 13447,
-      "transparent": true,
+      "sha256": "7b5fa67afd59b655810119b33ff05b475fd14687aa6cf78c9cf03f6c1fe1e736",
+      "width": 1140,
+      "height": 651,
+      "bytes": 620668,
       "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "press/press-logo.png": {
+      "sha256": "1985e75aca0018886b86ca898c1a3da600db59680ffbab4bdebd2e71ddc8b0b5",
+      "width": 1200,
+      "height": 685,
+      "bytes": 542399,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "press/press-header.svg": {
+      "sha256": "f6cf009943883b0ad8a740c72a5dcd3de4a47d4f8a22c19697c5514613f0222f",
+      "width": 804,
+      "height": 164,
+      "bytes": 620638,
+      "role": "header",
+      "transparent": true,
       "theme": "light"
     },
     "press/press-icon.svg": {
-      "sha256": "9f6b08ca9d85eb50e1a0d47e4a7702ce472045b43e16e62dd9ea47f6795d0b1e",
-      "width": 64,
-      "height": 64,
-      "bytes": 452,
-      "transparent": true,
+      "sha256": "4475a0cb908d916f13188b8330777875e9caa1181442877f515ce543279f1557",
+      "width": 128,
+      "height": 128,
+      "bytes": 1278,
       "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "press/press-icon.png": {
+      "sha256": "b956dde5de1adca7dcb16ae549f4908ad349ca32adf9b244baf2e579a8400f86",
+      "width": 256,
+      "height": 256,
+      "bytes": 7323,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "press/press-art.png": {
+      "sha256": "4b93133f2a92997c70d61f76323ad1e2d24885f5f48364748de54b4a42ff7071",
+      "width": 1100,
+      "height": 421,
+      "bytes": 458139,
+      "role": "illustration",
+      "transparent": true,
       "theme": "light"
     },
     "press/press-logo-dark.svg": {
-      "sha256": "770691ad768e34bb8756bb741b0bcedb882da7fc61a463a7f8d5f0420d11ad48",
-      "width": 480,
-      "height": 112,
-      "bytes": 13447,
-      "transparent": true,
+      "sha256": "39a64d730bd43a2a4aba9b2211d2ddb1e143a0ce40b67c6070ba02bed8bea5c5",
+      "width": 1140,
+      "height": 651,
+      "bytes": 591660,
       "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "press/press-logo-dark.png": {
+      "sha256": "30868076f3283f29bc1395fd10926ca7521de102c2e53f33fcad53f448b4c1f3",
+      "width": 1200,
+      "height": 685,
+      "bytes": 510567,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "press/press-header-dark.svg": {
+      "sha256": "f80e353f45180ab7d5586f5fcb41f1399f0bc76be390463ab0da4617de3ecefe",
+      "width": 804,
+      "height": 164,
+      "bytes": 591630,
+      "role": "header",
+      "transparent": true,
       "theme": "dark"
     },
     "press/press-icon-dark.svg": {
-      "sha256": "921c6997e73bd4152fe4556049fe67608c8bb063eef84111107bb40ad715f93d",
-      "width": 64,
-      "height": 64,
-      "bytes": 452,
-      "transparent": true,
+      "sha256": "1944873b8d3011bc99b04d3942b6663887768290bcc39879448c582d598823b1",
+      "width": 128,
+      "height": 128,
+      "bytes": 1278,
       "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "press/press-icon-dark.png": {
+      "sha256": "f6a4694338c73541b1e617b66cbee793b4c4d781cd64b0887054ee60a60c5074",
+      "width": 256,
+      "height": 256,
+      "bytes": 6905,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "press/press-art-dark.png": {
+      "sha256": "362af8055d107c027c8cc56584f6c00a2649c057cba95635ad94063a403b0f50",
+      "width": 1100,
+      "height": 421,
+      "bytes": 436381,
+      "role": "illustration",
+      "transparent": true,
       "theme": "dark"
     },
     "press/press-logo-auto.svg": {
-      "sha256": "fb45582fd97b09f285ddba1494f0a34e8a71e9768e8a4000e1488da7c64b943a",
-      "width": 480,
-      "height": 112,
-      "bytes": 13625,
-      "transparent": true,
+      "sha256": "de0b83029860051fc0990217ec4d6f7f56b49fbdfa446e9211a5e64e167aab03",
+      "width": 1140,
+      "height": 651,
+      "bytes": 1212302,
       "role": "logo",
+      "transparent": true,
       "theme": "auto"
     },
     "press/press-icon-auto.svg": {
-      "sha256": "519dadb2f6f5d72612f027f6af6d19c15fa115dd11b38e945835bebd6c85750d",
-      "width": 64,
-      "height": 64,
-      "bytes": 630,
-      "transparent": true,
+      "sha256": "02618ec01d5118bf9a42771e23577a13a195e2efb555d1fd417cd94a09eaf908",
+      "width": 128,
+      "height": 128,
+      "bytes": 1439,
       "role": "icon",
+      "transparent": true,
       "theme": "auto"
     },
+    "press/press-lockup.png": {
+      "sha256": "1985e75aca0018886b86ca898c1a3da600db59680ffbab4bdebd2e71ddc8b0b5",
+      "width": 1200,
+      "height": 685,
+      "bytes": 542399,
+      "role": "illustration",
+      "transparent": true
+    },
     "press/press-social.svg": {
-      "sha256": "f67dd4e2c2a0238b300572baf0ec3d85a7b539fb03f519d241f16b788ec07c5b",
+      "sha256": "82c17ff15decdce61b067be4c58ce31544b3c70e42d4e6ae635e216c3026e863",
       "width": 1200,
       "height": 630,
-      "bytes": 13591,
-      "role": "social"
+      "bytes": 620809,
+      "role": "social",
+      "transparent": false
     },
     "press/press-social.png": {
-      "sha256": "fb8ecc65395d66eacc6b0cce8ccdb8c7f7c36685e89d50ec25257d17c2b7744b",
+      "sha256": "4b99b78174bc7942d10b5e5a05ee9611acc1fa95088df519dcced42b310cf046",
       "width": 1200,
       "height": 630,
-      "bytes": 31327,
-      "role": "social"
+      "bytes": 292318,
+      "role": "social",
+      "transparent": false
     },
     "press/press-avatar.png": {
-      "sha256": "2032c3a5614470db9d901b88fef468e5eba3b9fe34009f331502d7a0bb38e3ea",
+      "sha256": "4f6537ea86d0e0b39515cb2cbd26073e1b6954bdb108ee9998265e57015ff993",
       "width": 500,
       "height": 500,
-      "bytes": 3725,
-      "role": "avatar"
+      "bytes": 16963,
+      "role": "avatar",
+      "transparent": false
+    },
+    "press/apple-touch-icon.png": {
+      "sha256": "0dd068e81470a293387404a401c827b530d40abb46667430d1e8f3737ea2f0f9",
+      "width": 180,
+      "height": 180,
+      "bytes": 5424,
+      "role": "touch-icon",
+      "transparent": false
+    },
+    "press/favicon-16.png": {
+      "sha256": "11618100604257d89081fc9dda43e6301e333139bec1a7a6767c64d75543ab8d",
+      "width": 16,
+      "height": 16,
+      "bytes": 650,
+      "role": "favicon",
+      "transparent": true
+    },
+    "press/favicon-32.png": {
+      "sha256": "4301cbf12926f61c69a63e737ced2497d5a2610a38006901a18044b8be250221",
+      "width": 32,
+      "height": 32,
+      "bytes": 1394,
+      "role": "favicon",
+      "transparent": true
+    },
+    "press/favicon.ico": {
+      "sha256": "622dae3b37cdafcb5d1d18b489f51cccc7c56f15ddc3afb79856e35c88a7514b",
+      "width": 256,
+      "height": 256,
+      "bytes": 7345,
+      "role": "favicon",
+      "transparent": true
     },
     "charter/charter-logo.svg": {
-      "sha256": "17f38d48f0ad16fb1759a67367a0d71e826b4a030373a103a5fd3ad343055d9f",
-      "width": 557,
-      "height": 112,
-      "bytes": 14412,
-      "transparent": true,
+      "sha256": "c4c1db23e299a36171a1646f670e769b9d85d611d5c395ce90978f06f6171a23",
+      "width": 1140,
+      "height": 650,
+      "bytes": 638010,
       "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "charter/charter-logo.png": {
+      "sha256": "db454faf0a96da7a5dfd3af30942d673572682ffb8ff7faedb5c64abb86dd8fb",
+      "width": 1200,
+      "height": 684,
+      "bytes": 553804,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "charter/charter-header.svg": {
+      "sha256": "af1ea8742ebffc8f002823cc51c7943708b68dab788e452717485fc503c672a6",
+      "width": 805,
+      "height": 164,
+      "bytes": 637980,
+      "role": "header",
+      "transparent": true,
       "theme": "light"
     },
     "charter/charter-icon.svg": {
-      "sha256": "22b6c60f2b40a49f5825b51bfbc0eecef2bc09cc2ca93fa66b67c19b262edcd9",
-      "width": 64,
-      "height": 64,
-      "bytes": 459,
-      "transparent": true,
+      "sha256": "afa875d16405a852f456eae218e323748c4801b33299d6720225bb2beaba3a3a",
+      "width": 128,
+      "height": 128,
+      "bytes": 1324,
       "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "charter/charter-icon.png": {
+      "sha256": "fd89076be44b0ea9c8c34e8d7e2ad8be8ca6d649ae2804ad62245e6d2f2b586f",
+      "width": 256,
+      "height": 256,
+      "bytes": 16963,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "charter/charter-art.png": {
+      "sha256": "93002d35ed5eca79541251163929a35b33b7274105679c1b791ca2777a2a140b",
+      "width": 1100,
+      "height": 420,
+      "bytes": 471144,
+      "role": "illustration",
+      "transparent": true,
       "theme": "light"
     },
     "charter/charter-logo-dark.svg": {
-      "sha256": "4a131c9d49df45e745791b16044a22dae2a52bf9907707433a637a4c9ceffebe",
-      "width": 557,
-      "height": 112,
-      "bytes": 14412,
-      "transparent": true,
+      "sha256": "7f7f8328f8ab7e24e5826a658c72c5973e1e9036479da68c3ab22d1c0dcb7e7b",
+      "width": 1140,
+      "height": 650,
+      "bytes": 587774,
       "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "charter/charter-logo-dark.png": {
+      "sha256": "f8887de5cfc8cd35d76eab34cf394ad70dd8b830137180dd42c15be213ad4729",
+      "width": 1200,
+      "height": 684,
+      "bytes": 506714,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "charter/charter-header-dark.svg": {
+      "sha256": "5306b0aceac93397169347c94846447943b125057e0ed75403c81be8a5440639",
+      "width": 805,
+      "height": 164,
+      "bytes": 587744,
+      "role": "header",
+      "transparent": true,
       "theme": "dark"
     },
     "charter/charter-icon-dark.svg": {
-      "sha256": "2de2676a63d4f06a3558068d9fd3f226d09056d12201748f6c2513b68c75d344",
-      "width": 64,
-      "height": 64,
-      "bytes": 459,
-      "transparent": true,
+      "sha256": "c68e6c6f27211c6a294588831e09a85c1e3c5f9f80e7e5088f77b96e37920d6f",
+      "width": 128,
+      "height": 128,
+      "bytes": 1324,
       "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "charter/charter-icon-dark.png": {
+      "sha256": "d999cd6cdd1c7185ddd0cbf6eca8c904048e9235a09ae72621623c93c6c9cdd6",
+      "width": 256,
+      "height": 256,
+      "bytes": 17007,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "charter/charter-art-dark.png": {
+      "sha256": "1473fe723408b236baf56d7f471de98509cbc254387797d1737826db052ff121",
+      "width": 1100,
+      "height": 420,
+      "bytes": 433466,
+      "role": "illustration",
+      "transparent": true,
       "theme": "dark"
     },
     "charter/charter-logo-auto.svg": {
-      "sha256": "cdd37dde2a82694d2870eb0cae7dd53a98c37959ed648dad5cecb7618c12b788",
-      "width": 557,
-      "height": 112,
-      "bytes": 14590,
-      "transparent": true,
+      "sha256": "2fe7ac36c9fa40d5ee381ad01897175165c22e8bd7a19968315d1a0ac48fdf48",
+      "width": 1140,
+      "height": 650,
+      "bytes": 1225756,
       "role": "logo",
+      "transparent": true,
       "theme": "auto"
     },
     "charter/charter-icon-auto.svg": {
-      "sha256": "1fbbb21cab7f20af1087612097b62205df0b39e840606ad1ef2c09c04aca4e1a",
-      "width": 64,
-      "height": 64,
-      "bytes": 637,
-      "transparent": true,
+      "sha256": "bbd172d57ab47e944297c974f951ae229ff48a0f8ab662d3e1dd600fb00fe126",
+      "width": 128,
+      "height": 128,
+      "bytes": 1485,
       "role": "icon",
+      "transparent": true,
       "theme": "auto"
     },
+    "charter/charter-lockup.png": {
+      "sha256": "db454faf0a96da7a5dfd3af30942d673572682ffb8ff7faedb5c64abb86dd8fb",
+      "width": 1200,
+      "height": 684,
+      "bytes": 553804,
+      "role": "illustration",
+      "transparent": true
+    },
     "charter/charter-social.svg": {
-      "sha256": "8da0388728008a1147336d8fdb4dfdef1172bb3691089d625ce6ccd347f5364b",
+      "sha256": "524fe9d69e868a9f9e5a3b4c3f88bd15ad38118200067be8cd26f596734c587b",
       "width": 1200,
       "height": 630,
-      "bytes": 14556,
-      "role": "social"
+      "bytes": 638121,
+      "role": "social",
+      "transparent": false
     },
     "charter/charter-social.png": {
-      "sha256": "e5c77d4ccc4558264b40ee0db145b64515a548a09484ff4e56a6b00ff4e34925",
+      "sha256": "02933f5dc63ffa09ea98b5e75fbf40dbe1428dcbae83eaf3863d55f60f9bde8f",
       "width": 1200,
       "height": 630,
-      "bytes": 31659,
-      "role": "social"
+      "bytes": 306892,
+      "role": "social",
+      "transparent": false
     },
     "charter/charter-avatar.png": {
-      "sha256": "2efad43b0773cb245415937a86c1e1f74cef00c6262daf0b6ad55b1497e67184",
+      "sha256": "82f37b4f14a8ec7e5474a569216aa02a7d58d0e264266438c07d274e643fd470",
       "width": 500,
       "height": 500,
-      "bytes": 5320,
-      "role": "avatar"
+      "bytes": 33779,
+      "role": "avatar",
+      "transparent": false
+    },
+    "charter/apple-touch-icon.png": {
+      "sha256": "99ab3766c30c571534b4a0b6bbf2edc570a6baf8ef7e687a1dd56317933edc90",
+      "width": 180,
+      "height": 180,
+      "bytes": 10202,
+      "role": "touch-icon",
+      "transparent": false
+    },
+    "charter/favicon-16.png": {
+      "sha256": "b0abad2defa873df2b975e02cbda49363f9680072200d686659317fd6d5140fd",
+      "width": 16,
+      "height": 16,
+      "bytes": 750,
+      "role": "favicon",
+      "transparent": true
+    },
+    "charter/favicon-32.png": {
+      "sha256": "7a63752b71420c846e22f59d24aeebde2b456f4e238a4f3fea9919d9f0945427",
+      "width": 32,
+      "height": 32,
+      "bytes": 1953,
+      "role": "favicon",
+      "transparent": true
+    },
+    "charter/favicon.ico": {
+      "sha256": "c8e736b3cc41ef551d6d7c3afba20383589afdcb28262ee5b53b03fc04acd205",
+      "width": 256,
+      "height": 256,
+      "bytes": 16985,
+      "role": "favicon",
+      "transparent": true
     }
   }
 }

@@ -1,5 +1,24 @@
 # Production artwork provenance
 
+## Complete collection release, 2026-09-08
+
+The owner approved all twelve prepared identities and explicitly requested their complete
+rollout and push. Version 5 replaces the rejected typeset names and abstract symbols.
+Ink, Lyre, Brush, and Pick preserve the original board drawings; OS, Conclave, and Courier
+preserve the watercolor extensions. Familiar, Herald, Press, and Charter use the approved
+new drawings, with unchanged generated proofs and exact prompts in their source folders.
+
+Canonical transparent light/dark artwork and native icon masters live in
+`source/<project>/`. `source/project-layouts.json` records signature placement, and
+`tooling/build-projects.mjs` produces full logos, compact headers, instrument marks,
+favicons, avatars, and social previews. The exact signature remains unchanged. Paper,
+metal, wood, and fur retain their material colors in dark variants. The private collection
+mirrors these outputs; its earlier extraction recipes are archived as production history.
+
+The manifest records dimensions and hashes for every export. READMEs use transparent
+PNG variants, while applications use their own local compact SVGs. This is an identity
+release and does not change project maturity, software licensing, or trademark policy.
+
 ## Organization release, 2026-09-08
 
 The owner approved the mountain-and-ink composition and then explicitly requested its
@@ -19,7 +38,8 @@ as `source/archive/ecosystem-tool-bundle.png`; it is no longer a production inpu
 
 The owner rejected the vector refresh's typeset project names and abstract icons after
 review. The original board and option 1 signature / option 2 artwork combination remain
-the reference. Review each identity separately before replacement. The approved new
+the reference. Individual review was requested at this stage; the later complete
+collection approval above supersedes that hold. The approved new
 organization proof combines calligraphy, a mountain ridge, an ink flourish, and a spaced
 ECOSYSTEM caption. Its generated PNG has a baked checkerboard and is not a production
 master. The proof and subsequent production decisions are retained in private review.

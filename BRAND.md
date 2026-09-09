@@ -1,7 +1,7 @@
 # The Wizard's Ecosystem brand
 
-Status: organization mountain identity released, 2026-09-08. The original calligraphy and
-watercolor board defines the direction. Project identities remain under individual review.
+Status: all twelve identities approved and released, 2026-09-08. The original calligraphy
+and watercolor board defines the direction.
 
 This document is the authority for naming, visual identity, voice, and status language
 across The Wizard's Ecosystem. The distributable artwork, semantic tokens, build tools,
@@ -74,11 +74,10 @@ signature and pair the illustration with a compact mountain-and-ink favicon. The
 original RGB proof remains a source reference; its baked checkerboard is removed by
 the production extraction recipe.
 
-Review one identity with the owner before replacing its exports or moving to another
-project. Review the full logo and compact icon together at actual display sizes. The
-existing [identity collection](brand/index.html) includes the released organization set
-and earlier project proposals. Project designs still require individual review. Artwork
-says nothing about readiness.
+The owner approved the complete twelve-identity collection on 2026-09-08. The
+[identity collection](brand/index.html) contains the released illustrated logos, compact
+application headers, and instrument marks. Future redesigns should be reviewed with
+the owner at actual sizes before distribution. Artwork says nothing about readiness.
 
 ## Color
 
@@ -183,8 +182,8 @@ are pinned under `brand/tooling/`. Source and generation history are in
 [`brand/PROVENANCE.md`](brand/PROVENANCE.md).
 
 Preserve approved masters. Record the source and approval for each revised identity,
-inspect its light/dark and small-size rendering, then distribute that identity only.
-Do not rebuild and synchronize every family during individual design review. Tests should
+inspect its light/dark and small-size rendering, then distribute the approved scope.
+The current complete collection is approved for distribution. Tests should
 protect behavior, working links, licenses, and usable files; do not pin banner names,
 lettering, decorative punctuation, palette hex values, or layout choices in product tests.
 A standalone trademark/artwork policy is still an explicit maintainer decision; do not

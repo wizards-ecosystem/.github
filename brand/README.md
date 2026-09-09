@@ -2,34 +2,32 @@
 
 Identity refresh, 2026-09-08. The [original approved board](source/approved-sheet.png) is
 the visual reference for expressive calligraphy, ink drawings, and watercolor.
-The [mountain-and-ink organization identity](ecosystem/) is released, including the
-original signature, transparent light/dark logos, and a compact mountain favicon.
-The public and private README headers use its transparent PNG exports. Project identities
-continue through individual review.
-
-The [identity collection](index.html) includes the released organization set and previous
-project proposals retained for existing consumers.
+All twelve identities are approved and released. The [identity collection](index.html)
+shows the mountain organization mark and eleven illustrated project identities, each
+with the exact existing signature. READMEs use transparent PNGs; application headers
+use compact horizontal SVGs and native instrument marks.
 
 ## Choose an export
 
 | File in each project folder | Use |
 | --- | --- |
-| `*-logo.svg` | Transparent horizontal logo for light surfaces |
+| `*-logo.svg` | Transparent illustrated logo for light surfaces |
 | `*-logo-dark.svg` | The same geometry for dark surfaces |
 | `*-logo-auto.svg` | System-theme logo for surfaces without a manual theme |
-| `ecosystem-logo.png`, `ecosystem-logo-dark.png` | Transparent organization README headers |
+| `*-logo.png`, `*-logo-dark.png` | Transparent README headers for every identity |
+| `*-header.svg`, `*-header-dark.svg` | Compact horizontal project logos for application chrome |
 | `*-icon.svg`, `*-icon-dark.svg` | Backgroundless marks for rails and compact UI |
 | `*-icon-auto.svg` | A favicon that follows the browser color scheme |
 | `*-social.png` | Opaque 1200 x 630 social preview; use PNG for social crawlers |
 | `*-social.svg` | Standalone outlined source for that preview |
 | `*-avatar.png` | Opaque 500 x 500 avatar with space for circular cropping |
-| `ecosystem/favicon.ico`, `favicon-16.png`, `favicon-32.png` | Organization favicon fallbacks |
-| `ecosystem/apple-touch-icon.png` | Organization touch icon |
-| `*-art.png`, `*-lockup.png` | Original watercolor illustrations for light editorial surfaces, in the eight original families |
+| `favicon.ico`, `favicon-16.png`, `favicon-32.png` | Browser favicon fallbacks in every family folder |
+| `apple-touch-icon.png` | Touch icon with an opaque canvas |
+| `*-art.png`, `*-art-dark.png`, `*-lockup.png` | Watercolor artwork and composed editorial illustrations |
 
-Existing version 3 logos and icons contain outlined paths. Their replacements may combine
-the original [signature](signature/) with transparent watercolor artwork. The
-[watercolor sources](source/) remain intact.
+Illustrated SVGs combine the original [signature](signature/) paths with embedded
+transparent watercolor artwork. Compact icons are native vectors. The approved
+[watercolor masters](source/) retain drawn lettering and material colors.
 The retired `*-header.png` exports must not return to a README or application.
 
 ## Layout
@@ -45,8 +43,8 @@ For GitHub, select the theme with a picture element:
 ```html
 <h1 align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/ink-logo-dark.svg">
-    <img src="docs/assets/ink-logo.svg" alt="The Wizard's Ink" width="420">
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/ink-logo-dark.png">
+    <img src="docs/assets/ink-logo.png" alt="The Wizard's Ink" width="420">
   </picture>
 </h1>
 ```
@@ -60,15 +58,14 @@ and [W3C's guidance for functional images](https://www.w3.org/WAI/tutorials/imag
 
 ## Build and distribute
 
-The build reproduces the released organization identity and the retained project exports.
-Distribution is scoped to the approved identity. From this directory:
+The build reproduces the complete approved collection. From this directory:
 
 ```sh
 npm --prefix tooling ci
 npm --prefix tooling run build
 npm --prefix tooling run check
-node tooling/sync-assets.mjs --workspace /path/to/wizards-ecosystem --project ecosystem
-node tooling/sync-assets.mjs --workspace /path/to/wizards-ecosystem --project ecosystem --check
+node tooling/sync-assets.mjs --workspace /path/to/wizards-ecosystem --wsl-home /home/your-user
+node tooling/sync-assets.mjs --workspace /path/to/wizards-ecosystem --wsl-home /home/your-user --check
 ```
 
 Both roots are explicit and independent; omit one to operate on only the other.
@@ -79,7 +76,9 @@ Products serve their own local assets and never require the central checkout at 
 
 The organization source and editable mountain marks live in [source/ecosystem](source/ecosystem/).
 `tooling/build-ecosystem.mjs` owns extraction, exact-signature composition, and export.
-The retained project geometry and accent definitions live in `tooling/build-assets.mjs`.
+`tooling/build-projects.mjs` composes the eleven project families from explicit light/dark
+masters and native icon SVGs in `source/<project>/`, using `source/project-layouts.json`.
+Accent definitions and export inventory live in `tooling/build-assets.mjs`.
 [Tokens](tokens.json) expose semantic palettes, and generated [CSS](tokens.css) follows
 the system theme unless a light or dark theme is selected explicitly. Newsreader and
 Instrument Sans are bundled with their OFL texts in [fonts](fonts/).
@@ -91,7 +90,7 @@ style. Inspect approved artwork on light and dark backgrounds and at its intende
 
 ## History and policy
 
-[Provenance](PROVENANCE.md) records the original illustration work and the vector refresh.
+[Provenance](PROVENANCE.md) records approval, original illustration work, and superseded implementations.
 The private brand archive preserves the original board and options as active visual
 references alongside superseded proposals and rollout screenshots. The current
 [brand guide](../BRAND.md) distinguishes approved direction from implementation history.

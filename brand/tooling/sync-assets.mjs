@@ -18,8 +18,12 @@ const roots = { workspace: values.workspace, wsl: values["wsl-home"] };
 const consumers = JSON.parse(
   await fs.readFile(path.join(brand, "consumers.json"), "utf8"),
 );
-if (values.project && !Object.values(consumers.workspace).concat(Object.values(consumers.wsl))
-  .some((families) => values.project in families))
+if (
+  values.project &&
+  !Object.values(consumers.workspace)
+    .concat(Object.values(consumers.wsl))
+    .some((families) => values.project in families)
+)
   throw new Error("Unknown project: " + values.project);
 const pending = [];
 const failures = [];
@@ -44,8 +48,12 @@ for (const [kind, root] of Object.entries(roots)) {
           "icon.svg",
           "icon-dark.svg",
           "icon-auto.svg",
+          "logo.png",
+          "logo-dark.png",
+          "social.png",
         ];
-        if (id === "ecosystem") suffixes.push("logo.png", "logo-dark.png");
+        if (id !== "ecosystem" && /(?:web|site|frontend)\//.test(folder))
+          suffixes.push("header.svg", "header-dark.svg");
         for (const suffix of suffixes) {
           const source = id + "/" + id + "-" + suffix;
           pending.push({
@@ -61,7 +69,10 @@ for (const [kind, root] of Object.entries(roots)) {
   }
 }
 for (const alias of consumers.aliases)
-  if (roots[alias.root] && (!values.project || alias.source.startsWith(values.project + "/")))
+  if (
+    roots[alias.root] &&
+    (!values.project || alias.source.startsWith(values.project + "/"))
+  )
     pending.push({
       source: alias.source,
       destination: target(roots[alias.root], alias.target),

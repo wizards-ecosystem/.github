@@ -1,0 +1,57 @@
+{
+  "lyre": {
+    "signatureWidth": 0.56,
+    "signatureLeft": 12,
+    "overlaySignature": true
+  },
+  "brush": {
+    "signatureWidth": 0.56,
+    "signatureLeft": 12,
+    "overlaySignature": false
+  },
+  "ink": {
+    "signatureWidth": 0.56,
+    "signatureLeft": 12,
+    "overlaySignature": true
+  },
+  "pick": {
+    "signatureWidth": 0.56,
+    "signatureLeft": 12,
+    "overlaySignature": false
+  },
+  "os": {
+    "signatureWidth": 0.44,
+    "signatureLeft": 0.04,
+    "overlaySignature": false
+  },
+  "conclave": {
+    "signatureWidth": 0.44,
+    "signatureLeft": 0.04,
+    "overlaySignature": false
+  },
+  "courier": {
+    "signatureWidth": 0.44,
+    "signatureLeft": 0.04,
+    "overlaySignature": false
+  },
+  "familiar": {
+    "signatureWidth": 0.44,
+    "signatureLeft": 0.04,
+    "overlaySignature": false
+  },
+  "herald": {
+    "signatureWidth": 0.44,
+    "signatureLeft": 0.04,
+    "overlaySignature": false
+  },
+  "press": {
+    "signatureWidth": 0.44,
+    "signatureLeft": 0.04,
+    "overlaySignature": false
+  },
+  "charter": {
+    "signatureWidth": 0.44,
+    "signatureLeft": 0.04,
+    "overlaySignature": false
+  }
+}
