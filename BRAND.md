@@ -68,8 +68,10 @@ and transparent watercolor raster assets are both appropriate.
 
 The owner approved the new organization composition on 2026-09-08: calligraphy above a
 charcoal and sage mountain ridge, joined by a sweeping ink flourish, with a small spaced
-`ECOSYSTEM` caption. The proof is a composition reference; its baked checkerboard is not
-production transparency. Its final extraction and small mountain icon still need review.
+`ECOSYSTEM` caption. The private review set now includes finished transparent exports,
+the exact existing signature, and a compact mountain-and-ink favicon. The complete set
+is awaiting visual review before publication. The original RGB proof remains a source
+reference; its baked checkerboard is not production transparency.
 
 Review one identity with the owner before replacing its exports or moving to another
 project. Review the full logo and compact icon together at actual display sizes. The

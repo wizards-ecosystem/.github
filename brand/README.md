@@ -2,8 +2,9 @@
 
 Identity refresh, 2026-09-08. The [original approved board](source/approved-sheet.png) is
 the visual reference for expressive calligraphy, ink drawings, and watercolor.
-The new mountain-and-ink organization composition is approved; production extraction and
-the compact icon are pending. Review and replace one identity at a time.
+The new mountain-and-ink organization composition is approved. Its transparent exports
+and compact icon are finished in the private review set and awaiting visual review
+together. Review and replace one identity at a time.
 
 The existing [identity collection](index.html), exports, and builder retain the previous
 proposal. They are available for existing consumers, not approval for further rollout.
