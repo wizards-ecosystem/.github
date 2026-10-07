@@ -2,10 +2,15 @@
 
 Identity refresh, 2026-09-08. The [original approved board](source/approved-sheet.png) is
 the visual reference for expressive calligraphy, ink drawings, and watercolor.
-All twelve identities are approved and released. The [identity collection](index.html)
+The original twelve identities were approved and released. The [identity collection](index.html)
 shows the mountain organization mark and eleven illustrated project identities, each
 with the exact existing signature. READMEs use transparent PNGs; application headers
 use compact horizontal SVGs and native instrument marks.
+
+Bedrock and Realm names were chosen on 2026-10-07. Their artwork, palettes,
+production IDs and exports are pending in the
+[branding transition](bedrock-realm-transition.md). Existing os assets and
+consumer paths retain their original identity until that work is approved.
 
 ## Choose an export
 

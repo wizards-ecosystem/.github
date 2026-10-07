@@ -5,17 +5,25 @@ overrides it.
 
 ## Read the status first
 
-Every project here states what is built, in one place, and that page is authoritative
-over any README, roadmap, or design document:
+Start with each project's current status and acceptance authorities. A roadmap
+entry does not establish implementation or readiness:
 
 - **Wizzy**: `STATUS.md`, with `ROADMAP.md` for planned work. A roadmap entry is not a
   supported feature or a delivery date.
-- **The Wizard's OS**: `docs/004-decision-log.md`.
-- **Conclave**: `docs/wizzy-handoff.md`, then `docs/HANDOFF.md` and `docs/GAPS.md`.
-- **Courier**: `docs/specs/`. Nothing is implemented; the specification is the artifact.
-- **Lyre**: `HANDOFF.md`.
+- **The Wizard's Bedrock** (existing wizards-os kernel): `docs/004-decision-log.md`
+  and `docs/016-pre-wizzy-foundation.md` in that project.
+- **The Wizard's Realm**: `README.md` and `docs/002-cutover.md` in wizards-realm.
+  Its compiler-readiness authority remains with the kernel until an explicit transfer.
+- **Conclave**: `README.md`, `docs/acceptance.md` and `docs/PRE-WIZZY.md`.
+- **Courier**: `README.md`, `docs/acceptance.md` and `docs/specs/`. Nothing is implemented;
+  the specification is the artifact.
+- **Lyre**: `README.md` and `SPEC.md`.
 - **Brush**: `README.md` and `docs/`.
 - **Pick**: `README.md`.
+- **Familiar**: `README.md`, then `AGENTS.md` and `SECURITY.md`.
+- **Herald**: `README.md` and `SETUP.md`.
+- **Press**: `README.md`, `docs/usage.md` and `docs/plan.md`.
+- **Charter**: `README.md`, `docs/plan.md` and `inbox.md`.
 
 Much of what looks like a bug is a documented limit, and checking takes a minute.
 

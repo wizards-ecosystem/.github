@@ -9,7 +9,7 @@
 
 
 We build local software for programming, media creation, and authorized security
-testing. Four projects have public releases. Four more are private while they are built.
+testing. Four projects have public releases. Other projects remain in development.
 
 ## Available now
 
@@ -40,7 +40,8 @@ You cannot use these yet.
 | Project | Current state |
 | --- | --- |
 | **The Wizard's Ink** | Home of **Wizzy**, an experimental statically typed language whose compiler tracks effects, resources, and authority. Wizzy compiles and runs on three backends: a tree-walking interpreter, a bytecode VM, and a Cranelift native tier. Pre-0.1 and source-only. |
-| **The Wizard's OS** | A from-scratch, capability-based Rust operating system for x86-64 and UEFI. Kernel work is active. The userland waits on Wizzy. |
+| **The Wizard's Bedrock** | The chosen new name for the existing wizards-os kernel project: a from-scratch, capability-based Rust kernel for x86-64 and UEFI. Kernel work is active; its repository migration remains separate. |
+| **The Wizard's Realm** | The operating environment and shared Wizzy userland, with intended Bedrock and Linux backends. Documentation only; implementation waits on its compiler-readiness gate. |
 | **The Wizard's Conclave** | A local coding-agent orchestrator. v0.1 runs and is frozen; the next implementation waits on Wizzy. |
 | **The Wizard's Courier** | A durable job service for the studios. The specification and conformance corpus are written. No implementation exists, and it waits on the same Wizzy work. |
 
@@ -49,8 +50,11 @@ is planned for release.
 
 ## How the projects connect
 
-Wizzy is planned for the OS userland, the next Conclave, and Courier. Their written gates require specific language capabilities and retained proof.
+Wizzy is planned for Realm's userland, the next Conclave, and Courier. Their written gates require specific language capabilities and retained proof.
 Each consumer records its own pinned revision and gate-opening decision when ready.
+
+Bedrock and Realm names were chosen on 2026-10-07. They separate the kernel from
+the operating environment; the [new identities still need branding](../brand/bedrock-realm-transition.md).
 
 Lyre and Brush have their own job queues and are meant to use Courier once it exists. No
 public release depends on any of the private work. Familiar shares nothing with the

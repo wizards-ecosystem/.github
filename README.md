@@ -39,6 +39,11 @@ copy of that file.
 The OS, Courier, Charter, and Press override nothing and inherit all six. Conclave has
 its own templates but no `CONTRIBUTING.md`, `SECURITY.md`, or `SUPPORT.md`.
 
+OS is the name in that dated inventory. Bedrock is now the chosen kernel name
+and Realm the separate operating environment; the
+[branding transition](brand/bedrock-realm-transition.md) records their pending
+migration and artwork. The historical defaults inventory is not a fresh settings check.
+
 ## Also here
 
 [**`BRAND.md`**](BRAND.md) holds the naming model, visual direction, voice, and status
