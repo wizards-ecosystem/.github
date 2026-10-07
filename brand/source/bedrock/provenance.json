@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-07",
+  "approval": "Owner selected Use these designs in the Bedrock/Realm cutover conversation.",
+  "generation": "Built-in imagegen; original wordmark plus a transparency-preserving dark-pigment edit. No old OS artwork was relabeled.",
+  "composition": "Exact existing The Wizard's SVG signature composed by tooling/build-projects.mjs; native 64px instrument icon paths.",
+  "masters": [
+    {
+      "file": "art.png",
+      "generator_output": "exec-385cf1fe-5f90-473b-9b64-7be75ec46f95.png",
+      "sha256": "446aef8c56192dfc47f74c34993b56b488b535ba4f2322ce81e72daf562b1f73"
+    },
+    {
+      "file": "art-dark.png",
+      "generator_output": "exec-705c248b-4803-43aa-8a23-9fb58577acb4.png",
+      "sha256": "93ef7470290a5b3c0efeaa7901ae1b43651c29d48013cb04032c5b929f804aae"
+    }
+  ]
+}

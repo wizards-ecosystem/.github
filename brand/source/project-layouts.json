@@ -53,5 +53,15 @@
     "signatureWidth": 0.44,
     "signatureLeft": 0.04,
     "overlaySignature": false
+  },
+  "bedrock": {
+    "signatureWidth": 0.38,
+    "signatureLeft": 0.035,
+    "overlaySignature": false
+  },
+  "realm": {
+    "signatureWidth": 0.38,
+    "signatureLeft": 0.035,
+    "overlaySignature": false
   }
 }

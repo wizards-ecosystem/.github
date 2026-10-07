@@ -40,7 +40,7 @@ You cannot use these yet.
 | Project | Current state |
 | --- | --- |
 | **The Wizard's Ink** | Home of **Wizzy**, an experimental statically typed language whose compiler tracks effects, resources, and authority. Wizzy compiles and runs on three backends: a tree-walking interpreter, a bytecode VM, and a Cranelift native tier. Pre-0.1 and source-only. |
-| **The Wizard's Bedrock** | The chosen new name for the existing wizards-os kernel project: a from-scratch, capability-based Rust kernel for x86-64 and UEFI. Kernel work is active; its repository migration remains separate. |
+| **The Wizard's Bedrock** | A from-scratch, capability-based Rust kernel for x86-64 and UEFI. Renamed from wizards-os with its history intact; owns hardware, kernel ABI and qualification. Realm owns the operating environment. |
 | **The Wizard's Realm** | The operating environment and shared Wizzy userland, with intended Bedrock and Linux backends. Documentation only; implementation waits on its compiler-readiness gate. |
 | **The Wizard's Conclave** | A local coding-agent orchestrator. v0.1 runs and is frozen; the next implementation waits on Wizzy. |
 | **The Wizard's Courier** | A durable job service for the studios. The specification and conformance corpus are written. No implementation exists, and it waits on the same Wizzy work. |

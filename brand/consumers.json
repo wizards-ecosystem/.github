@@ -1,21 +1,76 @@
 {
   "workspace": {
-    ".github-private": { "ecosystem": ["profile/assets"] },
-    "language/wizards-ink": {
-      "ink": ["docs/assets/brand", "site/public/brand"]
+    ".github-private": {
+      "ecosystem": [
+        "profile/assets"
+      ]
     },
-    "systems/wizards-os": { "os": ["docs/assets"] },
-    "services/wizards-conclave": { "conclave": ["docs/assets", "web/assets"] },
-    "services/wizards-courier": { "courier": ["docs/assets"] },
-    "tools/wizards-familiar": { "familiar": ["docs/assets"] },
-    "tools/wizards-herald": { "herald": ["docs/assets"] },
-    "tools/wizards-press": { "press": ["docs/assets"] },
-    "tools/wizards-charter": { "charter": ["docs/assets"] }
+    "language/wizards-ink": {
+      "ink": [
+        "docs/assets/brand",
+        "site/public/brand"
+      ]
+    },
+    "services/wizards-conclave": {
+      "conclave": [
+        "docs/assets",
+        "web/assets"
+      ]
+    },
+    "services/wizards-courier": {
+      "courier": [
+        "docs/assets"
+      ]
+    },
+    "tools/wizards-familiar": {
+      "familiar": [
+        "docs/assets"
+      ]
+    },
+    "tools/wizards-herald": {
+      "herald": [
+        "docs/assets"
+      ]
+    },
+    "tools/wizards-press": {
+      "press": [
+        "docs/assets"
+      ]
+    },
+    "tools/wizards-charter": {
+      "charter": [
+        "docs/assets"
+      ]
+    },
+    "systems/wizards-bedrock": {
+      "bedrock": [
+        "docs/assets"
+      ]
+    },
+    "systems/wizards-realm": {
+      "realm": [
+        "docs/assets"
+      ]
+    }
   },
   "wsl": {
-    "wizards-lyre": { "lyre": ["docs/assets", "web/public/brand"] },
-    "wizards-brush": { "brush": ["docs/assets", "frontend/public/brand"] },
-    "wizards-pick": { "pick": ["docs/assets"] }
+    "wizards-lyre": {
+      "lyre": [
+        "docs/assets",
+        "web/public/brand"
+      ]
+    },
+    "wizards-brush": {
+      "brush": [
+        "docs/assets",
+        "frontend/public/brand"
+      ]
+    },
+    "wizards-pick": {
+      "pick": [
+        "docs/assets"
+      ]
+    }
   },
   "aliases": [
     {

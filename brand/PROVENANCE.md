@@ -167,3 +167,19 @@ the contemporaneous handoff records the instruction as: replace every checkerboa
 square and simulated transparency region with pure `#FFFFFF`, preserve all foreground
 art, add no texture, shadow, or object, and keep dimensions and placement. The checked-in
 white sources and deterministic alpha reconstruction are the retained production record.
+
+## Bedrock and Realm cutover, 2026-10-07
+
+The owner selected “Use these designs” after seeing the new Bedrock and Realm
+wordmarks. Bedrock uses slate strata with copper accents; Realm uses teal
+lettering with an open map and compass. These are newly generated identities,
+not relabeled OS exports. Original transparent light masters and dark-pigment
+variants are retained in source/bedrock and source/realm, with per-master
+SHA-256 and generation-output provenance. Dark variants preserve the motif
+and layout but are separate generated paintings, not pixel-identical recolors.
+
+The production builder composes the unchanged signature master, generates
+theme-specific logos, compact headers, native instrument icons, social images,
+avatars and favicon formats, and records each export's digest and dimensions.
+Bedrock and Realm are explicit consumers; the old os family remains historical
+and is excluded from the current gallery. The September approval is unchanged.

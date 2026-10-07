@@ -10,10 +10,10 @@ entry does not establish implementation or readiness:
 
 - **Wizzy**: `STATUS.md`, with `ROADMAP.md` for planned work. A roadmap entry is not a
   supported feature or a delivery date.
-- **The Wizard's Bedrock** (existing wizards-os kernel): `docs/004-decision-log.md`
+- **The Wizard's Bedrock** (wizards-bedrock kernel): `docs/004-decision-log.md`
   and `docs/016-pre-wizzy-foundation.md` in that project.
 - **The Wizard's Realm**: `README.md` and `docs/002-cutover.md` in wizards-realm.
-  Its compiler-readiness authority remains with the kernel until an explicit transfer.
+  Its compiler-readiness authority is `docs/003-compiler-readiness.md`; the gate remains CLOSED.
 - **Conclave**: `README.md`, `docs/acceptance.md` and `docs/PRE-WIZZY.md`.
 - **Courier**: `README.md`, `docs/acceptance.md` and `docs/specs/`. Nothing is implemented;
   the specification is the artifact.

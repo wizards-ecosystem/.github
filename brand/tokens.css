@@ -33,6 +33,14 @@
   --wz-accent-light: #485F79;
   --wz-accent-on-dark: #A9C0D8;
 }
+:root[data-project="bedrock"] {
+  --wz-accent-light: #73523C;
+  --wz-accent-on-dark: #D8AD83;
+}
+:root[data-project="realm"] {
+  --wz-accent-light: #285F56;
+  --wz-accent-on-dark: #AFD2C3;
+}
 :root[data-project="conclave"] {
   --wz-accent-light: #65516D;
   --wz-accent-on-dark: #C9B0D3;

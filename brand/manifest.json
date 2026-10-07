@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "direction": "Calligraphy and watercolor: approved original signature, drawn project lettering, and instrument marks",
   "signature": {
     "sha256": "759ee828875140b2284ca03dad26f00f947d44a16b1cd07a33edc60bdba26fd4"
@@ -18,7 +18,18 @@
     "os": {
       "name": "OS",
       "accent": "#485F79",
-      "accentDark": "#A9C0D8"
+      "accentDark": "#A9C0D8",
+      "legacy": true
+    },
+    "bedrock": {
+      "name": "Bedrock",
+      "accent": "#73523C",
+      "accentDark": "#D8AD83"
+    },
+    "realm": {
+      "name": "Realm",
+      "accent": "#285F56",
+      "accentDark": "#AFD2C3"
     },
     "conclave": {
       "name": "Conclave",
@@ -596,6 +607,386 @@
       "width": 256,
       "height": 256,
       "bytes": 14597,
+      "role": "favicon",
+      "transparent": true
+    },
+    "bedrock/bedrock-logo.svg": {
+      "sha256": "afa516610e9f5e839aced9b0bd17f45baffd7d77ae77e55a5231bc2f9fe70241",
+      "width": 2046,
+      "height": 1117,
+      "bytes": 1843186,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "bedrock/bedrock-logo.png": {
+      "sha256": "803deef7e13856db5e2133f1f72f2bb2de36b90289f238224b9d678a5f03bf60",
+      "width": 1200,
+      "height": 655,
+      "bytes": 530642,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "bedrock/bedrock-header.svg": {
+      "sha256": "3747c5cbc09ff943696fb241492f85c36db8a98a12b22108f3451d8258a43b67",
+      "width": 797,
+      "height": 164,
+      "bytes": 1843140,
+      "role": "header",
+      "transparent": true,
+      "theme": "light"
+    },
+    "bedrock/bedrock-icon.svg": {
+      "sha256": "51e2c13ce440eb626d58b7ac1123964356f5eabb18a886a3e19c194928edd252",
+      "width": 64,
+      "height": 64,
+      "bytes": 474,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "bedrock/bedrock-icon.png": {
+      "sha256": "c1c5678e2bb48614ab09e3958154ece5ce0a3e497e0f9ead894c34651eef9f91",
+      "width": 256,
+      "height": 256,
+      "bytes": 4096,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "bedrock/bedrock-art.png": {
+      "sha256": "446aef8c56192dfc47f74c34993b56b488b535ba4f2322ce81e72daf562b1f73",
+      "width": 2006,
+      "height": 784,
+      "bytes": 1375013,
+      "role": "illustration",
+      "transparent": true,
+      "theme": "light"
+    },
+    "bedrock/bedrock-logo-dark.svg": {
+      "sha256": "5c7ec55da866a4a87babed63ace856b4ed5a1f5570852ef16ebb6152f58bc552",
+      "width": 2046,
+      "height": 1117,
+      "bytes": 1993750,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "bedrock/bedrock-logo-dark.png": {
+      "sha256": "5e47f80e48bf2edff21cf994922047239bf878f89ec29baa3a686644ba1e92fe",
+      "width": 1200,
+      "height": 655,
+      "bytes": 570090,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "bedrock/bedrock-header-dark.svg": {
+      "sha256": "b74db2b866c35df6b8e0188d7c8a0356f01070c72ea83ddfcdf4321a62ef3a09",
+      "width": 797,
+      "height": 164,
+      "bytes": 1993704,
+      "role": "header",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "bedrock/bedrock-icon-dark.svg": {
+      "sha256": "9e06d4faeaef2ba35bdf61a8752e8c0ebf1fb932d06964bc5951982a367c2891",
+      "width": 64,
+      "height": 64,
+      "bytes": 474,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "bedrock/bedrock-icon-dark.png": {
+      "sha256": "e7e638ca09eba7394d6f1c3ba7f6fee062cc917ec2737d3413b57455ccb98248",
+      "width": 256,
+      "height": 256,
+      "bytes": 4080,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "bedrock/bedrock-art-dark.png": {
+      "sha256": "93ef7470290a5b3c0efeaa7901ae1b43651c29d48013cb04032c5b929f804aae",
+      "width": 2006,
+      "height": 784,
+      "bytes": 1487935,
+      "role": "illustration",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "bedrock/bedrock-logo-auto.svg": {
+      "sha256": "5c70934a975c4e83ed18e4be075831106251d8234ab9e902986864376d544d1d",
+      "width": 2046,
+      "height": 1117,
+      "bytes": 3836906,
+      "role": "logo",
+      "transparent": true,
+      "theme": "auto"
+    },
+    "bedrock/bedrock-icon-auto.svg": {
+      "sha256": "e3dfae95feb94e0b5ccc48f1d919c81b36063d1e4e6901d7cfea85adb9b2fd5d",
+      "width": 64,
+      "height": 64,
+      "bytes": 562,
+      "role": "icon",
+      "transparent": true,
+      "theme": "auto"
+    },
+    "bedrock/bedrock-lockup.png": {
+      "sha256": "803deef7e13856db5e2133f1f72f2bb2de36b90289f238224b9d678a5f03bf60",
+      "width": 1200,
+      "height": 655,
+      "bytes": 530642,
+      "role": "illustration",
+      "transparent": true
+    },
+    "bedrock/bedrock-social.svg": {
+      "sha256": "68002cf0f079cf056ca2c062f0c620600784b54c89052f865b9348cd09e98849",
+      "width": 1200,
+      "height": 630,
+      "bytes": 1843324,
+      "role": "social",
+      "transparent": false
+    },
+    "bedrock/bedrock-social.png": {
+      "sha256": "e08b9a4000ce22f688f5d2245cf4a2fc68a605a012f272be9cab4c601301566b",
+      "width": 1200,
+      "height": 630,
+      "bytes": 314871,
+      "role": "social",
+      "transparent": false
+    },
+    "bedrock/bedrock-avatar.png": {
+      "sha256": "a10e9b743ac4af12b320915936f4e2b6eae8db67aac87c5de0d744d901e14fa9",
+      "width": 500,
+      "height": 500,
+      "bytes": 9835,
+      "role": "avatar",
+      "transparent": false
+    },
+    "bedrock/apple-touch-icon.png": {
+      "sha256": "31efcb235533eb655d820296c16d6748723301fcaca5feeece9b2e4dd23de4d6",
+      "width": 180,
+      "height": 180,
+      "bytes": 2687,
+      "role": "touch-icon",
+      "transparent": false
+    },
+    "bedrock/favicon-16.png": {
+      "sha256": "1dfba45e83ec0d40514017f8aee13c9045f4fb2daa15159082f7ae854ad9de34",
+      "width": 16,
+      "height": 16,
+      "bytes": 472,
+      "role": "favicon",
+      "transparent": true
+    },
+    "bedrock/favicon-32.png": {
+      "sha256": "a5821840dbe1489246aa6559a29dd5f8b736f27d5c0769dd092920c9e5a727cc",
+      "width": 32,
+      "height": 32,
+      "bytes": 890,
+      "role": "favicon",
+      "transparent": true
+    },
+    "bedrock/favicon.ico": {
+      "sha256": "8bf5849fdbbd27588693e548370e7e2e079c8f7d88805b90cf869a6193ba4c43",
+      "width": 256,
+      "height": 256,
+      "bytes": 4118,
+      "role": "favicon",
+      "transparent": true
+    },
+    "realm/realm-logo.svg": {
+      "sha256": "0e774a480c9a57191e5aa5c7b9dd73f3cb47b171d4054d9ad6d72f7077403ad4",
+      "width": 1814,
+      "height": 1187,
+      "bytes": 1690065,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "realm/realm-logo.png": {
+      "sha256": "fd0225fcf203a6f1d3da91ad4f600807ac3b55ac3e695ece580ba9e3c4f4119f",
+      "width": 1200,
+      "height": 785,
+      "bytes": 652624,
+      "role": "logo",
+      "transparent": true,
+      "theme": "light"
+    },
+    "realm/realm-header.svg": {
+      "sha256": "bea752443fe3336ce68fc604aeab7cde52c075bebc05ca8069876c6611c2e093",
+      "width": 718,
+      "height": 164,
+      "bytes": 1690016,
+      "role": "header",
+      "transparent": true,
+      "theme": "light"
+    },
+    "realm/realm-icon.svg": {
+      "sha256": "20260fdfecd193d4dcb222134ff8a9cf22bbab15b3f5210dfdd7e5bbb586a1e3",
+      "width": 64,
+      "height": 64,
+      "bytes": 587,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "realm/realm-icon.png": {
+      "sha256": "205f835460163ae9d5e35be37257849a0257a63401e1608ca7989fcc9e71f63a",
+      "width": 256,
+      "height": 256,
+      "bytes": 6956,
+      "role": "icon",
+      "transparent": true,
+      "theme": "light"
+    },
+    "realm/realm-art.png": {
+      "sha256": "4010ca50eed8cb88611366356b50d871745f927decb177b814188e4be7399f99",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1260183,
+      "role": "illustration",
+      "transparent": true,
+      "theme": "light"
+    },
+    "realm/realm-logo-dark.svg": {
+      "sha256": "b8216fdb572abb6e0cc144e365acc139c50df6b0476d3f863fabf1ee3b8bc74a",
+      "width": 1814,
+      "height": 1187,
+      "bytes": 1930593,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "realm/realm-logo-dark.png": {
+      "sha256": "25acf6b408ff33c0a99d40d1570bb219f299d63665ea38790c27c9a8cba851da",
+      "width": 1200,
+      "height": 785,
+      "bytes": 731081,
+      "role": "logo",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "realm/realm-header-dark.svg": {
+      "sha256": "d6f1f6ad4054593fe40475ed89918c17fbe6eaa0ef538b7d460dfd3ae47e8883",
+      "width": 718,
+      "height": 164,
+      "bytes": 1930544,
+      "role": "header",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "realm/realm-icon-dark.svg": {
+      "sha256": "e086cbaf1079b0a186a73043940df255a49df8387ef4cf474f38aa2b2ef7e623",
+      "width": 64,
+      "height": 64,
+      "bytes": 587,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "realm/realm-icon-dark.png": {
+      "sha256": "c586251f60b596f27804fc1f3ae14c8fcf46ea682cd17a35809f62133120fbd9",
+      "width": 256,
+      "height": 256,
+      "bytes": 6897,
+      "role": "icon",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "realm/realm-art-dark.png": {
+      "sha256": "6944783641ed62e33fd8ea9ac8b7eb351be561296dc1c25fba73618a14a0de06",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1440579,
+      "role": "illustration",
+      "transparent": true,
+      "theme": "dark"
+    },
+    "realm/realm-logo-auto.svg": {
+      "sha256": "25e46f3e9caad479e3e75c3fdf35b8f9f848529739034cc978d224a0fb53d390",
+      "width": 1814,
+      "height": 1187,
+      "bytes": 3620630,
+      "role": "logo",
+      "transparent": true,
+      "theme": "auto"
+    },
+    "realm/realm-icon-auto.svg": {
+      "sha256": "8c0242c92c389e67e702122088b10b940b0b6faa948ae0230f965b09bff8cae1",
+      "width": 64,
+      "height": 64,
+      "bytes": 675,
+      "role": "icon",
+      "transparent": true,
+      "theme": "auto"
+    },
+    "realm/realm-lockup.png": {
+      "sha256": "fd0225fcf203a6f1d3da91ad4f600807ac3b55ac3e695ece580ba9e3c4f4119f",
+      "width": 1200,
+      "height": 785,
+      "bytes": 652624,
+      "role": "illustration",
+      "transparent": true
+    },
+    "realm/realm-social.svg": {
+      "sha256": "01bbf388434d4accaec44e816bb8c1b45a60a68bf3a3bde5ca555807ccb49b97",
+      "width": 1200,
+      "height": 630,
+      "bytes": 1690205,
+      "role": "social",
+      "transparent": false
+    },
+    "realm/realm-social.png": {
+      "sha256": "1b1d52f3a844ecb0f73ad7b4ed7f53aca543fe9379fa56bd90b582f557952acf",
+      "width": 1200,
+      "height": 630,
+      "bytes": 278472,
+      "role": "social",
+      "transparent": false
+    },
+    "realm/realm-avatar.png": {
+      "sha256": "6f58d5cff67d9b564ca13a445421ad4fab1f8db4051154174e92731305c98d4f",
+      "width": 500,
+      "height": 500,
+      "bytes": 11551,
+      "role": "avatar",
+      "transparent": false
+    },
+    "realm/apple-touch-icon.png": {
+      "sha256": "ab278648e66ff99f68875f47bef803de009e41c77e5e666289dbfc4372d58bc3",
+      "width": 180,
+      "height": 180,
+      "bytes": 3269,
+      "role": "touch-icon",
+      "transparent": false
+    },
+    "realm/favicon-16.png": {
+      "sha256": "b59bed1be93986e58160bb7c7a794071260647b751a329a10e403c3e4a7711cc",
+      "width": 16,
+      "height": 16,
+      "bytes": 505,
+      "role": "favicon",
+      "transparent": true
+    },
+    "realm/favicon-32.png": {
+      "sha256": "66ac57f83035aba2a8bb0107ef0fc2adad4f0c8a3c16a61e74f046fd8b75c97d",
+      "width": 32,
+      "height": 32,
+      "bytes": 985,
+      "role": "favicon",
+      "transparent": true
+    },
+    "realm/favicon.ico": {
+      "sha256": "68752003ebc9fbad42e8f661d7d11a6b9b8aba7d082b95104be808fbc9b09dc2",
+      "width": 256,
+      "height": 256,
+      "bytes": 6978,
       "role": "favicon",
       "transparent": true
     },

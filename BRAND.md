@@ -1,8 +1,8 @@
 # The Wizard's Ecosystem brand
 
 Status: the original twelve identities were approved and released on 2026-09-08.
-Bedrock and Realm names were chosen on 2026-10-07; their artwork and exports are
-pending in the [branding transition](brand/bedrock-realm-transition.md). The original
+Bedrock and Realm names and artwork were approved on 2026-10-07; their production
+provenance is in the [branding cutover](brand/bedrock-realm-transition.md). The original
 calligraphy and watercolor board defines the direction.
 
 This document is the authority for naming, visual identity, voice, and status language
@@ -38,7 +38,7 @@ use **the ecosystem** in running prose.
 | Display name | Repository or package | Note |
 | --- | --- | --- |
 | **The Wizard's Ink** | `wizards-ink` | The project and home of the Wizzy language |
-| **The Wizard's Bedrock** | `wizards-bedrock` | The Rust kernel; chosen successor name for the existing wizards-os project, whose migration is pending |
+| **The Wizard's Bedrock** | `wizards-bedrock` | The Rust kernel, hardware support, native ABI and kernel qualification; renamed from wizards-os |
 | **The Wizard's Realm** | `wizards-realm` | The operating environment and shared Wizzy userland; documentation only, with intended Bedrock and Linux backends |
 | **The Wizard's Conclave** | `wizards-conclave` | The orchestrator |
 | **The Wizard's Courier** | `wizards-courier` | The durable job vendor |
@@ -57,9 +57,10 @@ names, binary names, and file paths do not take apostrophes.
 Wizzy is the language. The Wizard's Ink is its project and repository. Do not replace
 language-context uses of `Wizzy` with the project name.
 
-The Wizard's OS and wizards-os remain historical identities while the kernel's
-folder, repository metadata and artwork are migrated by their owners. New naming
-does not change ABI identifiers, open language gates or approve replacement art.
+The Wizard's OS and wizards-os are historical identities. The kernel folder and
+GitHub repository are now wizards-bedrock; Realm has its own repository and
+artwork. Compatibility ABI identifiers and historical qualifications retain
+their versions. Neither branding nor the rename opens language gates.
 
 ## Identity architecture
 
@@ -106,7 +107,9 @@ Project accents:
 | --- | --- | --- |
 | Ecosystem | `#3F5F56` | `#ADC6BA` |
 | Ink | `#7A303B` | `#E2A3AC` |
-| OS (legacy family; Bedrock/Realm palettes pending) | `#485F79` | `#A9C0D8` |
+| Bedrock | `#73523C` | `#D8AD83` |
+| Realm | `#285F56` | `#AFD2C3` |
+| OS (historical family) | `#485F79` | `#A9C0D8` |
 | Conclave | `#65516D` | `#C9B0D3` |
 | Courier | `#85621D` | `#E3C477` |
 | Lyre | `#456348` | `#AFC9AE` |

@@ -3,14 +3,14 @@
 Identity refresh, 2026-09-08. The [original approved board](source/approved-sheet.png) is
 the visual reference for expressive calligraphy, ink drawings, and watercolor.
 The original twelve identities were approved and released. The [identity collection](index.html)
-shows the mountain organization mark and eleven illustrated project identities, each
+shows the mountain organization mark and current illustrated project identities, each
 with the exact existing signature. READMEs use transparent PNGs; application headers
 use compact horizontal SVGs and native instrument marks.
 
-Bedrock and Realm names were chosen on 2026-10-07. Their artwork, palettes,
-production IDs and exports are pending in the
-[branding transition](bedrock-realm-transition.md). Existing os assets and
-consumer paths retain their original identity until that work is approved.
+Bedrock and Realm names and designs were approved on 2026-10-07. Their separate
+families and exact source provenance are recorded in the
+[branding cutover](bedrock-realm-transition.md). The old os family remains
+historical; active kernel and OS consumers now use bedrock and realm.
 
 ## Choose an export
 
@@ -81,7 +81,7 @@ Products serve their own local assets and never require the central checkout at 
 
 The organization source and editable mountain marks live in [source/ecosystem](source/ecosystem/).
 `tooling/build-ecosystem.mjs` owns extraction, exact-signature composition, and export.
-`tooling/build-projects.mjs` composes the eleven project families from explicit light/dark
+`tooling/build-projects.mjs` composes the project families from explicit light/dark
 masters and native icon SVGs in `source/<project>/`, using `source/project-layouts.json`.
 Accent definitions and export inventory live in `tooling/build-assets.mjs`.
 [Tokens](tokens.json) expose semantic palettes, and generated [CSS](tokens.css) follows

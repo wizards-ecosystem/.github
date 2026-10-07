@@ -18,7 +18,9 @@ const charcoal = "#272522";
 const projects = {
   ecosystem: { name: "Ecosystem", accent: "#3F5F56", accentDark: "#ADC6BA" },
   ink: { name: "Ink", accent: "#7A303B", accentDark: "#E2A3AC" },
-  os: { name: "OS", accent: "#485F79", accentDark: "#A9C0D8" },
+  os: { name: "OS", accent: "#485F79", accentDark: "#A9C0D8", legacy: true },
+  bedrock: { name: "Bedrock", accent: "#73523C", accentDark: "#D8AD83" },
+  realm: { name: "Realm", accent: "#285F56", accentDark: "#AFD2C3" },
   conclave: { name: "Conclave", accent: "#65516D", accentDark: "#C9B0D3" },
   courier: { name: "Courier", accent: "#85621D", accentDark: "#E3C477" },
   lyre: { name: "Lyre", accent: "#456348", accentDark: "#AFC9AE" },
@@ -137,7 +139,7 @@ for (const [id, project] of Object.entries(projects)) {
 const tokens = JSON.parse(
   await fs.readFile(path.join(brandRoot, "tokens.json"), "utf8"),
 );
-tokens.version = 5;
+tokens.version = 6;
 tokens.projects = Object.fromEntries(
   Object.entries(projects).map(([id, p]) => [
     id,
@@ -179,7 +181,7 @@ await write(
   "manifest.json",
   JSON.stringify(
     {
-      version: 5,
+      version: 6,
       direction:
         "Calligraphy and watercolor: approved original signature, drawn project lettering, and instrument marks",
       signature: { sha256: sha256(signature.vector) },
@@ -191,7 +193,7 @@ await write(
   ) + "\n",
 );
 console.log(
-  "Built brand package v5: " +
+  "Built brand package v6: " +
     Object.keys(projects).length +
     " families, " +
     Object.keys(files).length +
