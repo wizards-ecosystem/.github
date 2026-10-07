@@ -49,9 +49,8 @@ is planned for release.
 
 ## How the projects connect
 
-Wizzy is planned for the OS userland, the next Conclave, and Courier. All three wait on
-the same language work: starting a process, opening a socket, and decoding JSON. They
-unblock at the same time.
+Wizzy is planned for the OS userland, the next Conclave, and Courier. Their written gates require specific language capabilities and retained proof.
+Each consumer records its own pinned revision and gate-opening decision when ready.
 
 Lyre and Brush have their own job queues and are meant to use Courier once it exists. No
 public release depends on any of the private work. Familiar shares nothing with the

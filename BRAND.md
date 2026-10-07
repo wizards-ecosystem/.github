@@ -44,7 +44,7 @@ use **the ecosystem** in running prose.
 | **The Wizard's Pick** | `wizards-pick` | The security tool |
 | **The Wizard's Familiar** | `wizards-familiar` | The local coding agent |
 | **The Wizard's Herald** | `wizards-herald` | The local job-application workspace |
-| **The Wizard's Press** | `wizards-press` | Internal publishing infrastructure; specified, not built |
+| **The Wizard's Press** | `wizards-press` | Internal release drafts and public distribution observations; live delivery unqualified |
 | **The Wizard's Charter** | `wizards-charter` | Internal project assessment; specified, not built |
 
 Use the full display name in a title, heading, or first prose mention. Afterwards, use the
